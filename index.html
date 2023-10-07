@@ -146,11 +146,7 @@ body{
 </style> 
  </head> 
  <body> 
- 
- <script>
-if(!document.location.href.endswith("/index.html"))
-    document.location.href = "index.html";
-
+ 	<script>
 window.applicationCache.ondownloading = function()
 {
 	alert("开始缓存 !!")
@@ -158,13 +154,17 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3 style="font-size:20px;text-align:center;"><font color="#1d9bf0">离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("离线缓存成功!使用浏览器快捷方式重新进入ps5.psgo.eu.org")
+	alert("离线缓存完成!")
+    document.location.href = document.location.href;
 };
+
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
 </script>
 
   <h1 style="font-size:70px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PS5 折腾导航</font></h1>

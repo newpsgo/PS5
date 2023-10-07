@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# random: 9609e657976f3cf3aaca591accc66c08
+
+CACHE:
+c-code.js
+exploit.js
+index.html
+malloc.js
+netcat.html
+rop.js
+sigsegv.js
+syscalls2.js
+syscalls.js
+ps5-kstuff.bin
+
+NETWORK:
+*

@@ -1,0 +1,91 @@
+<html manifest="Cache.manifest">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PS5 4.03 Kernel Exploit</title>
+    <link rel="shortcut icon" href="favicon.ico"></link>
+</head>   
+<body>
+	<script>
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
+
+window.applicationCache.ondownloading = function()
+{
+	alert("Caching started !!")
+};
+
+window.applicationCache.onprogress = function(a)
+{
+	document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+};
+
+window.applicationCache.oncached = window.applicationCache.onupdateready = function()
+{
+	alert("Page Cached!!")
+};
+</script>
+    <script>
+        // Init on English Language
+        changeLanguage('english')
+
+        function changeLanguage(lang) {
+            Array.from(document.querySelectorAll('.language')).map( element => {
+                element.style.display = 'none'
+            });
+            if (document.getElementById(lang)) {
+                document.getElementById(lang).style.display = 'block';
+            }
+        }
+    </script>
+    <p>
+
+    </p>
+    <div id="english" class="language" style="display: block">
+        <h3>在继续之前请仔细阅读本文，PS5联网前请务必进入设置中关闭“系统自动更新”！</h3>
+	<p><b>2023/10/7更新：新的payload.bin文件，提高兼容性，请尝试安装运行DLC和第三方自制软件</b></p>
+        <p><b>此漏洞利用在 PS5 固件 4.03 上加载 PLD (.bin) 格式的有效负载。不支持其他固件和有效负载格式。3.00-4.51版本预计会在近期放出，7.61预计需要2个月左右，切勿升级！</b></p>
+	<p><b>如何在PS5中打开本折腾页面？ 修改PS5设置-网络设置-高级设置中的DNS为192.241.221.79和165.227.83.145，进入设置-用户指南等待中转网页加载完成，然后连续按两下手柄上的L2键，在弹窗的第一行里输入 ps5.psgo.eu.org 并点击submit即可进入</b></p>
+        <p><b>如何安装游戏？与ps4类似，将ps4的pkg游戏文件放入移动硬盘或优盘（exfat格式）并插入ps5，折腾成功后，按下ps键返回桌面，再次进入PS5设置-debug菜单-game-install，选择pkg文件安装</b></p>
+	    <ol>
+            <li>单击下方 JB+NETCAT 的链接。大约 20 秒后（如果弹出内存不足点确定键），您将看到一个弹出窗口，显示“正在等待有效负载”。然后您可以将有效负载发送到 TCP 端口 9019。<br />
+			在windows电脑中点击下载下方文件，PS5Tools和Payload.bin（类似GoldHEN，当前已经可安装运行PS4游戏），通过PS5Tools填写PS5在局域网中的IP地址+9019端口并推送Payload.bin<br />
+		    推送Payload.bin的时候遇到内存不足弹窗，不要点击确定键！要点击ps键返回桌面查看是否可以运行，如无法运行进入页面再次推送。<br />
+                如果在此过程中出现问题，您可能会收到一条警报，提示“越狱失败！重新启动 PS5 并重试。”。在这种情况下，您必须重新启动 PS5，最好不要关闭对话框。<br />
+                如果系统挂起超过一分钟（如果互联网连接速度较慢，可能需要更多时间），请重新启动 PS5 并重试。<br />
+                如果系统崩溃（看起来像是立即断电），请按 PS5 上的电源按钮（而不是游戏手柄上的），直到它再次打开，然后重试。（成功率大概60%）
+            </li>
+        </ol>
+        <p><i>此漏洞确实会崩溃并挂起。有时你甚至需要重试10次才能越狱。</i></p>
+        <p><i>致谢：@theflow 用于漏洞披露，@ChendoChap 用于用户态 CFI 绕过，@SpecterDev 和 @ChendoChap 用于各种帮助</i></p>
+    </div>
+    <div id="russian" class="language" style="display: none">
+        <h3>ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ИНСТРУКЦИЮ ПРЕЖДЕ ЧЕМ ПРОДОЛЖАТЬ</h3>
+        <p><b>Этот эксплоит загружает пейлоады в формате PLD (.bin) на PS5 с прошивкой 4.03. Другие прошивки и форматы НЕ поддерживаются.</b></p>
+        <ol>
+            <li>Нажмите на ссылку &laquo;JB+NETCAT&raquo;. В течение примерно 20 секунд появится уведомление
+                &laquo;waiting for payloads&raquo;. Это значит, что взлом сработал, и вы можете послать
+                пейлоад на TCP-порт 9019.<br />
+                Если что-то пошло не так, может вылететь ошибка &laquo;Jailbreak failed! Reboot your PS5 and try
+                again.&raquo;. В этом случае необходимо, не закрывая окно, перезагрузить консоль.<br />
+                Если взлом занимает больше минуты, и у вас адекватное интернет-соединение, скорее всего он повис.
+                Перезагрузите приставку и попробуйте еще раз.<br />
+                Если система крашится (выглядит как мгновенное выключение), нажимайте кнопку включения на ПРИСТАВКЕ (НЕ
+                НА КОНТРОЛЛЕРЕ), пока она не включится, после чего повторите взлом.
+            </li>
+        </ol>
+        <p><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
+        <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
+    </div>
+    <div id="progress"></div>
+
+<a href="netcat.html">JB+NETCAT（在PS5中点击这里）</a> 
+<br /><br />
+<a href="payload.bin">下载Payload.bin插件（用于解锁运行PS4游戏）</a> · 
+<a href="NetCat GUI v1.2.zip">下载NetCat推送工具（windows）</a> · 
+<a href="InternetBrowser.pkg">下载PS5-浏览器PKG</a> · 
+<a href="DebugSettings.pkg">下载PS5-Debug菜单快捷方式PKG</a>
+<!--<a href="https://ghproxy.com/https://github.com/Klairm/PS4-PayloadSender/releases/download/v1.0.1/app-release.apk">下载PayloadSender推送工具（安卓）</a>-->
+</body>
+
+</html>

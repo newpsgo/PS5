@@ -1,91 +1,265 @@
-<html manifest="Cache.manifest">
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico" type="image/x-icon">
+  <title>PS5 折腾导航 - PS5.PSGO.eu.org</title> 
 
-<head>
-    <meta charset="utf-8" />
-    <title>PS5 4.03 Kernel Exploit</title>
-    <link rel="shortcut icon" href="favicon.ico"></link>
-</head>   
-<body>
-	<script>
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VRDNYTJ1Y');
+</script>
+  <style>
+    
+body{
+    background-image:url(bg.png);
+    background-color:#202124;
+    background-attachment:fixed;
+    background-size:100%;
+    background-repeat:no-repeat;
+    font-family:system-ui;
+	text-align:center
+    }
+		
+    a:hover{
+	text-decoration: none;
+    border-bottom: 1.5px solid;
+	padding-bottom: 5px;
+	}
+    
+    button:-moz-focus-inner, button:focus{
+    outline:0;
+    border:none
+	}
+	
+	option{
+    background-color:#080808;
+    }
+	
+    button{
+	color:#dcddde;
+    font-family:arial;
+    font-size:22px;
+    font-weight:700;
+    border:2px solid #404040;
+    border-radius:4px;
+	margin:10px 2px; 
+    padding:10px;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:none;
+    background:#303134;
+    box-shadow:0 5px 0 #888888;
+    } 
+
+    button:hover{
+    color:#dcddde;
+    font-size:22px;
+    background:#161616;
+    border:2px solid #fff;
+    box-shadow:0 5px 0 #ccc;
+    } 
+    
+    button:active{
+    background:#1d9bf0;
+    position:relative;
+    color:#000;
+    top:5px;
+    box-shadow:none
+    }
+    
+   .bottopmsg{
+
+
+	padding:5px 0 1px 0;
+	color:#dcddde;
+	text-align: center;
+	font-size:16px;
+    }
+	
+      /** variables */
+      :root {
+        /*orig*/
+
+        --color-black: black;
+        --color-cod-gray: #101010;
+        --color-white: white;
+        --color-error: rgb(191, 95, 95);
+        --color-primary-rgba: 0, 192, 251;
+        --color-primary: #00c0fb;
+        --color-secondary-rgba: 234, 182, 56;
+        --color-secondary: #eab638;
+      }
+
+      .tiles {
+        display: flex;
+        flex-direction: column;
+		z-index:-1;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
+      }
+      .tiles__line {
+        -webkit-animation: runner 20s linear infinite;
+        display: flex;
+        transform: translateX(25%);
+      }
+      .tiles__line:nth-child(2) {
+        -webkit-animation-duration: 32s;
+      }
+      .tiles__line:nth-child(3) {
+        -webkit-animation-duration: 44s;
+      }
+
+      @keyframes runner {
+        to {
+          -webkit-transform: translateX(-25%);
+        }
+      }
+      .tiles__line-img {
+        --tile-margin: 3vw;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        flex: none;
+        height: 30vh;
+        margin: var(--tile-margin);
+        width: 30vh;
+        background-color:#1d9bf0;
+        opacity: 0.3;
+
+      }
+      .tiles__line-img--large {
+        border-radius: 20vh;
+        width: 100vh;
+        opacity: 0.3;
+      }
+  
+</style> 
+ </head> 
+ <body> 
+ 
+ <script>
 if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
 
 window.applicationCache.ondownloading = function()
 {
-	alert("Caching started !!")
+	alert("开始缓存 !!")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+	document.getElementById("progress").innerHTML="<h3>离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("Page Cached!!")
+	alert("离线缓存成功!使用浏览器快捷方式重新进入ps5.psgo.eu.org")
 };
 </script>
-    <script>
-        // Init on English Language
-        changeLanguage('english')
 
-        function changeLanguage(lang) {
-            Array.from(document.querySelectorAll('.language')).map( element => {
-                element.style.display = 'none'
-            });
-            if (document.getElementById(lang)) {
-                document.getElementById(lang).style.display = 'block';
-            }
-        }
-    </script>
-    <p>
+  <br> 
+  <h1 style="font-size:70px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PS5 折腾导航</font></h1>
+  <h2 style="font-size:28px;text-align:center;"><font color="#dcddde"> PS5.PSGO.eu.org - <font color="#dcddde"> 收藏分享是我更新的动力</font> </font></h2>
+  <div id="progress"></div>
+  <br><br>
+  <div id="mymenu"> 
+  
+  <table align="center"> 
+  
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='20231007/'";><font color=""> 【纯净原版】4.03 系统（20231007更新） </font></button>
+</td></tr>
 
-    </p>
-    <div id="english" class="language" style="display: block">
-        <h3>在继续之前请仔细阅读本文，PS5联网前请务必进入设置中关闭“系统自动更新”！</h3>
-	<p><b>2023/10/7更新：新的payload.bin文件，提高兼容性，请尝试安装运行DLC和第三方自制软件</b></p>
-        <p><b>此漏洞利用在 PS5 固件 4.03 上加载 PLD (.bin) 格式的有效负载。不支持其他固件和有效负载格式。3.00-4.51版本预计会在近期放出，7.61预计需要2个月左右，切勿升级！</b></p>
-	<p><b>如何在PS5中打开本折腾页面？ 修改PS5设置-网络设置-高级设置中的DNS为192.241.221.79和165.227.83.145，进入设置-用户指南等待中转网页加载完成，然后连续按两下手柄上的L2键，在弹窗的第一行里输入 ps5.psgo.eu.org 并点击submit即可进入</b></p>
-        <p><b>如何安装游戏？与ps4类似，将ps4的pkg游戏文件放入移动硬盘或优盘（exfat格式）并插入ps5，折腾成功后，按下ps键返回桌面，再次进入PS5设置-debug菜单-game-install，选择pkg文件安装</b></p>
-	    <ol>
-            <li>单击下方 JB+NETCAT 的链接。大约 20 秒后（如果弹出内存不足点确定键），您将看到一个弹出窗口，显示“正在等待有效负载”。然后您可以将有效负载发送到 TCP 端口 9019。<br />
-			在windows电脑中点击下载下方文件，PS5Tools和Payload.bin（类似GoldHEN，当前已经可安装运行PS4游戏），通过PS5Tools填写PS5在局域网中的IP地址+9019端口并推送Payload.bin<br />
-		    推送Payload.bin的时候遇到内存不足弹窗，不要点击确定键！要点击ps键返回桌面查看是否可以运行，如无法运行进入页面再次推送。<br />
-                如果在此过程中出现问题，您可能会收到一条警报，提示“越狱失败！重新启动 PS5 并重试。”。在这种情况下，您必须重新启动 PS5，最好不要关闭对话框。<br />
-                如果系统挂起超过一分钟（如果互联网连接速度较慢，可能需要更多时间），请重新启动 PS5 并重试。<br />
-                如果系统崩溃（看起来像是立即断电），请按 PS5 上的电源按钮（而不是游戏手柄上的），直到它再次打开，然后重试。（成功率大概60%）
-            </li>
-        </ol>
-        <p><i>此漏洞确实会崩溃并挂起。有时你甚至需要重试10次才能越狱。</i></p>
-        <p><i>致谢：@theflow 用于漏洞披露，@ChendoChap 用于用户态 CFI 绕过，@SpecterDev 和 @ChendoChap 用于各种帮助</i></p>
-    </div>
-    <div id="russian" class="language" style="display: none">
-        <h3>ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ИНСТРУКЦИЮ ПРЕЖДЕ ЧЕМ ПРОДОЛЖАТЬ</h3>
-        <p><b>Этот эксплоит загружает пейлоады в формате PLD (.bin) на PS5 с прошивкой 4.03. Другие прошивки и форматы НЕ поддерживаются.</b></p>
-        <ol>
-            <li>Нажмите на ссылку &laquo;JB+NETCAT&raquo;. В течение примерно 20 секунд появится уведомление
-                &laquo;waiting for payloads&raquo;. Это значит, что взлом сработал, и вы можете послать
-                пейлоад на TCP-порт 9019.<br />
-                Если что-то пошло не так, может вылететь ошибка &laquo;Jailbreak failed! Reboot your PS5 and try
-                again.&raquo;. В этом случае необходимо, не закрывая окно, перезагрузить консоль.<br />
-                Если взлом занимает больше минуты, и у вас адекватное интернет-соединение, скорее всего он повис.
-                Перезагрузите приставку и попробуйте еще раз.<br />
-                Если система крашится (выглядит как мгновенное выключение), нажимайте кнопку включения на ПРИСТАВКЕ (НЕ
-                НА КОНТРОЛЛЕРЕ), пока она не включится, после чего повторите взлом.
-            </li>
-        </ol>
-        <p><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
-        <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
-    </div>
-    <div id="progress"></div>
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='netcat.html#payload=ps5-kstuff.bin'";><font color=""> 【全自动】4.03 系统 </font></button>
+</td></tr>
 
-<a href="netcat.html">JB+NETCAT（在PS5中点击这里）</a> 
-<br /><br />
-<a href="payload.bin">下载Payload.bin插件（用于解锁运行PS4游戏）</a> · 
-<a href="NetCat GUI v1.2.zip">下载NetCat推送工具（windows）</a> · 
-<a href="InternetBrowser.pkg">下载PS5-浏览器PKG</a> · 
-<a href="DebugSettings.pkg">下载PS5-Debug菜单快捷方式PKG</a>
-<!--<a href="https://ghproxy.com/https://github.com/Klairm/PS4-PayloadSender/releases/download/v1.0.1/app-release.apk">下载PayloadSender推送工具（安卓）</a>-->
-</body>
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='netcat.html'";><font color=""> 4.03 系统（需手动推送bin文件）</font></button>
+</td></tr>
 
+<tr><td align="center">
+<button type="button"  onclick="window.location.href='debug/'"><font color=""> 4.03 系统 Debug模式（仅用于安装PKG）</font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.location.href='20231006/'";><font color=""> 【纯净原版】4.03 系统（20231006） </font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;;"> PS5 折腾工具 </font></td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('InternetBrowser.pkg')";><font color=""> PS5浏览器快捷方式（PKG文件 / 配合实现离线缓存） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('DebugSettings.pkg')";><font color=""> Debug菜单快捷方式（PKG文件 / 方便安装PKG文件） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('payload.bin')";><font color=""> Payload.bin 文件（运行游戏补丁 / 20231007更新） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('NetCat GUI v1.2.zip')";><font color=""> Netcat 推送bin工具 v1.2（Windows / 端口号9019） </font></button>
+</td></tr>
+
+<tr><td><br><br><br></td></tr>
+<tr><td><font size="4.5" color="#dcddde">--- 陆续更新中 ---</font></td></tr>
+
+   </table> 
+  </div> 
+  <div class="bottopmsg"> 
+  <br><br><br><br><br>
+   <a href="https://psgo.eu.org/disclaimer.html" target="_blank" style="color:#dcddde;font-size:16px;text-align:center;text-decoration:none;">免责声明</a>
+  </div> 
+  <div style="display:none" class="tiles"> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+   </div> 
+   <div class="tiles__line"> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img"></div> 
+    <div class="tiles__line-img tiles__line-img--large"></div> 
+    <div class="tiles__line-img"></div> 
+   </div>  
+  </div>
+ </body>
 </html>

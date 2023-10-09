@@ -143,7 +143,7 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3 style="font-size:20px;text-align:center;"><font color="#ff6699">离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3 style="font-size:20px;text-align:center;"><font color="#ff6699">离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </font></h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()

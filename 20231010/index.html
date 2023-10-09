@@ -40,30 +40,20 @@ if(!document.location.href.endswith("/index.html"))
         }
     </script>
     <p>
-        <a href="#" onclick="changeLanguage('english'); return false">English</a>
-        <a href="#" onclick="changeLanguage('russian'); return false">Русский</a>
+
     </p>
     <div id="english" class="language" style="display: block">
-        <h3>READ THIS CAREFULLY BEFORE PROCEEDING</h3>
-        <p><b>This exploit loads payloads in PLD (.bin) format on PS5 firmware 4.03. Other firmwares and payload formats are NOT supported.</b></p>
+        <h3>开始前请仔细阅读</h3>
+        <p><b>目前仅支持PS5 4.03固件。</b></p>
         <ol>
-            <li>Click on the link that says JB+NETCAT. In about 20 seconds you'll get a popup saying
-                "waiting for payloads". This means that everything has gone well.
-                You can then send your payload to TCP port 9019.<br />
-                If something went wrong during the process, you may get an alert saying "Jailbreak failed! Reboot your
-                PS5 and try again.". In this case you must reboot your PS5, preferrably without closing the dialog
-                box.<br />
-                If the system hangs for more than a minute (may require more time on slow Internet connections), reboot
-                your PS5 and try again.<br />
-                If the system crashes (looks like instant powerdown), press the power button on the PS5 (NOT on the
-                gamepad) until it turns on again, then retry.
+            <li>开始页面提示缓存，百分比完成前不要任何操作。<br />
+                如果提示Jailbreak failed!，PS5可能会死机无响应，这个时候需要重启主机<br />
+                死机无响应的主机，需要两次电源键才可唤醒，中间间隔大于5秒。<br />
+
             </li>
-            <li>You can load ps5-kstuff (a partial HEN for PS4 fake packages) by clicking JB+KSTUFF instead. Everything
-                above applies. Note that PS4 homebrews that use direct kernel access (kexec) are not supported and will
-                not work using this payload. You can also download the payload for manual sending <a href="ps5-kstuff.bin">here</a>.</li>
+            <li>新的版本可以点击 JB+KSTUFF全自动 </li>
         </ol>
-        <p><i>This exploit <b>does</b> crash and hang. Sometimes you even have to retry 10 times to get the
-                jailbreak.</i></p>
+        <p><i>如果出现多次死机无响应这些都是正常情况,后续同步更新代码。</i></p>
         <p><i>Credits: @theflow for vulnerability disclosure, @ChendoChap for userland CFI bypass, @SpecterDev & @ChendoChap for various help</i></p>
     </div>
     <div id="russian" class="language" style="display: none">

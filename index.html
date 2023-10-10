@@ -6,28 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico" type="image/x-icon">
   <title>PS5 折腾导航 - PS5.PSGO.eu.org</title> 
-  <script>
+</head> 
+<body> 
+	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("开始离线缓存 !!")
+	alert("开始缓存 !!")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>正在缓存，请不要做其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";	
+	document.getElementById("progress").innerHTML="<h3>缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!")
+	alert("缓存完成!!")
     document.location.href = document.location.href;
 };
 
 if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
-</script> 
-</head> 
-<body> 
+</script>
 <style> 
 body{
     background-image:url(bg.jpg);

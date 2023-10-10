@@ -6,8 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico" type="image/x-icon">
   <title>PS5 折腾导航 - PS5.PSGO.eu.org</title> 
- </head> 
- 
+  <script>
+window.applicationCache.ondownloading = function()
+{
+	alert("开始缓存 !!")
+};
+
+window.applicationCache.onprogress = function(a)
+{
+	document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+};
+
+window.applicationCache.oncached = window.applicationCache.onupdateready = function()
+{
+	alert("缓存完成!!")
+    document.location.href = document.location.href;
+};
+
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
+</script> 
+</head> 
 <body> 
 <style> 
 body{
@@ -136,26 +155,6 @@ body{
         opacity: 0.3;
       }
 </style> 
-<script>
-window.applicationCache.ondownloading = function()
-{
-	alert("开始缓存 !!")
-};
-
-window.applicationCache.onprogress = function(a)
-{
-	document.getElementById("progress").innerHTML="<h3 style="font-size:20px;text-align:center;"><font color="#ff6699">离线缓存中: "+(Math.round(100*(a.loaded/a.total)))+"% </font></h3>";
-};
-
-window.applicationCache.oncached = window.applicationCache.onupdateready = function()
-{
-	alert("离线缓存完成!")
-    document.location.href = document.location.href;
-};
-
-if(!document.location.href.endswith("/index.html"))
-    document.location.href = "index.html";
-</script>
   <h1 style="font-size:70px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PS5 折腾导航</font></h1>
   <h2 style="font-size:28px;text-align:center;"><font color="#dcddde"> PS5.PSGO.eu.org - <font color="#dcddde"> 记得收藏分享本站</font> </font></h2>
   <div id="progress"></div>
@@ -175,6 +174,7 @@ if(!document.location.href.endswith("/index.html"))
   <tr><td align="center">
 <button type="button" onclick="window.location.href='netcat.html#payload=ps5-kstuff.bin'";><font color=""> 【全自动】4.03 系统（网页自动注入bin免PC / 2023.10.10更新）</font></button>
 </td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 请耐心等待顶部进度条加载完成，然后再点击全自动按钮 </font></td></tr>
 <tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 切换不同网站不同方案前，请先进入设置-主机-web浏览器，删除Cookie和清除网站数据 </font></td></tr>
 <tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 左上角弹出“successfully loaded”成功提示后不要点OX键！要长按PS键回桌面！否则容易死机 </font></td></tr>
 
@@ -363,7 +363,7 @@ if(!document.location.href.endswith("/index.html"))
     <div class="tiles__line-img"></div> 
    </div>  
   </div>
-  	 <!-- Global site tag (gtag.js) - Google Analytics -->
+  	 <!-- Global site tag (gtag.js) - Google Analytics 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -371,6 +371,6 @@ if(!document.location.href.endswith("/index.html"))
   gtag('js', new Date());
 
   gtag('config', 'G-7VRDNYTJ1Y');
-</script>
+</script>-->
 </body>
 </html>

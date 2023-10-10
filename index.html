@@ -14,12 +14,13 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3 style="font-size:22px;text-align:center;"><font color="#dcddde">正在缓存请不要做其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3>正在缓存，请不要做其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成，请重新进入本页面!")
+	alert("缓存完成!")
     document.location.href = document.location.href;
 };
 

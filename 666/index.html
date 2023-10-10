@@ -1,0 +1,73 @@
+<html manifest="Cache.manifest">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PS5 4.03 Kernel Exploit</title>
+    <link rel="shortcut icon" href="favicon.ico"></link>
+</head>   
+<body>
+<style>
+html, body {
+background-color: #24272b;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 30px;
+text-align: center;
+color: white;
+}
+
+.TextCaption{
+display: block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+a {
+    display: inline-block;  
+	text-decoration: none;
+	color: white;
+}
+
+a:hover .TextCaption{
+transform: scale(1.1)
+}
+</style>
+	<script>
+window.applicationCache.ondownloading = function()
+{
+	alert("开始缓存 !!")
+};
+
+window.applicationCache.onprogress = function(a)
+{
+	document.getElementById("progress").innerHTML="<h3>缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+};
+
+window.applicationCache.oncached = window.applicationCache.onupdateready = function()
+{
+	alert("缓存完成，在浏览器输入https://ps5.psgo.eu.org/666即可离线使用!")
+    document.location.href = document.location.href;
+};
+
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
+</script>
+
+    <h1 style='font-size:55px;text-align:center;margin-top: 85px;'>PSGO.eu.org - PS5一键折腾</h1>
+	<h2 id="progress" style='font-size:30px;text-align:center;margin-top: 22px;'>缓存完成后断网，在浏览器输入https://ps5.psgo.eu.org/666即可离线使用</h2>
+
+<div style="margin-top: 85px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="netcat.html#payload=ps5-kstuff.bin"onMouseOver="msgs.innerHTML='Hen v1.1'"><span class="TextCaption">HEN v1.1 一键全自动折腾</span></a>
+<br><br><br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="netcat.html#payload=ps5-ftp.bin"onMouseOver="msgs.innerHTML='FTP'"><span class="TextCaption">FTP 插件</span></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="netcat.html"onMouseOver="msgs.innerHTML='Loads a bin file sent to the PS4 IP address on port 9020'"><span class="TextCaption">Bin 加载器</span></a>
+<br><br>
+</div>
+<h2 style="margin-bottom: 15px;">感谢:<a style="color:white; margin-left: 15px;">Sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a style="color:white; margin-left: 15px;">SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a style="color:white; margin-left: 15px;">Znullptr</a><a style="color:white; margin-left: 15px;">和所有为此付出的开发者</a></h2>
+</body>
+
+</html>

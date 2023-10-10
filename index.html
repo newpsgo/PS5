@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html manifest="Cache.manifest">
 
-<head> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico" type="image/x-icon">
-  <title>PS5 折腾导航 - PS5.PSGO.eu.org</title> 
+<head>
+    <meta charset="utf-8" />
+    <title>PS5 折腾导航 - PS5.PSGO.eu.org</title>
+    <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico"></link>
 </head> 
-<body> 
+
+<body>
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("Caching started !!")
+	alert("开始缓存 !!")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+	document.getElementById("progress").innerHTML="<h3>缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("Page Cached!!")
+	alert("缓存完成!!")
     document.location.href = document.location.href;
 };
 
 if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
 </script>
-<style> 
-body{
+
+ <style> 
+ body{
     background-image:url(bg.jpg);
     background-color:#202124;
     background-attachment:fixed;
@@ -159,8 +160,6 @@ body{
   <h2 style="font-size:28px;text-align:center;"><font color="#dcddde"> PS5.PSGO.eu.org - <font color="#dcddde"> 记得收藏分享本站</font> </font></h2>
   <div id="progress"></div>
   <br><br>
-  <div id="mymenu"> 
-  
   <table align="center"> 
     <tr><td align="center">
 <button type="button" onclick="window.location.href='jiaocheng.html'";><font color=""> 【新手必看】PS5折腾简易教程 </font></button>
@@ -312,41 +311,7 @@ body{
   <div class="bottopmsg"> 
   <br><br><br><br><br>
    <a href="https://psgo.eu.org/disclaimer.html" target="_blank" style="color:#dcddde;font-size:16px;text-align:center;text-decoration:none;">免责声明</a>
-  </div> 
-  <div style="display:none" class="tiles"> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-   </div>  
-  </div>
+  </div>  
   	 <!-- Global site tag (gtag.js) - Google Analytics 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
 <script>

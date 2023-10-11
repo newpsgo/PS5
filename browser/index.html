@@ -41,7 +41,8 @@ if(localStorage.history==null){
 };
 
 if(localStorage.fav==null){
-localStorage.fav="<a href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html' target='_self'>https://sleirsgoevy.github.io/ps4jb2/ps5-403</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav="<a href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html' target='_self'>https://sleirsgoevy.github.io/ps4jb2/ps5-403 - 原链接</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav+="<a href='https://ps5.psgo.eu.org/s' target='_self'>https://ps5.psgo.eu.org/s - 国内镜像</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
 }
  
 function goToURL(){

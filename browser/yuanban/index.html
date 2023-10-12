@@ -2,105 +2,32 @@
 <html>
 <head>
 <title>PS5浏览器 - PSGO折腾导航</title>
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
-<style>
-html, body {
-background-image: url('');
-background-size: 100%;
-background-repeat: no-repeat;
-background-color: #202124;
-color: white;
-text-align: center;
-margin: 0px;
-overflow: hidden;
-}
-
-h1 {
-font-size: 25px;
-text-align: center;
-color: white;
-}
-
-.TextCaption{
-display: block;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-#clock{
- float:right;
- margin-right:2.25%;
- margin-top: 25px;
- font-weight:bold;
- font-size:28px;
-  color: white;
-}
-#date {
- float:left;
- margin-left:1.25%;
- font-weight:bold;
- margin-top: 25px;
- font-size:28px;
- color: white;
-}
-</style>
-
-<script>
-    function showdate() {
-  var dt = new Date();
-    Hour= dt.getHours();
-  Minute= dt.getMinutes();
-     Day=dt.getDate();
-   Month=dt.getMonth()+1;
-   Year=dt.getFullYear();
-if (Minute < 10) { Minute = "0" + Minute; };
-if (Hour < 10) { Hour = "0" + Hour; };
-document.getElementById("date").innerHTML = (Year+"/"+Month+"/"+Day);
-document.getElementById("clock").innerHTML = (Hour+":"+Minute);
-  }
-  
-  setInterval(showdate,0);
-</script>
-<body class="bg-darker">
-<div id="container"  style="">
-<span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
-<br>
-<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 - PS5.PSGO.eu.org</font></h1></div>
-<body style="margin:0px;padding:0px;overflow:auto;">
-<div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">
-<input id="search-input" type="text" value="http://">
-</div>	
-<div id=BOX2 class=BOX style="margin:30px 0px 0px -35px;">
-<button id=infobutz class=leeful onclick='goToURL();'> 跳转 ></button>
+<body>
+<div id=BOX1>
+<input id="search-input" type="url" value="http://">
 </div>
-<div id=BOX3  style="margin-top: 30px;">
+
+<div id=BOX2>
+<button id=gobut class=leeful onclick='goToURL();'> 跳转 ></button>
+</div>
 
 <div id=BOX3>
-<button style="margin-top: 350px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br>
-
+<button class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br>
 <button class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button>
-
-<h1 style="margin-top:390px;color:white;"> <a href="" style="color: #f31414;margin-left: 0px;">  </a><br><a style="color: white;margin-left: 0px;">  </a></h1>
-
 </div>
 
-<div id=favsid  style="margin-top: 100px;">
-
-
-<div style='text-align:left;margin-left:100px;' id=favsid>
-<h3>收藏夹</h3>
+<div id=favsid>
+<h1>收藏夹:</h1>
 <a href='https://ps5.psgo.eu.org/' target='_self'>https://ps5.psgo.eu.org/ - PS5折腾导航</a><br>
 <div id=favs></div>
 </div>
 
-<div id=histid  style="margin-right: 100px;">
-
-<div style='text-align:left;margin-left:;'  id=histid>
-<h3>访问历史</h3>
+<div id=histid>
+<h1>历史记录:</h1>
 <div id=hist></div>
-
+</div>
 <script>
 url="";
 x=document.getElementById("search-input");
@@ -163,6 +90,5 @@ function remFav(){
 hist.innerHTML=localStorage.history;
 favs.innerHTML=localStorage.fav;
 </script>
-
 </body>
 </html>

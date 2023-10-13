@@ -16,7 +16,7 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3 style="font-color:#ff6699;">缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
@@ -188,7 +188,7 @@ if(!document.location.href.endswith("/index.html"))
 <tr><td>
 <br><br><br><br>
 </td></tr>
-<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;;"> 更多方案选择 </font></td></tr>
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;"> 更多方案选择 </font></td></tr>
 
   <tr><td align="center">
 <button type="button" onclick="window.location.href='20231010/'";><font color=""> 【国内镜像】Sleirsgoevy原版 4.03 系统（2023.10.10更新） </font></button>

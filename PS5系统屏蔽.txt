@@ -7,49 +7,48 @@
 
 不支持通配符的可以挨个添加，只需要其中的每个链接，比如djp01.ps5.update.playstation.net，全部都需要添加
 # Redirect PS5 Update PUP CDN Domains
-address=/djp01.ps5.update.playstation.net/{{HOST}}
-address=/dus01.ps5.update.playstation.net/{{HOST}}
-address=/deu01.ps5.update.playstation.net/{{HOST}}
-address=/dkr01.ps5.update.playstation.net/{{HOST}}
-address=/duk01.ps5.update.playstation.net/{{HOST}}
-address=/dmx01.ps5.update.playstation.net/{{HOST}}
-address=/dau01.ps5.update.playstation.net/{{HOST}}
-address=/dsa01.ps5.update.playstation.net/{{HOST}}
-address=/dtw01.ps5.update.playstation.net/{{HOST}}
-address=/dru01.ps5.update.playstation.net/{{HOST}}
-address=/dcn01.ps5.update.playstation.net/{{HOST}}
-address=/dhk01.ps5.update.playstation.net/{{HOST}}
-address=/dbr01.ps5.update.playstation.net/{{HOST}}
+djp01.ps5.update.playstation.net
+dus01.ps5.update.playstation.net
+deu01.ps5.update.playstation.net
+dkr01.ps5.update.playstation.net
+duk01.ps5.update.playstation.net
+dmx01.ps5.update.playstation.net
+dau01.ps5.update.playstation.net
+dsa01.ps5.update.playstation.net
+dtw01.ps5.update.playstation.net
+dru01.ps5.update.playstation.net
+dcn01.ps5.update.playstation.net
+dhk01.ps5.update.playstation.net
+dbr01.ps5.update.playstation.net
 
 
 # Redirect PS5 Update List Domains
-address=/fjp01.ps5.update.playstation.net/{{HOST}}
-address=/fus01.ps5.update.playstation.net/{{HOST}}
-address=/feu01.ps5.update.playstation.net/{{HOST}}
-address=/fkr01.ps5.update.playstation.net/{{HOST}}
-address=/fuk01.ps5.update.playstation.net/{{HOST}}
-address=/fmx01.ps5.update.playstation.net/{{HOST}}
-address=/fau01.ps5.update.playstation.net/{{HOST}}
-address=/fsa01.ps5.update.playstation.net/{{HOST}}
-address=/ftw01.ps5.update.playstation.net/{{HOST}}
-address=/fru01.ps5.update.playstation.net/{{HOST}}
-address=/fcn01.ps5.update.playstation.net/{{HOST}}
-address=/fhk01.ps5.update.playstation.net/{{HOST}}
-address=/fbr01.ps5.update.playstation.net/{{HOST}}
-
+fjp01.ps5.update.playstation.net
+fus01.ps5.update.playstation.net
+feu01.ps5.update.playstation.net
+fkr01.ps5.update.playstation.net
+fuk01.ps5.update.playstation.net
+fmx01.ps5.update.playstation.net
+fau01.ps5.update.playstation.net
+fsa01.ps5.update.playstation.net
+ftw01.ps5.update.playstation.net
+fru01.ps5.update.playstation.net
+fcn01.ps5.update.playstation.net
+fhk01.ps5.update.playstation.net
+fbr01.ps5.update.playstation.net
 
 
 # Redirect PS5 Update Feature Domains
-address=/hjp01.ps5.update.playstation.net/{{HOST}}
-address=/hus01.ps5.update.playstation.net/{{HOST}}
-address=/heu01.ps5.update.playstation.net/{{HOST}}
-address=/hkr01.ps5.update.playstation.net/{{HOST}}
-address=/huk01.ps5.update.playstation.net/{{HOST}}
-address=/hmx01.ps5.update.playstation.net/{{HOST}}
-address=/hau01.ps5.update.playstation.net/{{HOST}}
-address=/hsa01.ps5.update.playstation.net/{{HOST}}
-address=/htw01.ps5.update.playstation.net/{{HOST}}
-address=/hru01.ps5.update.playstation.net/{{HOST}}
-address=/hcn01.ps5.update.playstation.net/{{HOST}}
-address=/hhk01.ps5.update.playstation.net/{{HOST}}
-address=/hbr01.ps5.update.playstation.net/{{HOST}}
+hjp01.ps5.update.playstation.net
+hus01.ps5.update.playstation.net
+heu01.ps5.update.playstation.net
+hkr01.ps5.update.playstation.net
+huk01.ps5.update.playstation.net
+hmx01.ps5.update.playstation.net
+hau01.ps5.update.playstation.net
+hsa01.ps5.update.playstation.net
+htw01.ps5.update.playstation.net
+hru01.ps5.update.playstation.net
+hcn01.ps5.update.playstation.net
+hhk01.ps5.update.playstation.net
+hbr01.ps5.update.playstation.net

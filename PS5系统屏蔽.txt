@@ -1,0 +1,55 @@
+2023/10/11更新 -PS5.PSGO.eu.org
+
+可以用通配符，屏蔽的更彻底。
+
+*.ps5.update.playstation.net或者*.update.playstation.net或者*.playstation.net
+
+
+不支持通配符的可以挨个添加，只需要其中的每个链接，比如djp01.ps5.update.playstation.net，全部都需要添加
+# Redirect PS5 Update PUP CDN Domains
+address=/djp01.ps5.update.playstation.net/{{HOST}}
+address=/dus01.ps5.update.playstation.net/{{HOST}}
+address=/deu01.ps5.update.playstation.net/{{HOST}}
+address=/dkr01.ps5.update.playstation.net/{{HOST}}
+address=/duk01.ps5.update.playstation.net/{{HOST}}
+address=/dmx01.ps5.update.playstation.net/{{HOST}}
+address=/dau01.ps5.update.playstation.net/{{HOST}}
+address=/dsa01.ps5.update.playstation.net/{{HOST}}
+address=/dtw01.ps5.update.playstation.net/{{HOST}}
+address=/dru01.ps5.update.playstation.net/{{HOST}}
+address=/dcn01.ps5.update.playstation.net/{{HOST}}
+address=/dhk01.ps5.update.playstation.net/{{HOST}}
+address=/dbr01.ps5.update.playstation.net/{{HOST}}
+
+
+# Redirect PS5 Update List Domains
+address=/fjp01.ps5.update.playstation.net/{{HOST}}
+address=/fus01.ps5.update.playstation.net/{{HOST}}
+address=/feu01.ps5.update.playstation.net/{{HOST}}
+address=/fkr01.ps5.update.playstation.net/{{HOST}}
+address=/fuk01.ps5.update.playstation.net/{{HOST}}
+address=/fmx01.ps5.update.playstation.net/{{HOST}}
+address=/fau01.ps5.update.playstation.net/{{HOST}}
+address=/fsa01.ps5.update.playstation.net/{{HOST}}
+address=/ftw01.ps5.update.playstation.net/{{HOST}}
+address=/fru01.ps5.update.playstation.net/{{HOST}}
+address=/fcn01.ps5.update.playstation.net/{{HOST}}
+address=/fhk01.ps5.update.playstation.net/{{HOST}}
+address=/fbr01.ps5.update.playstation.net/{{HOST}}
+
+
+
+# Redirect PS5 Update Feature Domains
+address=/hjp01.ps5.update.playstation.net/{{HOST}}
+address=/hus01.ps5.update.playstation.net/{{HOST}}
+address=/heu01.ps5.update.playstation.net/{{HOST}}
+address=/hkr01.ps5.update.playstation.net/{{HOST}}
+address=/huk01.ps5.update.playstation.net/{{HOST}}
+address=/hmx01.ps5.update.playstation.net/{{HOST}}
+address=/hau01.ps5.update.playstation.net/{{HOST}}
+address=/hsa01.ps5.update.playstation.net/{{HOST}}
+address=/htw01.ps5.update.playstation.net/{{HOST}}
+address=/hru01.ps5.update.playstation.net/{{HOST}}
+address=/hcn01.ps5.update.playstation.net/{{HOST}}
+address=/hhk01.ps5.update.playstation.net/{{HOST}}
+address=/hbr01.ps5.update.playstation.net/{{HOST}}

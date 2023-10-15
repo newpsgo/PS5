@@ -48,17 +48,17 @@ display: block;
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("开始缓存浏览器 !!")
+	alert("开始缓存浏览器 !")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3 style="font-color:#ff6699;">缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3 style="color:white">缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("浏览器缓存完成!!")
+	alert("浏览器缓存完成!如果配合使用离线折腾，需要单独再缓存折腾页面！")
     document.location.href = document.location.href;
 };
 
@@ -110,7 +110,9 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 <div style='text-align:left;margin-left:100px;' id=favsid>
 <h3 style='margin-left:0px;'>我的收藏</h3>
-<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>https://ps5.psgo.eu.org/ - PSGO一键折腾</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>PSGO一键折腾离线版（首次需联网进入并完成缓存）</a><br>
+<a href='https://ps5.psgo.eu.org/' target='_self'>PS5.PSGO.eu.org - PSGO折腾导航（联网查看）</a><br>
+<a href='https://ps5.psgo.eu.org/qinghuancun.html' target='_self'>如何清除PS5浏览器缓存？（联网查看）</a><br>
 <div id=favs></div>
 </div>
 
@@ -133,8 +135,8 @@ if(localStorage.history==null){
 };
 
 if(localStorage.fav==null){
-localStorage.fav="<a href='https://ps5.psgo.eu.org/sleirsgoevy/index.html' target='_self'>https://ps5.psgo.eu.org/sleirsgoevy - 国内镜像</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
-localStorage.fav+="<a href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html' target='_self'>https://sleirsgoevy.github.io/ps4jb2/ps5-403 - 原链接</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav="<a href='https://ps5.psgo.eu.org/sleirsgoevy/index.html' target='_self'>ps5.psgo.eu.org/sleirsgoevy - 国内镜像</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav+="<a href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html' target='_self'>sleirsgoevy.github.io/ps4jb2/ps5-403 - 原版链接</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
 }
  
 function goToURL(){

@@ -11,7 +11,7 @@
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("开始缓存 !!")
+	alert("折腾缓存有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -21,7 +21,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!!")
+	alert("缓存完成!现在可以断开网络后离线使用!")
     document.location.href = document.location.href;
 };
 

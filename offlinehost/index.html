@@ -19,7 +19,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!!")
+	alert("缓存完成!可以断开网络离线使用!")
     document.location.href = document.location.href;
 };
 

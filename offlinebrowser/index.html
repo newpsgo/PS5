@@ -46,9 +46,17 @@ display: block;
 }
 </style>
 	<script>
+if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+	alert("缓存有更新！") 
+    window.applicationCache.swapCache();   
+    window.applicationCache.update(); 
+	alert("缓存升级完成！")
+    window.location.reload(); 
+};
+
 window.applicationCache.ondownloading = function()
 {
-	alert("浏览器缓存有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("浏览器缓存有新的版本，点击确定按钮将开始缓存浏览器!缓存完成之前请不要操作！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -60,14 +68,6 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 {
 	alert("浏览器缓存完成!如果配合使用离线折腾，需要单独再缓存折腾页面！")
     document.location.href = document.location.href;
-};
-
-if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-	alert("浏览器缓存有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！") 
-    window.applicationCache.swapCache();   
-    window.applicationCache.update(); 
-	alert("浏览器缓存升级完成！")
-    window.location.reload(); 
 };
 
 if(!document.location.href.endswith("/index.html"))

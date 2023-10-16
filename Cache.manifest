@@ -1,18 +1,7 @@
 CACHE MANIFEST
-# random: 798c702e608
+# random: 798c70
 
 CACHE:
-c-code.js
-exploit.js
-index.html
-malloc.js
-netcat.html
-rop.js
-sigsegv.js
-syscalls2.js
-syscalls.js
-ps5-kstuff.bin
-bg.jpg
 
 NETWORK:
 *

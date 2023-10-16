@@ -62,6 +62,14 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
     document.location.href = document.location.href;
 };
 
+if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+	alert("浏览器缓存有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！") 
+    window.applicationCache.swapCache();   
+    window.applicationCache.update(); 
+	alert("浏览器缓存升级完成！")
+    window.location.reload(); 
+};
+
 if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
 </script>

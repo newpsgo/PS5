@@ -1,0 +1,14 @@
+CACHE MANIFEST 
+# Leeful 
+# 15/12/2021-14:27:00.78 
+
+offsets/4.03.js
+900.cache
+cache.html
+exploit.js
+index.html
+int64.js
+payload.elf.bin
+rop.js
+rop_slave.js
+webkit.js

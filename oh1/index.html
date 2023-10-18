@@ -7,16 +7,6 @@
 </head>   
 <body>
 	<script>
-window.applicationCache.update(); //检查更新
-
-if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
-	//如果存在更新，并且已经下载ok,则替换浏览器缓存
-	alert("缓存有更新！"); 
-	window.applicationCache.swapCache(); 
-	alert("缓存升级完成！"); 
-    window.location.reload();   
-};
-
 window.applicationCache.ondownloading = function()
 {
 	alert("折腾缓存文件有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
@@ -52,7 +42,7 @@ if(!document.location.href.endswith("/index.html"))
     <p>
     </p>
     <div id="english" class="language" style="display: block">
-        <h3>PSGO一键折腾测试1 - PS5.PSGO.eu.org</h3>
+        <h3>PSGO一键折腾测试2 - PS5.PSGO.eu.org</h3>
         <p><b>目前仅支持PS5 4.03固件</b></p>
         <ol>
             <li>开始页面提示缓存，百分比完成前不要做任何操作。<br />

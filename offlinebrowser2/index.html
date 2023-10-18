@@ -46,15 +46,15 @@ display: block;
 }
 </style>
 	<script>
-window.applicationCache.update(); //检查更新
+//window.applicationCache.update(); //检查更新
 
-if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
+//if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
 	//如果存在更新，并且已经下载ok,则替换浏览器缓存
-	alert("缓存有更新！"); 
-	window.applicationCache.swapCache(); 
-	alert("缓存升级完成！"); 
-    window.location.reload();   
-};
+	//alert("缓存有更新！"); 
+	//window.applicationCache.swapCache(); 
+	//alert("缓存升级完成！"); 
+    //window.location.reload();   
+//};
 
 window.applicationCache.ondownloading = function()
 {
@@ -95,7 +95,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.1 - PS5.PSGO.eu.org</font></h1></div>
+<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.6 - PS5.PSGO.eu.org</font></h1></div>
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">

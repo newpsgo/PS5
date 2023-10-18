@@ -46,29 +46,19 @@ display: block;
 }
 </style>
 	<script>
-//window.applicationCache.update(); //检查更新
-
-//if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
-	//如果存在更新，并且已经下载ok,则替换浏览器缓存
-	//alert("缓存有更新！"); 
-	//window.applicationCache.swapCache(); 
-	//alert("缓存升级完成！"); 
-    //window.location.reload();   
-//};
-
 window.applicationCache.ondownloading = function()
 {
-	alert("浏览器缓存有新的版本，点击确定按钮将开始缓存浏览器!缓存完成之前请不要操作！")
+	alert("缓存文件有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3 style="color:white">缓存中请勿操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3>缓存中请勿有其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("浏览器缓存完成!如果配合使用离线折腾，需要单独再缓存折腾页面！")
+	alert("缓存完成!现在可以断开网络离线使用!")
     document.location.href = document.location.href;
 };
 
@@ -95,7 +85,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.6 - PS5.PSGO.eu.org</font></h1></div>
+<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.2 - PS5.PSGO.eu.org</font></h1></div>
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">

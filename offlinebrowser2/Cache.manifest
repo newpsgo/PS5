@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# random: 798c70486
+
+CACHE:
+index.html
+index.css
+
+NETWORK:
+*

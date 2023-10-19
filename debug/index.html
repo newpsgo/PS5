@@ -1,100 +1,38 @@
+
 <html>
-
 <head>
-    <title>PS5 Kernel Exploit (3.xx-4.xx)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .loader {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin: -75px 0 0 -75px;
+<title>PS5</title>
+<style>
+h1 {
+text-shadow: 0.1em 0.1em 0.2em black;
+font-size: 25px;
+text-align: center;
+color: white;
+}
+body{background-color:black;color: #f5f1f1;border: 5px solid #603bcc;font-size:28px;text-align:center;}
+.bottopmsg{position:absolute;bottom: 34px;width: 1520px;padding:5px 0 1px 0;}
 
-            border: 10px solid #1f1e1e;
-            border-radius: 50%;
-            border-top: 10px solid #044595;
-            border-left: 10px solid #044595;
-            width: 120px;
-            height: 120px;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .info {
-            overflow: hidden;
-            position: fixed;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            font-size: 45px;
-            font-family: sans-serif;
-            color: #b8b8b8;
-
-            transform: translate(-50%, -50%);
-        }
-
-        .j {
-            font-size: 15px;
-            color: #2F3335;
-        }
-
-        .log {
-            display: block;
-            unicode-bidi: embed;
-            font-family: monospace;
-            white-space: pre;
-            font-size: 18px;
-            width: 100%;
-            height: 80%;
-        }
-    </style>
-    <script>
-        function allset() {
-            document.getElementById("loader").style.display = "none";
-        }
-    </script>
+div#bottommsg {}
+.loader {position: absolute;left: 50%;top: 55%;margin: -75px 0 0 -75px;border: 10px solid #1f1e1e;border-radius: 50%;border-top: 10px solid #603bcc;border-left: 10px solid #603bcc;width: 120px;height: 120px;animation: spin 1s linear infinite;}
+@keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+</style>
     <script defer src="int64.js"></script>
     <script defer src="rop.js"></script>
     <script defer src="exploit.js"></script>
 </head>
-
-</html>
-
-<body onload="setTimeout(poc, 1500);">
-
+  <body onload="setTimeout(poc,1500);">
     <div id="loader" class="loader"></div>
+    <br>
+    <div class=IMG>
+	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">Specter 支持 4.03 和 3.00-4.51</font></h1> 
+    <div id="msgs" class="msgs">准备手动注入Bin · 大概需要20秒左右<font color=#603bcc> · 弹出内存提示点确定 · 弹出失败则重启再试</div>
+    </div>
+    <div id=bottommsg class="bottopmsg">
+	<a  style="text-align: center;margin-top: 165px;">
+<!--<h3 style="margin-top: 15px; color: #603bcc;">Special Thanks to:<a href="https://twitter.com/sleirsgoevy" style="color:white; margin-left: 15px;">@sleirsgoevy</a><a style="color:white; margin-left: 15px;">ChendoChap</a><a href="https://twitter.com/SpecterDev" style="color:white; margin-left: 15px;">@SpecterDev</a><a style="color:white; margin-left: 15px;">SiSTR0</a><a href="https://twitter.com/Znullptr" style="color:white; margin-left: 15px;">@Znullptr</a><a style="color:white; margin-left: 15px;">和所有为此努力的开发者们</a></h3>-->
 
-    <textarea id="console" class="log"></textarea>
-
-    <center>
-        <h3>
-            <b>v1.04.</b>
-            <br />
-            <a href="https://twitter.com/theflow0">@theflow0</a>, 
-            <a href="https://twitter.com/SpecterDev">@SpecterDev</a>, 
-            ChendoChap, 
-            <a href="https://twitter.com/Znullptr">@Znullptr</a>, 
-            <a href="https://twitter.com/sleirsgoevy">@sleirsgoevy</a>, 
-            <br />
-            <a href="https://twitter.com/psxdev">@psxdev</a>, 
-            <a href="https://twitter.com/flat_z">@flat_z</a>, 
-            <a href="https://twitter.com/notnotzecoxao">@notnotzecoxao</a>, 
-            <a href="https://twitter.com/SocraticBliss">@SocraticBliss</a>, 
-            laureeeeeee
-        </h3>
-    </center>
-
-</body>
-<script>
-
-</script>
+    <script>
+      function allset() {document.getElementById("loader").style.display = "none";}
+    </script>
+ </body>
+</html>

@@ -10,7 +10,7 @@ const payload_map =
         },
 		{
             displayTitle: '清除浏览器缓存',
-            description: '如果离线缓存出现问题，可定期清除',
+            description: '如遇到缓存影响折腾成功率，清除后重新缓存',
             fileName: 'cleancache.elf',
             author: 'Storm21CH',
             source: 'https://github.com/Storm21CH/PS5_Browser_appCache_remove',

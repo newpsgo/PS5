@@ -26,7 +26,7 @@ const payload_map =
         // },
         {
             displayTitle: 'PS5 Payload ELF 加载器',
-            description: '加载后可从Debug菜单调出',
+            description: '用于加载插件，注入后从Debug菜单调出',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',

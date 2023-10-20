@@ -12,9 +12,17 @@ const payload_map =
             displayTitle: '清除浏览器缓存',
             description: '如果离线缓存出现问题，可定期清除',
             fileName: 'cleancache.elf',
-            author: 'storm',
-            source: 'https://github.com/illusion0001/libhijacker/releases',
-            version: '1.121'
+            author: 'Storm21CH',
+            source: 'https://github.com/Storm21CH/PS5_Browser_appCache_remove',
+            version: '1.0'
+        },
+		{
+            displayTitle: '禁止系统更新',
+            description: '可防止系统自动下载更新',
+            fileName: 'Disable-UPD.elf',
+            author: 'logic-68',
+            source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
+            version: '1.03'
         },
         // {
         //     displayTitle: 'libhijacker game-patch (broken)',

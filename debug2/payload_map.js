@@ -24,14 +24,14 @@ const payload_map =
         //     source: 'https://github.com/illusion0001/libhijacker/releases',
         //     version: '1.121'
         // },
-        {
-            displayTitle: 'PS5 Payload ELF 加载器',
-            description: '用于加载插件，加载器会在后台运行',
-            fileName: 'elfldr.elf',
-            author: 'john-tornblom',
-            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.5'
-        },
+        // {
+            // displayTitle: 'PS5 Payload ELF 加载器',
+            // description: '用于加载插件，加载器会在后台运行',
+            // fileName: 'elfldr.elf',
+            // author: 'john-tornblom',
+            // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
+            // version: '0.5'
+        // },
         {
             displayTitle: 'FTP插件（端口1337）',
             description: 'FTP Server',

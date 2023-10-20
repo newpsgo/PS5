@@ -6,7 +6,7 @@ const payload_map =
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
-            version: '1.0'
+            version: '1.1'
         },
 		{
             displayTitle: '清除浏览器缓存',
@@ -33,8 +33,8 @@ const payload_map =
             // version: '0.5'
         // },
         {
-            displayTitle: 'FTP插件（端口1337）',
-            description: 'FTP Server',
+            displayTitle: 'FTP插件',
+            description: '端口1337',
             fileName: 'ftps5-np.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',

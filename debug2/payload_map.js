@@ -16,14 +16,6 @@ const payload_map =
             source: 'https://github.com/Storm21CH/PS5_Browser_appCache_remove',
             version: '1.0'
         },
-		{
-            displayTitle: '禁止系统更新',
-            description: '可防止系统自动下载更新',
-            fileName: 'Disable-UPD.elf',
-            author: 'logic-68',
-            source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
-            version: '1.03'
-        },
         // {
         //     displayTitle: 'libhijacker game-patch (broken)',
         //     description: 'Patches supported games to run at higher framerates, and adds debug menus to certain titles.',
@@ -32,30 +24,38 @@ const payload_map =
         //     source: 'https://github.com/illusion0001/libhijacker/releases',
         //     version: '1.121'
         // },
-        // {
-            // displayTitle: 'PS5 Payload ELF Loader',
-            // description: 'Persistent network elf loader',
-            // fileName: 'elfldr.elf',
-            // author: 'john-tornblom',
-            // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            // version: '0.5'
-        // },
-        // {
-            // displayTitle: 'FTPS5 (Non-Persistent)',
-            // description: 'FTP Server',
-            // fileName: 'ftps5-np.elf',
-            // author: 'SiSTR0, zecoxao, EchoStretch',
-            // source:'https://github.com/EchoStretch/FTPS5/releases',
-            // version: '1.4'
-        // },
+        {
+            displayTitle: 'PS5 Payload ELF 加载器',
+            description: '加载后可从Debug菜单调出',
+            fileName: 'elfldr.elf',
+            author: 'john-tornblom',
+            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
+            version: '0.5'
+        },
         {
             displayTitle: 'FTP插件（端口1337）',
             description: 'FTP Server',
-            fileName: 'ftps5-p.elf',
+            fileName: 'ftps5-np.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
         },
+		{
+            displayTitle: '屏蔽系统更新',
+            description: '配合USB文件防止系统更新',
+            fileName: 'Disable-UPD.elf',
+            author: 'logic-68',
+            source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
+            version: '1.03'
+        },
+        // {
+            // displayTitle: 'FTP插件（端口1337）',
+            // description: 'FTP Server',
+            // fileName: 'ftps5-p.elf',
+            // author: 'SiSTR0, zecoxao, EchoStretch',
+            // source:'https://github.com/EchoStretch/FTPS5/releases',
+            // version: '1.4'
+        // },
         // {
             // displayTitle: 'Versions',
             // description: 'Shows kernel build, os and sdk versions',

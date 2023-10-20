@@ -85,18 +85,20 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.1 - PS5.PSGO.eu.org</font></h1></div>
+<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">浏览器 v1.2 - PS5.PSGO.eu.org</font></h1></div>
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">
-<input id="search-input" type="text" value="http://">
+<input style="top:1px;" id="search-input" type="text" value="https://">
 </div>	
 <div id=BOX2 class=BOX style="margin:30px 0px 0px -35px;">
 <button id=infobutz class=leeful onclick='goToURL();'>  跳转  </button>
 </div>
+<div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：区分字母大小写、区分http和https，否则会影响离线缓存</font></div>
 <div id=BOX3  style="margin-top: 30px;">
 
 <div id=BOX3>
+
 <button style="position:absolute; bottom:75px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br>
 
 <button style="position:absolute; bottom:25px;" class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button>
@@ -111,8 +113,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div style='text-align:left;margin-left:100px;' id=favsid>
 <h3 style='margin-left:0px;'>我的收藏</h3>
 <a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>PSGO一键折腾离线版（首次需联网进入并完成缓存）</a><br>
-<a href='https://ps5.psgo.eu.org/' target='_self'>PS5.PSGO.eu.org - PSGO折腾导航（联网查看）</a><br>
-<a href='https://ps5.psgo.eu.org/qinghuancun.html' target='_self'>如何清除PS5浏览器缓存？（联网查看）</a><br>
+<a href='https://ps5.psgo.eu.org/' target='_self'>PSGO折腾导航首页 - PS5.PSGO.eu.org（联网进入）</a><br>
 <div id=favs></div>
 </div>
 

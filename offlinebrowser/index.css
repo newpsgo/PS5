@@ -23,6 +23,10 @@ margin-bottom: 1rem
 a{
 color:white;text-decoration:none;
 }
+a:hover{
+color:#603bcc;
+text-decoration:none;
+}
 h2,h3,h4,h5,h6{
 color:white;
 font-size: 15px;
@@ -136,7 +140,7 @@ margin:5px 0px 0 0;
 height:63px;
 top:-17px;
 width: 190px;
-background-color:#24272b;
+background-color:#603bcc;
 display:inline-block;
 font-size:19px;
 font-weight:bolder;

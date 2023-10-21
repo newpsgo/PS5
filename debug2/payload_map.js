@@ -1,7 +1,7 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN v1.1（仅支持4.03和4.50）',
+            displayTitle: 'HEN v1.2（仅支持4.03和4.50）',
             description: '解锁运行游戏PS5-kstuff.bin',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',

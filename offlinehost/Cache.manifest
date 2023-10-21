@@ -1,21 +1,21 @@
-CACHE MANIFEST
-# random: 798c702e6034234234
+CACHE MANIFEST 
+# 2023/10/22 ÷‹»’- 1:32:49.45 
 
-CACHE:
+CACHE: 
+browser.css
+browser.html
 c-code.js
 exploit.js
 index.html
+jiaocheng.html
 malloc.js
 netcat.html
+ps5-kstuff.bin
 rop.js
 sigsegv.js
-syscalls2.js
 syscalls.js
-ps5-kstuff.bin
-browser.html
-browser.css
+syscalls2.js
 updatehistory.html
-jiaocheng.html
 
-NETWORK:
-*
+NETWORK: 
+* 

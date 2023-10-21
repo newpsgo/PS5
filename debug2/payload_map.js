@@ -32,14 +32,22 @@ const payload_map =
             // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
             // version: '0.5'
         // },
-        {
+		{
             displayTitle: 'FTP插件',
-            description: '端口1337',
-            fileName: 'ftps5-np.elf',
+            description: '端口号1337，后台持续运行',
+            fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
         },
+        // {
+            // displayTitle: 'FTP插件',
+            // description: '端口1337',
+            // fileName: 'ftps5-np.elf',
+            // author: 'SiSTR0, zecoxao, EchoStretch',
+            // source:'https://github.com/EchoStretch/FTPS5/releases',
+            // version: '1.4'
+        // },
 		{
             displayTitle: '屏蔽系统更新',
             description: '配合USB文件防止系统更新',
@@ -48,14 +56,6 @@ const payload_map =
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
             version: '1.03'
         },
-        // {
-            // displayTitle: 'FTP插件（端口1337）',
-            // description: 'FTP Server',
-            // fileName: 'ftps5-p.elf',
-            // author: 'SiSTR0, zecoxao, EchoStretch',
-            // source:'https://github.com/EchoStretch/FTPS5/releases',
-            // version: '1.4'
-        // },
         // {
             // displayTitle: 'Versions',
             // description: 'Shows kernel build, os and sdk versions',

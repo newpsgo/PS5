@@ -1,92 +1,186 @@
 <html manifest="Cache.manifest">
 
 <head>
-    <meta charset="utf-8" />
     <title>PSGO一键折腾 - PS5.PSGO.eu.org</title>
-    <link rel="shortcut icon" href="favicon.ico"></link>
-</head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        function allset() { }
+    </script>
+    <script defer src="int64.js"></script>
+    <script defer src="rop.js"></script>
+    <script defer src="exploit.js"></script>
+    <script defer src="payload_map.js"></script>
+    <script defer src="custom_host_stuff.js"></script>
+</head>
+
+</html>
+
 <body>
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("折腾缓存文件有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>缓存中请勿有其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!现在可以断开网络离线使用!")
+	alert("缓存完成！长按PS键回到桌面后再次进入本页面！现在可以断开网络离线使用！")
     document.location.href = document.location.href;
 };
 
 if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
 </script>
-    <script>
-        // Init on English Language
-        changeLanguage('english')
-
-        function changeLanguage(lang) {
-            Array.from(document.querySelectorAll('.language')).map( element => {
-                element.style.display = 'none'
-            });
-            if (document.getElementById(lang)) {
-                document.getElementById(lang).style.display = 'block';
-            }
-        }
-    </script>
-    <p>
-    </p>
-    <div id="english" class="language" style="display: block">
-        <h3>PSGO一键折腾 - PS5.PSGO.eu.org</h3>
-        <p><b>目前仅支持PS5 4.03和4.50系统解锁运行</b></p>
-        <ol>
-            <li>开始页面提示缓存，百分比完成前不要做任何操作。<br />
-                如果提示Jailbreak failed!，PS5可能会死机无响应，这个时候需要重启主机<br />
-                死机无响应的主机，需要两次电源键才可唤醒，中间间隔大于5秒。<br />
-
-            </li>
-            <li>新的版本可以点击 JB+KSTUFF全自动 </li>
-        </ol>
-        <p><i>如果出现多次死机无响应这些都是正常情况,后续同步更新代码。</i></p>
-        <p><i>Credits: @theflow for vulnerability disclosure, @ChendoChap for userland CFI bypass, @SpecterDev & @ChendoChap for various help</i></p>
+    <div style="margin: 2.5rem;">
+        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;">Specter 4.03 & 4.50 一键折腾离线版</h1>
+		<div id="progress" style="font-size:25px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机稍等1分钟 · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复点击注入</div>
+		<p id="current-fw" class="text-secondary" style="text-align: center;display: none;"></p>
+		
     </div>
-    <div id="russian" class="language" style="display: none">
-        <h3>ВНИМАТЕЛЬНО ПРОЧИТАЙТЕ ИНСТРУКЦИЮ ПРЕЖДЕ ЧЕМ ПРОДОЛЖАТЬ</h3>
-        <p><b>Этот эксплоит загружает пейлоады в формате PLD (.bin) на PS5 с прошивкой 4.03. Другие прошивки и форматы НЕ поддерживаются.</b></p>
-        <ol>
-            <li>Нажмите на ссылку &laquo;JB+NETCAT&raquo;. В течение примерно 20 секунд появится уведомление
-                &laquo;waiting for payloads&raquo;. Это значит, что взлом сработал, и вы можете послать
-                пейлоад на TCP-порт 9019.<br />
-                Если что-то пошло не так, может вылететь ошибка &laquo;Jailbreak failed! Reboot your PS5 and try
-                again.&raquo;. В этом случае необходимо, не закрывая окно, перезагрузить консоль.<br />
-                Если взлом занимает больше минуты, и у вас адекватное интернет-соединение, скорее всего он повис.
-                Перезагрузите приставку и попробуйте еще раз.<br />
-                Если система крашится (выглядит как мгновенное выключение), нажимайте кнопку включения на ПРИСТАВКЕ (НЕ
-                НА КОНТРОЛЛЕРЕ), пока она не включится, после чего повторите взлом.
-            </li>
-            <li>Вы можете загрузить ps5-kstuff (частичный HEN для fake pkg приложений PS4), нажав JB+KSTUFF. Всё написанное выше применимо и к
-                ps5-kstuff. Обратите внимание, что homebrew-приложения, использующие прямой доступ к ядру (kexec), не поддерживаются и работать
-                не будут. Файл пейлоада для ручной отправки можно скачать <a href="ps5-kstuff.bin">здесь</a>.</li>
-        </ol>
-        <p><i>Эксплойт <b>будет</b> крашиться и виснуть, иногда вообще только с 10 попытки заводится.</i></p>
-        <p><i>Credits: @theflow &mdash; уязвимость ядра, @ChendoChap &mdash; обход CFI в пользовательском пространстве, @SpecterDev и @ChendoChap &mdash; помощь по различным вопросам</i></p>
-    </div>
-    <div id="progress"></div>
 
-<a style="font-size:25px" href="netcat.html#payload=ps5-kstuff.bin">JB+KSTUFF（全自动离线模式 / 成功率约70%）</a> &nbsp;·&nbsp
-<a href="netcat.html">JB+NETCAT（bin插件加载器）</a> &nbsp;·&nbsp
-<a href="browser.html">PSGO浏览器</a> &nbsp;·&nbsp
-<a href="jiaocheng.html">折腾教程</a> &nbsp;·&nbsp
-<a href="updatehistory.html">更新记录</a> &nbsp;·&nbsp
-<a href="https://ps5.psgo.eu.org/qinghuancun.html">清缓存方法（联网进入）</a>
-<br /><br /><br />
-<a style="font-size:25px" href="https://ps5.psgo.eu.org/debug2/">Specter新方案（成功率约85% / 需联网进入）</a>
+    <div id="before-jb-view">
+
+        <div id="run-jb-parent" class="opacity-transition"
+            style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
+            <a tabindex="0" class="btn" style="max-width: 45%;" id="run-jb" onclick="runJailbreak()">一键开始折腾</a>
+			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新离线缓存</a>
+        </div>
+
+        <div id="jb-progress" class=""
+            style="display: none; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p id="jb-progress-status-text" style="text-align: center; width: 100%;">正在折腾中<br/><span class="secondary-text">请稍后</span></p>
+            <textarea id="console" class="log" style="display: none;"></textarea>
+        </div>
+
+        <div id="post-jb-view" class="opacity-transition"
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center;opacity: 0; pointer-events: none; padding-top: 2rem;">
+            <!-- please dont judge this, if i create the elements in js after the jailbreak it 'runs out of memory'. -->
+            <!-- TODO: try making the buttons before the jb and assign the onclicks after, i think i tried this already but make sure -->
+            <div id="payloads-list" class="grid-container">
+                <a class="btn mx-auto hidden-btn" id="payload-0" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-1" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-2" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-3" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-4" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-5" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-6" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-7" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-8" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-9" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-10" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-11" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-12" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-13" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-14" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-15" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-16" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-17" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-18" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+                <a class="btn mx-auto hidden-btn" id="payload-19" tabindex="0">
+                    <p></p>
+                    <p class="secondary-text"></p>
+                </a>
+
+            </div>
+        </div>
+
+
+
+        <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 1.5rem;" class="info opacity-transition"
+            id="credits">
+			<h4>
+                阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、Notzecoxao、JoseG、Flat_z、John、PSGO等
+            </h4>
+        </center>
+    </div>
 
 </body>
+	<!-- <script> -->
+		<!-- window.onload = function() { -->
+		<!-- document.getElementById('run-jb').click(); -->
+		<!-- }; -->
+	<!-- </script> -->
+<script>
+function updateCache() {
 
-</html>
+ window.applicationCache.update();
+ 
+window.applicationCache.onnoupdate = function(){
+    alert("当前缓存是最新版本，无需更新！");
+}
+
+window.applicationCache.onerror = function(){
+    alert("点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！");
+}
+}
+</script>

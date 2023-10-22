@@ -98,9 +98,12 @@
 }
 
 body {
-    background-color: #131313;
-    color: #fff;
-    font-family: 'Sans-Serif', Helvetica;
+    /* background-color: #131313; */
+    background-color: rgb(18, 18, 25);
+    /* webkit renders this with banding... */
+    /* background : radial-gradient(ellipse at left top, rgb(31, 35, 43) 0%, rgb(10, 10, 20) 65%);     */
+    color: #def;
+    font-family: Calibri, Helvetica, 'Sans-Serif';
 }
 
 .btn {
@@ -116,23 +119,25 @@ body {
     /* border-radius: 5rem; */
     border-radius: 1rem;
     width: 70%;
-    background-color: #3d3f3e;
+    background-color: #3d3f4e;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 1.2rem;
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #603bcc;
     color: white;
 }
 
 
-a:active, a:focus {
+a:active,
+a:focus {
     outline: 0;
     border: none;
-  }
+}
 
 .secondary-text {
     color: #959595;
@@ -184,12 +189,45 @@ a:active, a:focus {
     transition: opacity 0.3s ease-in-out;
 }
 
-.hidden-btn{
+.hidden-btn {
     padding: 0;
     visibility: collapse;
 }
 
-#payloads-list a p{
+#payloads-list a p {
     margin: 0;
     padding: 0;
+}
+
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    background: #181830;
+    color: #fff;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 300px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.4s, transform 0.4s;
+    pointer-events: none;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast.hide {
+    opacity: 0;
+    transform: translateY(-100%);
 }

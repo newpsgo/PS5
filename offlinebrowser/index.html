@@ -48,7 +48,7 @@ display: block;
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("有新的版本！点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("浏览器有新的版本！点击确定按钮将开始缓存!缓存完成之前请不要操作！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -58,7 +58,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!现在可以断开网络离线使用!")
+	alert("浏览器缓存完成!如果想离线使用PSGO一键折腾方案，请在联网状态下点击我的收藏中第一个链接进行缓存和升级!")
     document.location.href = document.location.href;
 };
 

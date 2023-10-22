@@ -1,7 +1,7 @@
 <html manifest="Cache.manifest">
 
 <head>
-    <title>Specter 4.03 & 4.50 插件版b v1.04 - PS5.PSGO.eu.org</title>
+    <title>PSGO一键折腾 - PS5.PSGO.eu.org</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -21,17 +21,17 @@
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("折腾缓存文件有新的版本，点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>缓存中请勿有其他操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("progress").innerHTML="<h3>缓存中请不要操作: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!现在可以断开网络离线使用!")
+	alert("缓存完成！现在可以断开网络离线使用！")
     document.location.href = document.location.href;
 };
 
@@ -39,7 +39,7 @@ if(!document.location.href.endswith("/index.html"))
     document.location.href = "index.html";
 </script>
     <div style="margin: 2.5rem;">
-        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;">Specter 4.03 & 4.50 带插件离线版内测 v1.04</h1>
+        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;">Specter 4.03 & 4.50 一键折腾离线版</h1>
 		<div id="progress" style="font-size:25px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机稍等1分钟 · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复点击注入</div>
 		<p id="current-fw" class="text-secondary" style="text-align: center;display: none;"></p>
 		
@@ -49,7 +49,8 @@ if(!document.location.href.endswith("/index.html"))
 
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-            <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">开始离线折腾</a>
+            <a tabindex="0" class="btn" style="max-width: 45%;" id="run-jb" onclick="runJailbreak()">一键开始折腾</a>
+			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新缓存</a>
         </div>
 
         <div id="jb-progress" class=""
@@ -170,7 +171,16 @@ if(!document.location.href.endswith("/index.html"))
 		<!-- }; -->
 	<!-- </script> -->
 <script>
-   function upcache() {
-	window.applicationCache.update();
-  }
+function updateCache() {
+
+ window.applicationCache.update();
+ 
+window.applicationCache.onnoupdate = function(){
+    alert("当前缓存是最新版本，无需更新！");
+}
+
+window.applicationCache.onerror = function(){
+    alert("点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！");
+}
+}
 </script>

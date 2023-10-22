@@ -31,7 +31,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成！现在可以断开网络离线使用！")
+	alert("缓存完成！长按PS键回到桌面后再次进入本页面！现在可以断开网络离线使用！")
     document.location.href = document.location.href;
 };
 
@@ -50,7 +50,7 @@ if(!document.location.href.endswith("/index.html"))
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
             <a tabindex="0" class="btn" style="max-width: 45%;" id="run-jb" onclick="runJailbreak()">一键开始折腾</a>
-			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新缓存</a>
+			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新离线缓存</a>
         </div>
 
         <div id="jb-progress" class=""

@@ -1,7 +1,7 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN v1.2（仅支持4.03和4.50）',
+            displayTitle: 'HEN v1.2（支持 4.03 和 4.50）',
             description: '解锁运行游戏PS5-kstuff.bin',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
@@ -50,7 +50,7 @@ const payload_map =
         // },
 		{
             displayTitle: '屏蔽系统更新',
-            description: '配合USB文件防止系统更新',
+            description: '使用方法进PSGO群领取',
             fileName: 'Disable-UPD.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

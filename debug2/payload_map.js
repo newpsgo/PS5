@@ -1,7 +1,7 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN v1.2（仅支持4.03和4.50）',
+            displayTitle: 'HEN v1.2（仅支持4.03 和 4.50）',
             description: '解锁运行游戏PS5-kstuff.bin',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
@@ -10,20 +10,21 @@ const payload_map =
         },
 		{
             displayTitle: '清除浏览器缓存',
-            description: '如遇到缓存影响折腾成功率，清除后重新缓存',
-            fileName: 'cleancache.elf',
+            description: 'PS5无法双清，遇到缓存问题使用本功能清除后重新缓存',
+            fileName: 'Browser_appCache_remove.elf',
             author: 'Storm21CH',
-            source: 'https://github.com/Storm21CH/PS5_Browser_appCache_remove',
-            version: '1.0'
+            source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
+            version: '1.0fix'
         },
-        // {
-        //     displayTitle: 'libhijacker game-patch (broken)',
-        //     description: 'Patches supported games to run at higher framerates, and adds debug menus to certain titles.',
-        //     fileName: 'daemon.elf',
-        //     author: 'illusion0001, astrelsky',
-        //     source: 'https://github.com/illusion0001/libhijacker/releases',
-        //     version: '1.121'
-        // },
+		{
+            displayTitle: '解锁部分正版游戏120/60帧率',
+            description: 'v1.124版，运行后可直接启动相应游戏',
+            fileName: 'libhijacker-spawner-1.124.elf;libhijacker-daemon-1.124.elf',
+            author: 'illusion0001, astrelsky',
+            source: 'https://github.com/illusion0001/libhijacker/releases',
+            loader: 'libhijacker',
+            version: '1.124'
+        },
         // {
             // displayTitle: 'PS5 Payload ELF 加载器',
             // description: '用于加载插件，加载器会在后台运行',
@@ -32,6 +33,14 @@ const payload_map =
             // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
             // version: '0.5'
         // },
+		{
+            displayTitle: 'PS5 Payload ELF 加载器',
+            description: '注入端口号9021，用于加载ELF插件，加载器会在后台运行',
+            fileName: 'elfldr.elf',
+            author: 'john-tornblom',
+            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
+            version: '0.5'
+        },
 		{
             displayTitle: 'FTP插件',
             description: '端口号1337，后台持续运行',
@@ -50,7 +59,7 @@ const payload_map =
         // },
 		{
             displayTitle: '屏蔽系统更新',
-            description: '配合USB文件防止系统更新',
+            description: '使用方法咨询PSGO群',
             fileName: 'Disable-UPD.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

@@ -1,6 +1,7 @@
 <html>
-
+<!-- 去掉缓存 -->
 <head>
+<!-- 改名 -->
     <title>Specter 4.03 & 4.50 一键折腾在线版 - PS5.PSGO.eu.org</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
@@ -13,24 +14,32 @@
     <script defer src="exploit.js"></script>
     <script defer src="payload_map.js"></script>
     <script defer src="custom_host_stuff.js"></script>
+    <!-- 去掉缓存 -->
+	<!-- <script defer src="appcache_handler.js"></script> -->
+    <script>
+        window.addEventListener('load', function () {
+            add_cache_event_toasts();
+        }, false);
+    </script>
 </head>
 
 </html>
 
+
 <body>
+    <div id="toast-container"></div>
 
     <div style="margin: 2.5rem;">
         <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;">Specter 4.03 & 4.50 一键折腾在线版</h1>
 		<div style="font-size:25px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机稍等1分钟 · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复点击注入</div>
         <p id="current-fw" class="text-secondary" style="text-align: center;display: none;"></p>
-		
     </div>
 
     <div id="before-jb-view">
 
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-            <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">开始折腾</a>
+            <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">点击开始或6秒后自动开始一键折腾</a>
         </div>
 
         <div id="jb-progress" class=""
@@ -41,7 +50,8 @@
                 <div></div>
                 <div></div>
             </div>
-            <p id="jb-progress-status-text" style="text-align: center; width: 100%;">正在折腾中<br/><span class="secondary-text">请稍后</span></p>
+            <p id="jb-progress-status-text" style="text-align: center; width: 100%;">正在
+                折腾中 <br/><span class="secondary-text">(可能会假死)</span></p>
             <textarea id="console" class="log" style="display: none;"></textarea>
         </div>
 
@@ -138,16 +148,16 @@
 
         <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 1.5rem;" class="info opacity-transition"
             id="credits">
-			<h4>
-			<b>v1.04</b><br>
+            <h3>
+                <b>v1.04</b><br>
                 阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、Notzecoxao、JoseG、Flat_z、John、PSGO等
-            </h4>
+            </h3>
         </center>
     </div>
 
 </body>
 	<script>
 		window.onload = function() {
-		document.getElementById('run-jb').click();
-		};
+			setTimeout(function() {document.getElementById('run-jb').click();}, 6000);	
+		}
 	</script>

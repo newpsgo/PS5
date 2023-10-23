@@ -23,7 +23,9 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
     document.location.href = "index.html";
 };
 
- 
+if(!document.location.href.endswith("/index.html"))
+    document.location.href = "index.html";
+	
 window.applicationCache.onnoupdate = function(){
     setTimeout(function() {document.getElementById('run-jb').click();}, 5000);
 }

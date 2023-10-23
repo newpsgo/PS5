@@ -23,7 +23,6 @@ offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
 payloads\Browser_appCache_remove.elf
-payloads\cleancache.elf
 payloads\daemon.elf
 payloads\Disable-UPD.elf
 payloads\elfldr.elf
@@ -33,7 +32,6 @@ payloads\getOsVersion.elf
 payloads\libhijacker-daemon-1.124.elf
 payloads\libhijacker-spawner-1.124.elf
 payloads\ps5-kstuff-v1.1.bin
-payloads\ps5-kstuff.bin
 payloads\versions.elf
 
 NETWORK: 

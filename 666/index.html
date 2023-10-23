@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="main.css">
 	
 		<script>
-window.applicationCache.update();
-
+		
 window.applicationCache.ondownloading = function()
 {
 	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
+	var auto = 0;
 };
 
 window.applicationCache.onprogress = function(a)
@@ -218,3 +218,11 @@ div#bottommsg {}
 		<!-- setTimeout(function() {document.getElementById('run-jb').click();}, 10000); -->
 		<!-- }; -->
 	<!-- </script> -->
+    <script>
+       if(var auto = 0){
+        
+       }
+       else{ 
+        setTimeout(function() {document.getElementById('run-jb').click();}, 10000);
+       }
+    </script>

@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# 2023/10/24 周二- 3:22:33.94 
+# 2023/10/24 周二- 3:30:58.34 
 
 CACHE: 
 404.html
@@ -23,16 +23,7 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
-payloads\Browser_appCache_remove.elf
-payloads\elfldr.elf
-payloads\ftps5-np.elf
-payloads\ftps5-p.elf
-payloads\getOsVersion.elf
-payloads\libhijacker-daemon-1.124.elf
-payloads\libhijacker-spawner-1.124.elf
 payloads\ps5-kstuff-v1.1.bin
-payloads\ps5-kstuff.bin
-payloads\versions.elf
 
 NETWORK: 
 * 

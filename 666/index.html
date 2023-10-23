@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="main.css">
 	
 		<script>
-window.applicationCache.update();		
+<!-- window.applicationCache.update();		 -->
 window.applicationCache.ondownloading = function()
 {
 	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
@@ -25,13 +25,12 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 
  
 window.applicationCache.onnoupdate = function(){
-    setTimeout(function() {document.getElementById('run-jb').click();}, 50);
+    setTimeout(function() {document.getElementById('run-jb').click();}, 5000);
 }
 
 window.applicationCache.onerror = function(){
-    setTimeout(function() {document.getElementById('run-jb').click();}, 50);
+    setTimeout(function() {document.getElementById('run-jb').click();}, 5000);
 }
-
 
 </script>
 

@@ -10,8 +10,8 @@
 var auto;		
 window.applicationCache.ondownloading = function()
 {
-	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
 	auto = 1;
+	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -31,15 +31,15 @@ window.applicationCache.onnoupdate = function(){
 
 window.applicationCache.onerror = function(){
     
-	if (auto = 1)
-	{
-		document.getElementById("jb-progress-status-text").innerHTML="<h3>网络不稳定，如果缓存停止请重新打开窗口再次缓存，如果持续缓存失败请关闭PS5网络使用离线</h3>";
-		setTimeout(function() {document.getElementById('run-jb').click();}, 60000);
-	}
-	else
+	if (auto != 1)
 	{
 		document.getElementById("jb-progress-status-text").innerHTML="<h3>当前处于离线，将使用当前缓存进行折腾</h3>";
 		setTimeout(function() {document.getElementById('run-jb').click();}, 500);
+	}
+	else
+	{
+		document.getElementById("jb-progress-status-text").innerHTML="<h3>网络不稳定，如果缓存停止请重新打开窗口再次缓存，如果持续缓存失败请关闭PS5网络使用离线</h3>";
+		setTimeout(function() {document.getElementById('run-jb').click();}, 60000);
 	}	
 }
 

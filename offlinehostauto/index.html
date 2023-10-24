@@ -33,7 +33,6 @@ window.applicationCache.onerror = function(){
     
 	if (auto != 1)
 	{
-		document.getElementById("jb-progress-status-text").innerHTML="<h3>当前处于离线，将使用缓存进行折腾，成功后请不要重复进入本页</h3>";
 		setTimeout(function() {document.getElementById('run-jb').click();}, 500);
 	}
 	else

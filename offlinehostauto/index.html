@@ -25,12 +25,13 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 };
 	
 window.applicationCache.onnoupdate = function(){
-    setTimeout(function() {document.getElementById('run-jb').click();}, 5000);
+    setTimeout(function() {document.getElementById('run-jb').click();}, 500);
 }
 
-<!-- window.applicationCache.onerror = function(){ -->
-    <!-- setTimeout(function() {document.getElementById('run-jb').click();}, 2000); -->
-<!-- } -->
+window.applicationCache.onerror = function(){
+	document.getElementById("jb-progress-status-text").innerHTML="<h3>当前处于离线，或网络不稳定，将使用当前缓存进行折腾</h3>";
+    setTimeout(function() {document.getElementById('run-jb').click();}, 500);
+}
 
 </script>
 

@@ -15,7 +15,7 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("jb-progress-status-text").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()

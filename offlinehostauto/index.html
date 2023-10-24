@@ -29,7 +29,7 @@ window.applicationCache.onnoupdate = function(){
 }
 
 window.applicationCache.onerror = function(){
-	document.getElementById("jb-progress-status-text").innerHTML="<h3>当前处于离线，或网络不稳定，将使用当前缓存进行折腾</h3>";
+	document.getElementById("jb-progress-status-text").innerHTML="<h3>当前处于离线，或网络问题，将使用当前缓存进行折腾</h3>";
     setTimeout(function() {document.getElementById('run-jb').click();}, 500);
 }
 
@@ -72,7 +72,7 @@ div#bottommsg {}
     <div id="jb-progress-status-text" class="msgs">大约需要30秒 · 内存提示点确定 · 失败提示则重启 · 折腾完成后请勿重复进入</div>
     </div>
 	<!-- 设置隐藏 -->
-    <div style="display:;">
+    <div style="display:none;">
 	<div id="toast-container"></div>
 
     <div style="margin: 2.5rem;">

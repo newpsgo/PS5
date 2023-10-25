@@ -11,7 +11,7 @@ var auto;
 window.applicationCache.ondownloading = function()
 {
 	auto = 1;
-	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
+	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -21,7 +21,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成！长按PS键回到桌面后再次进入本页面！现在可以断开网络离线使用！")
+	alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！")
     document.location.href = "index.html";
 };
 	
@@ -37,7 +37,7 @@ window.applicationCache.onerror = function(){
 	}
 	else
 	{
-		alert("网络不稳定，缓存失败，点击确定尝试再次缓存或请重新打开窗口，如果持续缓存失败请关闭PS5网络使用离线进行折腾");
+		alert("网络不稳定，缓存失败！ \n\n点击确定尝试再次缓存或请重新打开窗口，如果持续缓存失败请关闭PS5网络使用离线进行折腾！\n\n首次缓存请检查网络问题或稍后再试！否则无法使用离线进行折腾！");
 		window.applicationCache.update();
 	}	
 }

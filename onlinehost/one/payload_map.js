@@ -69,7 +69,7 @@ const payload_map =
             displayTitle: '查询版本',
             description: '显示内核、系统、SDK等版本信息',
             fileName: 'versions.elf',
-            author: '?',
+            author: '匿名作者',
             source:'https://mega.nz/folder/4xA2ATTI#6lHvye1JUfhxRGvqOva8fw/folder/gwhWmRrB',
             version: '1.0'
         },

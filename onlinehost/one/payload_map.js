@@ -17,11 +17,11 @@ const payload_map =
             version: '1.0'
         },
 		{
-            displayTitle: '伪装高版本（支持4.03）',
-            description: '先运行HEN！可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
-            fileName: 'test10_ok.elf',
-            author: 'Jaafar',
-            source:'https://twitter.com/jaf51744',
+            displayTitle: '屏蔽系统更新',
+            description: '卸载系统更新模块',
+            fileName: 'lock_unlock_updates.elf',
+            author: 'logic-68',
+            source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
             version: '1.0'
         },
 		{
@@ -31,6 +31,14 @@ const payload_map =
             author: 'Storm21CH',
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
             version: '1.0fix'
+        },
+		{
+            displayTitle: '伪装高版本（支持4.03）',
+            description: '先运行HEN！可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
+            fileName: 'test10_ok.elf',
+            author: 'Jaafar',
+            source:'https://twitter.com/jaf51744',
+            version: '1.0'
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
@@ -73,14 +81,6 @@ const payload_map =
             // source:'https://github.com/EchoStretch/FTPS5/releases',
             // version: '1.4'
         // },
-		{
-            displayTitle: '屏蔽系统更新',
-            description: '使用方法详见PSGO群',
-            fileName: 'Disable-UPD.elf',
-            author: 'logic-68',
-            source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
-            version: '1.03'
-        },
         {
             displayTitle: '查看版本（确认是否伪装成功）',
             description: '显示内核、系统、SDK等版本信息',

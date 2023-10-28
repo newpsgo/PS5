@@ -9,8 +9,16 @@ const payload_map =
             version: '1.1'
         },
 		{
+            displayTitle: '伪装高版本',
+            description: '可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
+            fileName: 'test10_ok.elf',
+            author: 'Jaafar',
+            source:'https://twitter.com/jaf51744',
+            version: '1.0'
+        },
+		{
             displayTitle: '清除浏览器缓存',
-            description: 'PS5无法双清，遇到缓存问题使用本功能清除后重新缓存',
+            description: 'PS5无法双清，遇到连续报错等缓存问题使用本功能清除后重新缓存',
             fileName: 'Browser_appCache_remove.elf',
             author: 'Storm21CH',
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
@@ -18,7 +26,7 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.124版，运行后可直接启动相应游戏',
+            description: 'v1.124版，运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'libhijacker-spawner-1.124.elf;libhijacker-daemon-1.124.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
@@ -59,7 +67,7 @@ const payload_map =
         // },
 		{
             displayTitle: '屏蔽系统更新',
-            description: '使用方法询问PSGO群',
+            description: '使用方法详见PSGO群',
             fileName: 'Disable-UPD.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

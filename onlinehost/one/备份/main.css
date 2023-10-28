@@ -99,11 +99,10 @@
 
 body {
     /* background-color: #131313; */
-    background-color: rgb(14, 14, 20);
+    background-color: rgb(18, 18, 25);
     /* webkit renders this with banding... */
     /* background : radial-gradient(ellipse at left top, rgb(31, 35, 43) 0%, rgb(10, 10, 20) 65%);     */
-    /* color: #def; */
-    color: white;
+    color: #def;
     font-family: Calibri, Helvetica, 'Sans-Serif';
 }
 
@@ -120,17 +119,19 @@ body {
     /* border-radius: 5rem; */
     border-radius: 1rem;
     width: 70%;
-    background-color: #333348;
+    background-color: #3d3f4e;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 1.2rem;
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #c2c2c2;
-    color: #303030;
+.btn:hover,
+.btn:focus {
+    background-color: #603bcc;
+    color: white;
 }
+
 
 a:active,
 a:focus {
@@ -149,47 +150,6 @@ a:focus {
 
 }
 
-
-.btn p:nth-child(1) {
-    line-height: 2em;
-    font-weight: bolder;
-}
-
-/* .btn:hover p:nth-child(1) {
-    color: #444;
-} */
-
-
-.btn p:nth-child(2) {
-    color: #959595;
-    margin: 0;
-    padding: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 2em;
-    font-size: 0.9em;
-}
-
-.btn:hover p:nth-child(2) {
-    color: #666;
-}
-
-
-.btn p:nth-child(3) {
-    color: #777;
-    margin: 0;
-    padding: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 1.5em;
-    font-size: 0.8em;
-    font-weight:normal;
-}
-
-
-
 .info a {
     color: #e3e3e3;
 }
@@ -207,12 +167,12 @@ a:focus {
     width: 100%;
 }
 
-/* .grid-item {
+.grid-item {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .mx-auto {
     margin-left: auto;

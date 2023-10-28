@@ -1,8 +1,8 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN（支持 4.03 和 4.50 ）',
-            description: '解锁运行游戏 PS5-kstuff.bin',
+            displayTitle: 'HEN v1.2（仅支持4.03 和 4.50）',
+            description: '解锁运行游戏PS5-kstuff.bin',
             fileName: 'ps5-kstuff-v1.1.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
@@ -34,7 +34,7 @@ const payload_map =
             // version: '0.5'
         // },
 		{
-            displayTitle: 'Payload ELF 加载器',
+            displayTitle: 'PS5 Payload ELF 加载器',
             description: '注入端口号9021，用于加载ELF插件，加载器会在后台运行',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
@@ -59,7 +59,7 @@ const payload_map =
         // },
 		{
             displayTitle: '屏蔽系统更新',
-            description: '使用方法询问PSGO群',
+            description: '使用方法咨询PSGO群',
             fileName: 'Disable-UPD.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

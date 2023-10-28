@@ -2,7 +2,7 @@ const payload_map =
     [
         {
             displayTitle: 'HEN（支持 4.03 和 4.50 ）',
-            description: '解锁运行游戏 PS5-kstuff.bin',
+            description: '解锁运行游戏（支持非整合资源） PS5-kstuff.bin',
             fileName: 'ps5-kstuff-v1.1.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
@@ -33,14 +33,14 @@ const payload_map =
             // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
             // version: '0.5'
         // },
-		{
-            displayTitle: 'Payload ELF 加载器',
-            description: '注入端口号9021，用于加载ELF插件，加载器会在后台运行',
-            fileName: 'elfldr.elf',
-            author: 'john-tornblom',
-            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.5'
-        },
+		// {
+            // displayTitle: 'Payload ELF 加载器',
+            // description: '注入端口号9021，用于加载ELF插件，加载器会在后台运行',
+            // fileName: 'elfldr.elf',
+            // author: 'john-tornblom',
+            // source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
+            // version: '0.5'
+        // },
 		{
             displayTitle: 'FTP插件',
             description: '端口号1337，后台持续运行',
@@ -65,14 +65,14 @@ const payload_map =
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
             version: '1.03'
         },
-        // {
-            // displayTitle: 'Versions',
-            // description: 'Shows kernel build, os and sdk versions',
-            // fileName: 'versions.elf',
-            // author: '?',
-            // source:'https://mega.nz/folder/4xA2ATTI#6lHvye1JUfhxRGvqOva8fw/folder/gwhWmRrB',
-            // version: '1.0'
-        // },
+        {
+            displayTitle: '查询版本',
+            description: '显示内核、系统、SDK等版本信息',
+            fileName: 'versions.elf',
+            author: '?',
+            source:'https://mega.nz/folder/4xA2ATTI#6lHvye1JUfhxRGvqOva8fw/folder/gwhWmRrB',
+            version: '1.0'
+        },
         // {
             // displayTitle: 'GetOSVersion',
             // description: 'very slow',

@@ -74,7 +74,7 @@ const payload_map =
             version: '1.03'
         },
         {
-            displayTitle: '查询版本',
+            displayTitle: '查看版本（确认是否伪装成功）',
             description: '显示内核、系统、SDK等版本信息',
             fileName: 'versions.elf',
             author: '匿名作者',

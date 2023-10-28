@@ -1,7 +1,8 @@
 CACHE MANIFEST 
-# 2023/10/24 ÖÜ¶þ-18:54:57.73 
+# 2023/10/28 ÖÜÁù-15:15:58.33 
 
 CACHE: 
+appcache_handler.js
 custom_host_stuff.js
 exploit.js
 index.html
@@ -10,7 +11,6 @@ main.css
 payload_map.js
 rop.js
 rop_slave.js
-service_worker.js
 webkit.js
 offsets\3.00.js
 offsets\3.10.js
@@ -21,7 +21,15 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
+payloads\Browser_appCache_remove.elf
+payloads\elfldr.elf
+payloads\ftps5-np.elf
+payloads\ftps5-p.elf
+payloads\getOsVersion.elf
+payloads\libhijacker-daemon-1.124.elf
+payloads\libhijacker-spawner-1.124.elf
 payloads\ps5-kstuff-v1.1.bin
+payloads\versions.elf
 
 NETWORK: 
 * 

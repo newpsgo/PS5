@@ -8,14 +8,14 @@ const payload_map =
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.1'
         },
-		{
-            displayTitle: '伪装高版本（支持4.03）',
-            description: '先运行HEN。可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
-            fileName: 'test10_ok.elf',
-            author: 'Jaafar',
-            source:'https://twitter.com/jaf51744',
-            version: '1.0'
-        },
+		// {
+            // displayTitle: '伪装高版本（支持4.03）',
+            // description: '先运行HEN。可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
+            // fileName: 'test10_ok.elf',
+            // author: 'Jaafar',
+            // source:'https://twitter.com/jaf51744',
+            // version: '1.0'
+        // },
 		{
             displayTitle: '清除浏览器缓存',
             description: 'PS5无法双清，遇到连续报错等缓存问题使用本功能清除后重新缓存',

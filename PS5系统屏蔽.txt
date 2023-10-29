@@ -1,11 +1,16 @@
-2023/10/13更新 -PS5.PSGO.eu.org
+2023/10/30更新 -PS5.PSGO.eu.org
 
-可以用通配符，屏蔽的更彻底。
+以下为通过网络层面进行屏蔽，相比其他方法来说效果最好。但是建议多种屏蔽方法叠加，起到多重保险的作用。其他还有一键插件法、FTP文件替换法等
 
+1.部分路由器支持通配符，屏蔽的更彻底
 *.ps5.update.playstation.net或者*.update.playstation.net或者*.playstation.net
 
+2.部分路由器支持白名单或者黑名单，建议直接用黑名单添加进去playstation.net
 
-不支持通配符的可以挨个添加，只需要其中的每个链接，比如djp01.ps5.update.playstation.net，全部都需要添加
+3.部分路由器支持关键词屏蔽，直接输入playstation或者playstation.net，也可实现屏蔽相关域名
+
+4.不支持以上方式的可以挨个添加，只需要其中的每个链接，比如djp01.ps5.update.playstation.net，因为PS5分不同销售地区不同版本，建议全部都需要添加
+
 # Redirect PS5 Update PUP CDN Domains
 djp01.ps5.update.playstation.net
 dus01.ps5.update.playstation.net
@@ -52,3 +57,7 @@ hru01.ps5.update.playstation.net
 hcn01.ps5.update.playstation.net
 hhk01.ps5.update.playstation.net
 hbr01.ps5.update.playstation.net
+
+# 屏蔽游戏更新
+sgst.prod.dl.playstation.net
+gs2.ww.prod.dl.playstation.net

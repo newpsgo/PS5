@@ -34,7 +34,7 @@ const payload_map =
         },
 		{
             displayTitle: '伪装高版本（支持4.03）',
-            description: '已经默认伪装PS4最高版本，点击将伪装PS5最高版本',
+            description: '已经默认伪装PS4最高版本，先运行HEN再点击将伪装PS5最高版本',
             fileName: 'test10_ok.elf',
             author: 'Jaafar',
             source:'https://twitter.com/jaf51744',

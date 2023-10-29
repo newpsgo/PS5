@@ -9,9 +9,9 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'etaHEN 1.0b（多合一插件）',
-            description: '一键解锁运行+屏蔽升级+FTP+伪装等，支持 4.03 和 4.50',
-            fileName: 'etaHEN-1.0b.bin',
+            displayTitle: 'etaHEN 金手指 1.0b',
+            description: '配合illusion的patches工具包进行使用',
+            fileName: 'etaHENwithcheats-1.0b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.0'

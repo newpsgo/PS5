@@ -65,6 +65,14 @@ const payload_map =
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
         },
+		{
+            displayTitle: 'etaHEN 1.0b（多合一插件）',
+            description: '一键解锁运行+屏蔽升级+FTP+伪装等，支持 4.03 和 4.50',
+            fileName: 'etaHEN-1.0b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
+        },
         // {
             // displayTitle: 'FTP插件',
             // description: '端口1337',

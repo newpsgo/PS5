@@ -15,15 +15,17 @@
     <script defer src="custom_host_stuff.js"></script>
     <!-- 去掉缓存 -->
 	<!-- <script defer src="appcache_handler.js"></script> -->
-    <script>
-        window.addEventListener('load', function () {
-            add_cache_event_toasts();
-        }, false);
-    </script>
+    <!-- <script> -->
+        <!-- window.addEventListener('load', function () { -->
+            <!-- add_cache_event_toasts(); -->
+        <!-- }, false); -->
+    <!-- </script> -->
 	<script>
+var auto;		
 window.applicationCache.ondownloading = function()
 {
-	alert("折腾缓存有新的版本！点击确定按钮将开始缓存！缓存完成之前请不要操作！若缓存失败请重新打开窗口再次缓存！")
+	auto = 1;
+	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -33,7 +35,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成！长按PS键回到桌面后再次进入本页面！现在可以断开网络离线使用！")
+	alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！")
     document.location.href = document.location.href;
 };
 
@@ -49,8 +51,8 @@ if(!document.location.href.endswith("/index.html"))
     <div id="toast-container"></div>
 
     <div style="margin: 2.5rem;">
-        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;">Specter 4.03 & 4.50 一键折腾离线版</h1>
-		<div id="progress" style="font-size:25px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机稍等1分钟 · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复点击注入</div>
+        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;">PSGO 4.03 & 4.50 一键折腾离线版</h1>
+		<div id="progress" style="font-size:25px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机后稍等1-2分钟！ · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复点击注入</div>
         <p id="current-fw" class="text-secondary" style="text-align: center;display: none;"></p>
     </div>
 
@@ -169,7 +171,7 @@ if(!document.location.href.endswith("/index.html"))
         <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 1.5rem;" class="info opacity-transition"
             id="credits">
             <h3>
-                <b>v1.04</b><br>
+                <b>Specter v1.04 | 当前版本：20231029（新增一键屏蔽系统更新、金手指等插件）</b><br>
                 阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、Notzecoxao、JoseG、Flat_z、John、PSGO等
             </h3>
         </center>
@@ -186,7 +188,7 @@ window.applicationCache.onnoupdate = function(){
 }
 
 window.applicationCache.onerror = function(){
-    alert("点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！");
+    alert("当前处于离线状态！\n\n点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！");
 }
 }
 </script>

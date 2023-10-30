@@ -26,7 +26,7 @@ const payload_map =
         },
 		{
             displayTitle: '屏蔽系统更新（推荐）',
-            description: '只需点击一次，无需USB文件，左上角显示“blocker enable”则为生效',
+            description: '只需点击一次，无需USB文件，左上角显示“blocker enable”则为永久生效',
             fileName: 'lock_unlock_updates.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

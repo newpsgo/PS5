@@ -65,6 +65,21 @@
     }
 }
 
+
+/* .info {
+    overflow: hidden;
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #b8b8b8;
+
+    transform: translate(-50%, -50%);
+} */
+
 .j {
     font-size: 15px;
     color: #2F3335;
@@ -83,32 +98,40 @@
 }
 
 body {
-    background-color: rgb(14, 14, 20);
-    color: white;
+    /* background-color: #131313; */
+    background-color: rgb(18, 18, 25);
+    /* webkit renders this with banding... */
+    /* background : radial-gradient(ellipse at left top, rgb(31, 35, 43) 0%, rgb(10, 10, 20) 65%);     */
+    color: #def;
     font-family: Calibri, Helvetica, 'Sans-Serif';
 }
 
 .btn {
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 0.2rem 0.1rem;
     cursor: pointer;
-    line-height: 40px;
+    line-height: 2.5rem;
+    /* height: 2.5rem; */
     min-width: 75px;
-    border-radius: 16px;
+    /* border-radius: 5rem; */
+    border-radius: 1rem;
     width: 70%;
-    background-color: #333348;
+    background-color: #3d3f4e;
     border: none;
-    color: #fff;
-    font-size: 20px;
+    color: white;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #603bcc;color: white;
+.btn:hover,
+.btn:focus {
+    background-color: #603bcc;
+    color: white;
 }
+
 
 a:active,
 a:focus {
@@ -123,42 +146,8 @@ a:focus {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 13px;
+    font-size: 0.8em;
 
-}
-
-
-.payload-name {
-    line-height: 32px;
-    font-weight: bolder;
-}
-
-
-.payload-description {
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 32px;
-    font-size: 15px;
-}
-
-.btn:hover p.payload-description {
-    color: white;
-}
-
-.payload-author {
-    color: #777;
-    margin: 0;
-    padding: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    line-height: 24px;
-    font-size: 13px;
-    font-weight:normal;
 }
 
 .info a {
@@ -178,6 +167,13 @@ a:focus {
     width: 100%;
 }
 
+.grid-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -189,6 +185,7 @@ a:focus {
 }
 
 .opacity-transition {
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -197,7 +194,7 @@ a:focus {
     visibility: collapse;
 }
 
-.grid-container a p {
+#payloads-list a p {
     margin: 0;
     padding: 0;
 }

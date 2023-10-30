@@ -54,7 +54,16 @@ window.applicationCache.onerror = function(){
 } 
 }
 </script>
-
+<script>
+    var secstime=6;
+    for(var i=secstime;i>=0;i--){
+       window.setTimeout("doUpdate("+ i + ")",(secstime-i)*1000);
+    }
+    function doUpdate(daojitime){
+       document.getElementById("daojishi").innerHTML="（建议 " + daojitime +" 秒后点击）";
+       if(daojitime==0) document.getElementById("daojishi").innerHTML="";
+    }
+</script>
 </head>
 
 </html>
@@ -74,7 +83,7 @@ window.applicationCache.onerror = function(){
 
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-            <a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:600;" id="run-jb" onclick="runJailbreak()">开始折腾（建议6秒后点击） </a>
+            <a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:600;" id="run-jb" onclick="runJailbreak()">开始折腾<span id="daojishi"></span></a>
 			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新离线缓存</a>
         </div>
 

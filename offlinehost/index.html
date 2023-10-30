@@ -54,17 +54,7 @@ window.applicationCache.onerror = function(){
 } 
 }
 </script>
-	<script>
-	<!-- 减少弹内存引导文案 -->
-    var secs=6;
-    for(var i=secs;i>=0;i--){
-       window.setTimeout("doUpdate("+ i + ")",(secs-i)*1000);
-    }
-    function doUpdate(num){
-       document.getElementById("second").innerHTML="（建议 " + num +" 秒后点击）";
-       if(num==0) document.getElementById("second").innerHTML="";
-    }
-</script>
+
 </head>
 
 </html>
@@ -75,7 +65,7 @@ window.applicationCache.onerror = function(){
 
     <div style="margin: 40px;">
         <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;">PSGO 4.03 & 4.50 一键折腾离线版</h1>
-		<div id="progress" style="font-size:22px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机后稍等1-2分钟！ · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启<span id="listening-ip"></span></div>
+		<div id="progress" style="font-size:22px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机后稍等1-2分钟！ · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复注入<span id="listening-ip"></span></div>
 		<p id="current-fw" class="text-secondary" style="text-align: center; margin-bottom: 8px; padding-bottom: 0;display: none;"></p>
         <p id="listening-ip" class="text-secondary" style="text-align: center; margin-top: 0; padding-top: 0;display: none;"><br/></p>
     </div>
@@ -84,7 +74,7 @@ window.applicationCache.onerror = function(){
 
         <div id="run-jb-parent" class="opacity-transition"
             style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-            <a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:600;" id="run-jb" onclick="runJailbreak()">开始折腾<span id="second"></span></a>
+            <a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:600;" id="run-jb" onclick="runJailbreak()">开始折腾（建议6秒后点击）</a>
 			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新离线缓存</a>
         </div>
 

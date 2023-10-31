@@ -9,9 +9,9 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'etaHEN 1.0b（一键注入灵魂）',
-            description: '多合一插件，一键解锁运行+屏蔽升级+FTP等，支持 4.03 和 4.50',
-            fileName: 'etaHEN-1.0b.bin',
+            displayTitle: 'etaHEN 金手指 1.0b',
+            description: '配合illusion的patches工具包进行使用',
+            fileName: 'etaHENwithcheats-1.0b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.0'
@@ -31,14 +31,6 @@ const payload_map =
             author: 'Storm21CH',
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
             version: '1.0fix'
-        },
-		{
-            displayTitle: '伪装高版本（支持4.03）',
-            description: '先运行HEN！可伪装PS5/PS4最高版本，安装运行高版本PS4游戏',
-            fileName: 'test10_ok.elf',
-            author: 'Jaafar',
-            source:'https://twitter.com/jaf51744',
-            version: '1.0'
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
@@ -73,6 +65,14 @@ const payload_map =
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
         },
+		{
+            displayTitle: 'etaHEN 1.0b（多合一插件）',
+            description: '一键解锁运行+屏蔽升级+FTP+伪装等，支持 4.03 和 4.50',
+            fileName: 'etaHEN-1.0b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
+        },
         // {
             // displayTitle: 'FTP插件',
             // description: '端口1337',
@@ -81,6 +81,14 @@ const payload_map =
             // source:'https://github.com/EchoStretch/FTPS5/releases',
             // version: '1.4'
         // },
+		{
+            displayTitle: '伪装PS5高版本（小白勿试）',
+            description: '默认已经伪装PS4最高版本，如需伪装PS5最高版本需先点击运行HEN',
+            fileName: 'test10_ok.elf',
+            author: 'Jaafar',
+            source:'https://twitter.com/jaf51744',
+            version: '1.0'
+        },
         {
             displayTitle: '查看版本（确认是否伪装成功）',
             description: '显示内核、系统、SDK等版本信息',

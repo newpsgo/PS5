@@ -9,9 +9,9 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'etaHEN 普通版 1.0b（多合一插件）',
+            displayTitle: 'etaHEN 普通版 1.1b（多合一插件）',
             description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03 和 4.50',
-            fileName: 'etaHEN-1.0b.bin',
+            fileName: 'etaHEN-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.0'
@@ -33,9 +33,9 @@ const payload_map =
             version: '1.0'
         },
         {
-            displayTitle: 'etaHEN 金手指版 1.0b（与自制应用冲突）',
+            displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
             description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
-            fileName: 'etaHENwithcheats-1.0b.bin',
+            fileName: 'etaHENwithcheats-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.0'

@@ -9,6 +9,14 @@ const payload_map =
             version: '1.1'
         },
 		{
+            displayTitle: 'etaHEN 普通版 1.1b（多合一插件）',
+            description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03 和 4.50',
+            fileName: 'etaHEN-1.1b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
+        },
+		{
             displayTitle: '清除浏览器缓存',
             description: 'PS5无法双清，遇到连续报错等缓存问题使用本功能清除后重新缓存',
             fileName: 'Browser_appCache_remove.elf',
@@ -16,22 +24,6 @@ const payload_map =
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
             version: '1.0fix'
         },
-		// {
-            // displayTitle: 'etaHEN 普通版 1.1b（多合一插件）',
-            // description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03 和 4.50',
-            // fileName: 'etaHEN-1.1b.bin',
-            // author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
-            // source: 'https://github.com/LightningMods/etaHEN',
-            // version: '1.0'
-        // },
-		// {
-            // displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
-            // description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
-            // fileName: 'etaHENwithcheats-1.1b.bin',
-            // author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
-            // source: 'https://github.com/LightningMods/etaHEN',
-            // version: '1.0'
-        // },
 		{
             displayTitle: '屏蔽系统更新（推荐）',
             description: '只需点击一次，无需USB文件，左上角显示“blocker enable”则为永久生效',
@@ -39,7 +31,15 @@ const payload_map =
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',
             version: '1.0'
-        }, 
+        },
+        {
+            displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
+            description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
+            fileName: 'etaHENwithcheats-1.1b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
+        },
         {
             displayTitle: '解锁部分正版游戏120/60帧率',
             description: 'v1.124版，运行后可直接启动相应游戏（版本也需要对应）',
@@ -51,7 +51,7 @@ const payload_map =
         },
 		{
             displayTitle: '伪装高版本（小白勿试）',
-            description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
+            description: '用于安装高版本资源，可能会与其它插件冲突，点击本插件前先点击运行HEN！',
             fileName: 'TO99999999_403_450.bin',
             author: 'Jaafar',
             source:'https://twitter.com/jaf51744',

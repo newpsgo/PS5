@@ -1,7 +1,8 @@
 CACHE MANIFEST 
-# 2023/10/31 周二-23:48:40.80 
+#PS5.PSGO.eu.org 2023/10/31 周二- 0:30:49.64 
 
 CACHE: 
+appcache_handler.js
 custom_host_stuff.js
 exploit.js
 index.html
@@ -10,7 +11,6 @@ main.css
 payload_map.js
 rop.js
 rop_slave.js
-service_worker.js
 webkit.js
 offsets\3.00.js
 offsets\3.10.js
@@ -22,6 +22,8 @@ offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
 payloads\Browser_appCache_remove.elf
+payloads\etaHEN-1.1b.bin
+payloads\etaHENwithcheats-1.1b.bin
 payloads\ftps5-p.elf
 payloads\hwinfo-tornblom.elf
 payloads\libhijacker-daemon-1.124.elf

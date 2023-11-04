@@ -19,41 +19,41 @@
             <!-- add_cache_event_toasts(); -->
         <!-- }, false); -->
     <!-- </script> -->
-	<script>
-var auto;		
-window.applicationCache.ondownloading = function()
-{
-	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！")
-};
+	<!-- <script> -->
+<!-- var auto;		 -->
+<!-- window.applicationCache.ondownloading = function() -->
+<!-- { -->
+	<!-- alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！") -->
+<!-- }; -->
 
-window.applicationCache.onprogress = function(a)
-{
-	document.getElementById("progress").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
-};
+<!-- window.applicationCache.onprogress = function(a) -->
+<!-- { -->
+	<!-- document.getElementById("progress").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>"; -->
+<!-- }; -->
 
-window.applicationCache.oncached = window.applicationCache.onupdateready = function()
-{
-	alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！")
-    document.location.href = document.location.href;
-};
+<!-- window.applicationCache.oncached = window.applicationCache.onupdateready = function() -->
+<!-- { -->
+	<!-- alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！") -->
+    <!-- document.location.href = document.location.href; -->
+<!-- }; -->
 
-if(!document.location.href.endswith("/index.html"))
-    document.location.href = "index.html";
-</script>
-	<script>
-function updateCache() {
+<!-- if(!document.location.href.endswith("/index.html")) -->
+    <!-- document.location.href = "index.html"; -->
+<!-- </script> -->
+	<!-- <script> -->
+<!-- function updateCache() { -->
 
-window.applicationCache.update();
+<!-- window.applicationCache.update(); -->
  
-window.applicationCache.onnoupdate = function(){
-    alert("当前缓存是最新版本，无需更新！");
-}
+<!-- window.applicationCache.onnoupdate = function(){ -->
+    <!-- alert("当前缓存是最新版本，无需更新！"); -->
+<!-- } -->
 
-window.applicationCache.onerror = function(){
-    alert("当前处于离线状态或网络不稳定！\n\n点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！ \n\n你也可以尝试手机热点");
-} 
-}
-</script>
+<!-- window.applicationCache.onerror = function(){ -->
+    <!-- alert("当前处于离线状态或网络不稳定！\n\n点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！ \n\n你也可以尝试手机热点"); -->
+<!-- }  -->
+<!-- } -->
+<!-- </script> -->
 
 </head>
 
@@ -200,7 +200,7 @@ window.applicationCache.onerror = function(){
         <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 24px" class="info opacity-transition"
             id="credits">
             <h3>
-                <b>Specter v1.04 | 当前版本：20231101（修复稳定性、新增伪装高版本、屏蔽更新、系统和版本查询等插件）</b><br>
+                <b>Specter v1.04 | 当前版本：20231105（修复稳定性、新增伪装高版本、屏蔽更新、系统和版本查询等插件）</b><br>
                 阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、Notzecoxao、JoseG、Flat_z、John、PSGO等
             </h3>
         </center>
@@ -208,7 +208,7 @@ window.applicationCache.onerror = function(){
 
 </body>
 <script>
-    var secstime=6;
+    var secstime=8;
     for(var i=secstime;i>=0;i--){
        window.setTimeout("doUpdate("+ i + ")",(secstime-i)*1000);
     }

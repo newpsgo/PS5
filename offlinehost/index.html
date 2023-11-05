@@ -33,9 +33,16 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
+	if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+	
+		window.applicationCache.swapCache();
+        window.location.reload();
+		alert("已将新缓存替代老缓存！")
+	}
+	
 	for (var i = 1; i <= 99; i++) {
     
-		alert("缓存完成！\n\n建议先重启！或长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
+		alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！（或者最好重启一次！）\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
 		document.location.href = "index.html";	
 	}
 };

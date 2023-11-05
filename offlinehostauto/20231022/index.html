@@ -11,7 +11,7 @@ var auto;
 window.applicationCache.ondownloading = function()
 {
 	auto = 1;
-	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n如果缓存失败请重新打开窗口再次缓存！")
+	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -21,14 +21,8 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	window.applicationCache.swapCache();
-	window.location.reload();
-	
-	for (var i = 1; i <= 99; i++) {
-    
-		alert("缓存完成！\n\n建议先重启！或长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
-		document.location.href = "index.html";	
-	}
+	alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！")
+    document.location.href = "index.html";
 };
 	
 window.applicationCache.onnoupdate = function(){
@@ -43,7 +37,7 @@ window.applicationCache.onerror = function(){
 	}
 	else
 	{
-		alert("网络不稳定，缓存失败！ \n\n点击确定尝试再次缓存或请重新打开窗口，如果持续缓存失败请关闭PS5网络使用离线进行折腾！\n\n首次缓存请检查网络问题或稍后再试！否则无法使用离线进行折腾！ \n\n也可以尝试连接手机热点");
+		alert("网络不稳定，缓存失败！ \n\n点击确定尝试再次缓存或请重新打开窗口，如果持续缓存失败请关闭PS5网络使用离线进行折腾！\n\n首次缓存请检查网络问题或稍后再试！否则无法使用离线进行折腾！ \n\n你也可以尝试连接手机热点");
 		window.applicationCache.update();
 	}	
 }
@@ -83,7 +77,7 @@ div#bottommsg {}
  <div id="loader" class="loader"></div>
     <br>
     <div class=IMG>
-	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 全自动折腾离线版 4.03 & 4.50 & 4.51</font></h1> 
+	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 全自动折腾离线版 4.03 & 4.50</font></h1> 
     <div id="jb-progress-status-text" class="msgs">开机后稍等1-2分钟！ · 关机待机前关游戏 · 折腾约30秒 · 内存提示点确定 · 失败死机则重启 · 折腾成功后不要重复进入！</div>
     </div>
 	<!-- 设置隐藏 -->

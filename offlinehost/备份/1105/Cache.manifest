@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# 2023/11/05 周日-17:20:58.09 
+# 2023/11/2 周二-23:50:40.80 
 
 CACHE: 
 custom_host_stuff.js
@@ -27,7 +27,7 @@ payloads\hwinfo-tornblom.elf
 payloads\libhijacker-daemon-1.124.elf
 payloads\libhijacker-spawner-1.124.elf
 payloads\lock_unlock_updates.elf
-payloads\ps5-kstuff.bin
+payloads\ps5-kstuff-v1.1.bin
 payloads\TO99999999_403_450.bin
 payloads\versions.elf
 

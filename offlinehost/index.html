@@ -23,7 +23,7 @@
 var auto;		
 window.applicationCache.ondownloading = function()
 {
-	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n若缓存失败请重新打开窗口再次缓存！")
+	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n如果缓存失败请重新打开窗口再次缓存！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -33,8 +33,14 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！")
-    document.location.href = document.location.href;
+	window.applicationCache.swapCache();
+	window.location.reload();
+	
+	for (var i = 1; i <= 99; i++) {
+    
+		alert("缓存完成！\n\n建议先重启！或长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
+		document.location.href = "index.html";	
+	}
 };
 
 if(!document.location.href.endswith("/index.html"))
@@ -64,7 +70,7 @@ window.applicationCache.onerror = function(){
     <div id="toast-container"></div>
 
     <div style="margin: 40px;">
-        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;">PSGO 4.03 & 4.50 一键折腾离线版</h1>
+        <h1 style="color:#603bcc;font-size:60px;text-align:center;font-style:italic;">PSGO 4.03 & 4.50 & 4.51 一键折腾离线版</h1>
 		<div id="progress" style="font-size:22px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">开机后稍等1-2分钟！ · 待机关机前关闭游戏 · 内存提示点确定 · 失败提示需重启 · 请勿重复注入<span id="listening-ip"></span></div>
 		<p id="current-fw" class="text-secondary" style="text-align: center; margin-bottom: 8px; padding-bottom: 0;display: none;"></p>
         <p id="listening-ip" class="text-secondary" style="text-align: center; margin-top: 0; padding-top: 0;display: none;"><br/></p>
@@ -201,7 +207,7 @@ window.applicationCache.onerror = function(){
         <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 24px" class="info opacity-transition"
             id="credits">
             <h3>
-                <b>Specter v1.04 | <a href="https://ps5.psgo.eu.org/onlinehost/qing/" aria-hidden="true" tabindex="-1">清除浏览器缓存（联网进入）</a> | 当前版本：20231103（修复稳定性、新增伪装高版本、屏蔽更新等插件）</b><br>
+                <b>Specter v1.04 | <a href="https://ps5.psgo.eu.org/onlinehost/qing/" aria-hidden="true" tabindex="-1">清除浏览器缓存（联网进入）</a> | 当前版本：20231105（新增4.51、修复稳定性、新增伪装高版本、屏蔽更新等插件）</b><br>
                 阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、Notzecoxao、JoseG、Flat_z、John、PSGO等
             </h3>
         </center>

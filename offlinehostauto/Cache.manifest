@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# 2023/11/01 周三-22:34:46.54 
+# 2023/11/05 周日-16:24:04.81 
 
 CACHE: 
 custom_host_stuff.js
@@ -21,7 +21,7 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
-payloads\ps5-kstuff-v1.1.bin
+payloads\ps5-kstuff.bin
 payloads\TO99999999_403_450.bin
 payloads\versions.elf
 

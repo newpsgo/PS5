@@ -9,8 +9,8 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'etaHEN 普通版 v1.1beta（即将支持运行PS5）',
-            description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03、4.50、4.51',
+            displayTitle: 'etaHEN 第三方版 v1.1beta（即将支持运行PS5）',
+            description: '一键解锁运行游戏+HB商店等，支持 4.03、4.50、4.51',
             fileName: 'etaHEN-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
@@ -25,7 +25,7 @@ const payload_map =
             version: '1.0fix'
         },
 		{
-            displayTitle: 'etaHEN 金手指版 v1.1b（与自制应用冲突）',
+            displayTitle: 'etaHEN 金手指版 v1.1beta（与自制应用冲突）',
             description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
             fileName: 'etaHENwithcheats-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
@@ -34,7 +34,7 @@ const payload_map =
         },
 		{
             displayTitle: '屏蔽系统更新（推荐）',
-            description: '只需点击一次，左上角显示“blocker enable”则为永久生效',
+            description: '左上角显示“blocker enable”则为永久生效，建议配合路由器屏蔽',
             fileName: 'lock_unlock_updates.elf',
             author: 'logic-68',
             source: 'https://github.com/logic-68/Enable-Disable-UPD-PS5/releases',

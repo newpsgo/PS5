@@ -17,20 +17,20 @@ const payload_map =
             version: '1.0'
         },
 		{
-            displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
-            description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
-            fileName: 'etaHENwithcheats-1.1b.bin',
-            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
-            source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.0'
-        },
-		{
             displayTitle: '清除浏览器缓存',
             description: 'PS5无法双清，遇到连续报错等缓存问题使用本功能清除后重新缓存',
             fileName: 'Browser_appCache_remove.elf',
             author: 'Storm21CH',
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
             version: '1.0fix'
+        },
+		{
+            displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
+            description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
+            fileName: 'etaHENwithcheats-1.1b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
         },
 		{
             displayTitle: '屏蔽系统更新（推荐）',

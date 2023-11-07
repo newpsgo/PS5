@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# PS5.PSGO.eu.org 2023/11/07 周二-21:04:35.64 
+# PS5.PSGO.eu.org 2023/11/07 周二-21:28:08.45 
 
 CACHE: 
 custom_host_stuff.js
@@ -28,7 +28,7 @@ payloads\hwinfo-tornblom.elf
 payloads\lock_unlock_updates.elf
 payloads\ps5-kstuff.bin
 payloads\spawner.elf
-payloads\TO99999999_403_450.elf
+payloads\TO99999999-403-450.elf
 payloads\versions.elf
 
 NETWORK: 

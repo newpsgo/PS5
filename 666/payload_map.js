@@ -9,7 +9,7 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'etaHEN 普通版 1.1b（即将支持运行PS5）',
+            displayTitle: 'etaHEN 普通版 v1.1beta（即将支持运行PS5）',
             description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03、4.50、4.51',
             fileName: 'etaHEN-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
@@ -25,7 +25,7 @@ const payload_map =
             version: '1.0fix'
         },
 		{
-            displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
+            displayTitle: 'etaHEN 金手指版 v1.1b（与自制应用冲突）',
             description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
             fileName: 'etaHENwithcheats-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',

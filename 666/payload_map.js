@@ -50,7 +50,7 @@ const payload_map =
             version: '1.132'
         },
 		{
-            displayTitle: '伪装高版本（小白勿试）',
+            displayTitle: '伪装高版本（需注入两次）',
             description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
             fileName: 'TO99999999-403-450.elf',
             author: 'Jaafar',

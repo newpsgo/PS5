@@ -1,20 +1,20 @@
 const payload_map =
     [
         {
-            displayTitle: 'etaHEN 普通版 1.1b（支持运行PS5）',
-            description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03、4.50、4.51',
-            fileName: 'etaHEN-1.1b.bin',
-            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
-            source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.0'
-        },
-		{
             displayTitle: 'HEN 原版（推荐 / 支持 4.03、4.50、4.51）',
             description: '点击解锁运行游戏！！！PS5-kstuff.bin',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.1'
+        },
+		{
+            displayTitle: 'etaHEN 普通版 1.1b（即将支持运行PS5）',
+            description: '一键解锁运行+屏蔽升级+FTP等，支持 4.03、4.50、4.51',
+            fileName: 'etaHEN-1.1b.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.0'
         },
 		{
             displayTitle: 'etaHEN 金手指版 1.1b（与自制应用冲突）',
@@ -52,7 +52,7 @@ const payload_map =
 		{
             displayTitle: '伪装高版本（需注入两次）',
             description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
-            fileName: 'TO99999999-403-450.elf',
+            fileName: 'TO99999999_403_450.elf',
             author: 'Jaafar',
             source:'https://twitter.com/jaf51744',
             version: '1.0'

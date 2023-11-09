@@ -6,7 +6,7 @@ const payload_map =
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
-            version: '1.1'
+            version: '1.2'
         },
 		{
             displayTitle: 'etaHEN 第三方版 v1.1beta（即将支持运行PS5）',
@@ -14,7 +14,7 @@ const payload_map =
             fileName: 'etaHEN-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.0'
+            version: '1.1'
         },
 		{
             displayTitle: '清除浏览器缓存',
@@ -30,7 +30,7 @@ const payload_map =
             fileName: 'etaHENwithcheats-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.0'
+            version: '1.1'
         },
 		{
             displayTitle: '屏蔽系统更新（推荐）',
@@ -42,12 +42,12 @@ const payload_map =
         }, 
         {
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.132版，运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.136版，运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
             // loader: 'libhijacker',
-            version: '1.132'
+            version: '1.136'
         },
 		{
             displayTitle: '伪装高版本（需注入两次）',

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+    <meta charset="utf-8" />
+    <title>PS5 折腾导航 - PS5.PSGO.eu.org</title>
+    <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico"></link>
+<script>
+if(!navigator.userAgent.includes('PlayStation 5')) {
+    window.location='pc.html';
+}
+</script>
+</head> 
+<body>
+
+ <style> 
+ body{
+    background-image:url(bg.jpg);
+    background-color:#202124;
+    background-attachment:fixed;
+    background-size:100%;
+    background-repeat:no-repeat;
+    font-family:system-ui;
+	text-align:center
+    }
+		
+    a:hover{
+	text-decoration: none;
+    border-bottom: 1.5px solid;
+	padding-bottom: 5px;
+	}
+    
+    button:-moz-focus-inner, button:focus{
+    outline:0;
+    border:none
+	}
+	
+	option{
+    background-color:#080808;
+    }
+	
+    button{
+	color:#dcddde;
+    font-family:arial;
+    font-size:22px;
+    font-weight:700;
+    border:2px solid #404040;
+    border-radius:4px;
+	margin:10px 2px; 
+    padding:10px;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:none;
+    background:#303134;
+    box-shadow:0 5px 0 #888888;
+    } 
+
+    button:hover{
+    color:#161616;
+    font-size:22px;
+    background:#ff6699;
+    border:2px solid #fff;
+    box-shadow:0 5px 0 #ccc;
+    } 
+    
+    button:active{
+    background:#1d9bf0;
+    position:relative;
+    color:#000;
+    top:5px;
+    box-shadow:none
+    }
+    
+   .bottopmsg{
+
+	padding:5px 0 1px 0;
+	color:#dcddde;
+	text-align: center;
+	font-size:16px;
+    }
+	
+      /** variables */
+      :root {
+        /*orig*/
+
+        --color-black: black;
+        --color-cod-gray: #101010;
+        --color-white: white;
+        --color-error: rgb(191, 95, 95);
+        --color-primary-rgba: 0, 192, 251;
+        --color-primary: #00c0fb;
+        --color-secondary-rgba: 234, 182, 56;
+        --color-secondary: #eab638;
+      }
+
+      .tiles {
+        display: flex;
+        flex-direction: column;
+		z-index:-1;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
+      }
+      .tiles__line {
+        -webkit-animation: runner 20s linear infinite;
+        display: flex;
+        transform: translateX(25%);
+      }
+      .tiles__line:nth-child(2) {
+        -webkit-animation-duration: 32s;
+      }
+      .tiles__line:nth-child(3) {
+        -webkit-animation-duration: 44s;
+      }
+
+      @keyframes runner {
+        to {
+          -webkit-transform: translateX(-25%);
+        }
+      }
+      .tiles__line-img {
+        --tile-margin: 3vw;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        flex: none;
+        height: 30vh;
+        margin: var(--tile-margin);
+        width: 30vh;
+        background-color:#1d9bf0;
+        opacity: 0.3;
+
+      }
+      .tiles__line-img--large {
+        border-radius: 20vh;
+        width: 100vh;
+        opacity: 0.3;
+      }
+</style> 
+  <h1 style="font-size:70px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PS5 折腾导航</font></h1>
+  <h2 style="font-size:28px;text-align:center;"><font color="#dcddde"> PS5.PSGO.eu.org - <font color="#dcddde"> 即将改版敬请期待</font> </font></h2>
+  <div id="progress"></div>
+  <br><br>
+  <table align="center"> 
+    <tr><td align="center">
+<button type="button" onclick="window.location.href='jiaocheng.html'";><font color=""> 【新手必看】PS5折腾简易教程 </font></button>
+<button type="button" onclick="window.location.href='updatehistory.html'";><font color=""> 更新记录 </font></button>
+<button type="button" onclick="window.location.href='others/Official_Firmware.html'";><font color=""> 购买建议 </font></button>
+<!-- <button type="button" onclick="window.location.href='qinghuancun.html'";><font color=""> 清缓存方法 </font></button> -->
+</td></tr>
+
+<tr><td>
+<br>
+</td></tr>
+
+  <!-- <tr><td align="center"> -->
+<!-- <button type="button" onclick="window.location.href='451/'";><font color="">【全自动在线版】4.51 系统</font></button> -->
+<!-- </td></tr> -->
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='onlinehost/auto/'";><font color="">【全自动在线版】4.03 & 4.50 & 4.51 系统（成功率约93% / 2023.11.5更新）</font></button>
+</td></tr>
+
+<tr><td>
+<br>
+</td></tr>
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='onlinehost/one/'";><font color="">【多插件在线版】4.03 & 4.50 & 4.51 系统（成功率约93% / 2023.11.5更新）</font></button>
+</td></tr>
+
+<tr><td>
+<br>
+</td></tr>
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='onlinehost/qing/'";><font color="">【一键清除浏览器缓存在线版】4.03 & 4.50 & 4.51 系统（2023.11.2更新）</font></button>
+</td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 解决各种离线缓存产生的疑难杂症，例如频繁缓存失败、折腾频繁失败等问题，操作前先重启PS5</font></td></tr>
+
+<tr><td>
+<br>
+</td></tr>
+
+<tr><td align="center">
+<button type="button"  onclick="window.location.href='debug/'"><font color=""> 【Debug模式】3.00-4.51 系统 v1.04（仅用于安装PKG）</font></button>
+<button type="button"  onclick="window.location.href='debug/104'"><font color=""> v1.04 </font></button>
+<button type="button"  onclick="window.location.href='debug/103'"><font color=""> v1.03 </font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br>
+</td></tr>
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;"> PSGO折腾离线版PKG（强烈推荐！离线缓存比网页版和ESP更稳定） </font></td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('pkg/PSGO全自动折腾v1.0.pkg')";><font color="">【推荐】 PSGO 全自动折腾PKG 支持4.03 & 4.50 & 4.51（成功率约93% / 缓存自动升级） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('pkg/PSGO Exploit Host_v1.0.pkg')";><font color="">【推荐】 PSGO 多插件折腾PKG 支持4.03 & 4.50 & 4.51（成功率约93% / 缓存自动升级） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('pkg/PSGO Internet browser_v1.0.pkg')";><font color=""> PSGO 浏览器PKG 支持4.03 & 4.50 & 4.51（缓存自动升级） </font></button>
+</td></tr>
+
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 折腾状态下安装PKG后，先不要启动，建议重启后在非折腾状态下联网状态下启动 </font></td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 首次联网并启动应用，一定要耐心等待提示“缓存完成”！定期联网启动检查缓存更新！ </font></td></tr>
+
+<tr><td>
+<br><br><br>
+</td></tr>
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;"> PSGO一键折腾Windows离线版（强烈推荐！离线缓存比网页版和ESP更稳定） </font></td></tr>
+<tr><td align="center">
+<button type="button" onclick="window.open('tools/PSGO-PS5-Windows.zip')";><font color="">【推荐】 一键启动PS5折腾20231025（免DNS免联网替代ESP / 从用户指南进入 / 支持离线缓存） </font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;"> 更多方案选择 </font></td></tr>
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='debug/'";><font color="">【手动在线版】4.03 & 4.50 系统（成功率约93% / 2023.10.22更新）</font></button>
+<button type="button" onclick="window.open('sleirsgoevy/ps5-kstuff.bin')";><font color="">下载bin文件</font></button>
+</td></tr>
+
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 手动版加载需要20秒左右，等待提示推送，然后使用NetCat或安卓手动推送bin或elf文件，端口号9020 </font></td></tr>
+
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='sleirsgoevy/netcat.html#payload=ps5-kstuff.bin'";><font color=""> 【全自动老方案】 4.03 & 4.50 系统（成功率约65% / 2023.10.22更新）</font></button>
+</td></tr>
+
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 请耐心等待顶部进度条加载完成！！！然后再操作，否则容易折腾不稳定 </font></td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 如果频繁死机或缓存失败或更新新方案缓存，查看清除浏览器缓存方法请点击顶部右侧按钮 </font></td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#ff6699;"> 左上角弹出“successfully loaded”成功提示后不要点OX键！要长按PS键回桌面！否则容易死机 </font></td></tr>
+
+
+  <tr><td align="center">
+<button type="button" onclick="window.location.href='sleirsgoevy/'";><font color=""> 【国内镜像】Sleirs 纯净原版 4.03 & 4.50 系统（2023.10.22更新） </font></button>
+</td></tr>
+
+  <!--<tr><td align="center">
+<button type="button" onclick="window.location.href='netcat.html'";><font color=""> 【半自动】4.03 系统（需手动推送bin / 2023.10.9更新）</font></button>
+</td></tr>-->
+
+<tr><td align="center">
+<button type="button" onclick="window.location.href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html'";><font color=""> 【原始链接】Sleirs原版 4.03 & 4.50 系统（需要网络支持） </font></button>
+</td></tr>
+
+  <!-- <tr><td align="center"> -->
+<!-- <button type="button" onclick="window.location.href='http://wolf2022.ir/ps5/index.html'";><font color=""> 【原始链接】Wolf 4.03 系统（需要国际网络） </font></button> -->
+<!-- </td></tr> -->
+  
+  
+<tr><td align="center">
+<button type="button"  onclick="window.location.href='debug/'"><font color=""> 3.00-4.51 系统 Debug模式 v1.04（用于安装PKG）</font></button>
+<button type="button"  onclick="window.location.href='debug/103'"><font color=""> v1.03 </font></button>
+</td></tr>
+
+<!--<tr><td align="center">
+<button type="button"  onclick="window.location.href='test/'"><font color=""> 【内部测试】 3.XX-4.XX系统 解锁测试结果在群内反馈（2023.10.8）</font></button>
+</td></tr>-->
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;;"> PS5 折腾工具（在电脑上下载） </font></td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('pkg/DebugSettingsPS5.pkg')";><font color=""> PS5 Debug菜单快捷方式（PKG文件 / 方便进入安装PKG界面） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('pkg/PS5游戏库快捷方式.pkg')";><font color=""> PS5 游戏库快捷方式（PKG文件 / 快速预览、启动、查找游戏） </font></button>
+</td></tr>
+
+<!-- <tr><td align="center"> -->
+<!-- <button type="button" onclick="window.open('sleirsgoevy/ps5-kstuff.bin')";><font color=""> Payload.bin文件（支持4.03 & 4.50 / 运行游戏补丁 / 20231022更新） </font></button> -->
+<!-- </td></tr> -->
+
+<tr><td align="center">
+<button type="button" onclick="window.open('tools/NetCat GUI v1.2.zip')";><font color=""> Netcat 推送注入工具 v1.2（Windows / 推送端口号9019或新方案9020） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('tools/Sender-PSGO.apk')";><font color=""> 安卓推送注入工具 v3.0（把bin和elf插件放入手机任意目录 / 推送端口号9019或新方案9020） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('payload/ftps5_rw_FTP端口号1337.elf')";><font color=""> PS5 FTP插件（elf文件 / 仅适用于3.00-4.51 Debug模式 v1.04 / FTP端口号1337） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('https://www.filezilla.cn/download')";><font color=""> FTP工具 FileZilla（完全读写权限谨慎使用 / 支持Win、Mac） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('payload/清除浏览器缓存.elf')";><font color=""> 清除PS5浏览器缓存插件（elf文件 / 仅适用于3.00-4.51 Debug模式 v1.04 / 推送elf端口号9020） </font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('https://ghproxy.com/https://github.com/newpsgo/PS5Tools/releases/download/merge_FPKG_ps5_20231010/merge_FPKG_ps5_20231010.rar')";><font color=""> Merge PS5&PS4 PKG合并工具（一键打包合并 / 20231010） </font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;;"> PS5 ESP 第三方固件（在电脑上下载）</font></td></tr>
+<tr><td><font style="font-size:16px;text-align:center;color:#dcddde;;"> wifi密码12345678 / 从用户指南进入 / Sleirsgoevy 4.03 Bin JBV2（JB+KSTUFF为全自动）</font></td></tr>
+
+<!-- <tr><td align="center"> -->
+<!-- <button type="button" onclick="window.open('esp/PS5_caihongTEST_2.bin')";><font color=""> 4.03 彩虹固件 ESP32 by slangel（20231009） </font></button> -->
+<!-- </td></tr> --> 
+
+<tr><td align="center">
+<button type="button" onclick="window.open('EchoStretch.PS5.ESP8266.2023-10-21.bin')";><font color=""> 4.03 & 4.50 7in1 ESP8266 固件（20231021） </font></button>
+</td></tr>
+<tr><td align="center">
+<button type="button" onclick="window.open('esp/EchoStretch.PS5.ESP32S2.2023-10-21.bin')";><font color=""> 4.03 & 4.50 7in1 ESP32 固件（20231021） </font></button>
+</td></tr>
+<tr><td align="center">
+<button type="button" onclick="window.open('https://esp.psgo.eu.org/local/index.html')";><font color=""> 在线刷机工具（支持ESP8266&ESP32）</font></button>
+</td></tr>
+<tr><td align="center">
+<button type="button" onclick="window.open('https://pan.baidu.com/s/1YujeyrT26tYzFxJJpSFMcA?pwd=hmhy')";><font color=""> ESP 工具包（驱动、刷机工具等） </font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr><td><font style="font-size:20px;text-align:center;color:#dcddde;;"> PS5 BD-JB光盘折腾（有刻录机的尝鲜）</font></td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('bdjb/PS5 Jailbreak BD-J Tools v0.2b.iso')";><font color=""> 3.00-4.51系统 BD-J Tools v0.2b 光盘镜像（手动推送Bin可安装运行FPKG）</font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('bdjb/PS5 BD-JB FTP Server v1.2-Beta.iso')";><font color=""> 1.00-6.02系统 FTP服务 v1.2b 光盘镜像（可读写内部文件 / 端口号1337）</font></button>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('bdjb/SetupImgBurn_2.5.8.0.zip')";><font color=""> ImgBurn中文版刻录工具（使用BD-RE或BD-R光盘）</font></button>
+</td></tr>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr><td align="center">
+<button type="button" onclick="window.open('https://game.psgo.eu.org/')";><font color=""> 下载游戏资源 </font></button>
+<!--<button type="button" onclick="window.open('https ://prosperopatches.com/')";><font color=""> PS5游戏离线升级包 </font></button>-->
+<button type="button" onclick="window.open('https://psgo.eu.org/')";><font color=""> PS4折腾 PSGO.eu.org </font></button>
+<button type="button" onclick="window.open('https://t.me/psgotk')";><font color=""> 电报交流群 </font></button>
+</td></tr>
+
+
+<tr><td><br><br><br></td></tr>
+<tr><td><font size="4.5" color="#dcddde">--- 陆续更新中 ---</font></td></tr>
+<tr><td><br></tr>
+<tr><td><font size="4.5" color="#dcddde"> PSGO交流群：6307380 </font></td></tr>
+
+   </table> 
+  </div> 
+  <div class="bottopmsg"> 
+  <br><br><br><br><br>
+   <a href="https://psgo.eu.org/disclaimer.html" target="_blank" style="color:#dcddde;font-size:16px;text-align:center;text-decoration:none;">免责声明</a>
+  </div>  
+  	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VRDNYTJ1Y');
+</script>
+</body>
+</html>

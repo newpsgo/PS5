@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="https://ps5.psgo.eu.org/psgo.ico" type="image/x-icon">
   <title>PS5 折腾导航 - PS5.PSGO.eu.org</title> 
-  
+  <script>
+if(!navigator.userAgent.includes('PlayStation 5')) {
+    window.location='pc.html';
+}
+</script>
   <style>
 	body{
 	overflow: hidden;

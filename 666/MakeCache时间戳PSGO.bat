@@ -1,7 +1,7 @@
 @echo off
 
 echo CACHE MANIFEST > test0.txt
-echo # PS5.PSGO.eu.org %DATE%-%TIME% >> test0.txt
+echo # %DATE%-%TIME% >> test0.txt
 echo. >> test0.txt
 echo CACHE: >> test0.txt
 

@@ -11,7 +11,7 @@ const payload_map =
 		{
             displayTitle: '伪装高版本（小白勿试）',
             description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
-            fileName: 'TO99999999_403_450.elf',
+            fileName: 'TO99999999_403_450.bin',
             author: 'Jaafar',
             source:'https://twitter.com/jaf51744',
             version: '1.0'

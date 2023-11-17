@@ -30,7 +30,7 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 	
 		window.applicationCache.swapCache();
         window.location.reload();
-		setTimeout(function() {alert("已将新缓存覆盖老缓存！")}, 3000);
+		alert("已将新缓存覆盖老缓存！")
 	}
 	
 	for (var i = 1; i <= 99; i++) {

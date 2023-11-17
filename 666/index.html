@@ -21,7 +21,7 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("jb-progress-status-text").innerHTML="<h3>缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
+	document.getElementById("jb-progress-status-text").innerHTML="<h3>正在缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
@@ -35,7 +35,7 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 	
 	for (var i = 1; i <= 99; i++) {
     
-		alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！或者建议最好先重启一次！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
+		alert("缓存完成！\n\n建议现在重启一次！或者长按PS键回到桌面后再次进入本页面！\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
 		document.location.href = "index.html";	
 	}
 };
@@ -79,7 +79,7 @@ div#bottommsg {}
     <br>
     <div>
 	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 一键折腾离线版 4.03 & 4.50 & 4.51</font></h1> 
-    <div id="jb-progress-status-text" class="msgs" style="font-size:30px;text-align:center;font-weight:bold;">开机后稍等15秒 · 后台请勿更新游戏 · 内存提示点确定 · 失败死机则重启 · 折腾成功后请勿重复进入</div>
+    <div id="jb-progress-status-text" class="msgs" style="font-size:30px;text-align:center;font-weight:bold;">开机后稍等15秒 · 后台请勿更新游戏补丁 · 内存提示点确定 · 失败死机则重启 · 折腾成功后请勿重复进入</div>
     </div>
 	<div id="mengceng" style="opacity: 0">
     <svg style="display: none" version="2.0">

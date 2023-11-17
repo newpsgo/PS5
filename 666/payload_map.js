@@ -50,7 +50,7 @@ const payload_map =
             version: '1.136'
         },
 		{
-            displayTitle: '伪装高版本（需点击两次）',
+            displayTitle: '伪装高版本（支持4.03、4.50 / 需点击两次）',
             description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
             fileName: 'TO99999999_403_450.elf',
             author: 'Jaafar',
@@ -59,7 +59,7 @@ const payload_map =
         },
 		{
             displayTitle: 'FTP远程文件管理',
-            description: '端口号1337，后台持续运行，配合FileZill',
+            description: '端口号1337，后台持续运行，配合FileZilla',
             fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',

@@ -295,7 +295,7 @@ function create_payload_buttons() {
         btn.className = "btn mx-auto";
         btn.tabIndex = "0";
         btn.onclick = async () => {
-            showToast(payload_map[i].displayTitle + " added to queue.", 1000);
+            showToast(payload_map[i].displayTitle + " 加入队列", 1000);
             window.local_payload_queue.push(payload_map[i]);
         };
 

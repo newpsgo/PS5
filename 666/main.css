@@ -144,8 +144,8 @@ input:focus {
 }
 
 .btn:hover {
-    background-color: #c2c2c2;
-    color: #303030;
+    background-color: #603bcc;
+    color: white;
 }
 
 a:active,
@@ -173,7 +173,7 @@ a:focus {
 
 
 .payload-description {
-    color: #959595;
+    color: white;
     margin: 0;
     padding: 0;
     text-overflow: ellipsis;
@@ -184,7 +184,7 @@ a:focus {
 }
 
 .btn:hover p.payload-description {
-    color: #666;
+    color: white;
 }
 
 .payload-author {
@@ -249,7 +249,7 @@ a:focus {
 }
 
 .toast {
-    background: #181830;
+    background: #603bcc;
     color: #fff;
     padding: 20px 25px;
     border-radius: 5px;

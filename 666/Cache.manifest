@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-# 2023/11/16 周四-21:30:50.88 
+# 2023/11/17 周五-18:49:59.90 
 
 CACHE: 
 custom_host_stuff.js
@@ -20,8 +20,15 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
+payloads\Browser_appCache_remove.elf
+payloads\etaHEN-1.1b.bin
+payloads\etaHENwithcheats-1.1b.bin
+payloads\ftps5-p.elf
+payloads\hwinfo-tornblom.elf
+payloads\lock_unlock_updates.elf
 payloads\ps5-kstuff.bin
-payloads\TO99999999_403_450.bin
+payloads\spawner.elf
+payloads\TO99999999_403_450.elf
 payloads\versions.elf
 
 NETWORK: 

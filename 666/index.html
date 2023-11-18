@@ -34,14 +34,14 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 };
 	
 window.applicationCache.onnoupdate = function(){
-    setTimeout(function() {document.getElementById('onekey').click();}, 2500);
+    setTimeout(function() {document.getElementById('onekey').click();}, 6000);
 }
 
 window.applicationCache.onerror = function(){
     
 	if (auto != 1)
 	{
-		setTimeout(function() {document.getElementById('onekey').click();}, 3500);
+		setTimeout(function() {document.getElementById('onekey').click();}, 6000);
 	}
 	else
 	{

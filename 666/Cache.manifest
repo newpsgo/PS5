@@ -1,13 +1,12 @@
 CACHE MANIFEST 
-# 2023/11/17 ÷‹ŒÂ-20:57:02.40 
+# 2023/11/18 ÷‹¡˘-14:34:20.59 
 
 CACHE: 
-custom_host_stuff.js
+auto1118.zip
 exploit.js
 index.html
 int64.js
-main.css
-payload_map.js
+ps5-kstuff.bin
 rop.js
 rop_slave.js
 webkit.js
@@ -20,16 +19,6 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
-payloads\Browser_appCache_remove.elf
-payloads\etaHEN-1.1b.bin
-payloads\etaHENwithcheats-1.1b.bin
-payloads\ftps5-p.elf
-payloads\hwinfo-tornblom.elf
-payloads\lock_unlock_updates.elf
-payloads\ps5-kstuff.bin
-payloads\spawner.elf
-payloads\TO99999999_403_450.elf
-payloads\versions.elf
 
 NETWORK: 
 * 

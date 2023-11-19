@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-#PS5.PSGO.eu.org 2023/11/19 周日-21:44:36.47 
+# 2023/11/16 周四-21:30:50.88 
 
 CACHE: 
 custom_host_stuff.js
@@ -21,6 +21,8 @@ offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
 payloads\ps5-kstuff.bin
+payloads\TO99999999_403_450.bin
+payloads\versions.elf
 
 NETWORK: 
 * 

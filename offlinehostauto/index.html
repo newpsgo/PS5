@@ -12,8 +12,6 @@
     <script defer src="custom_host_stuff.js"></script>
 	
 	<script>
-        window.addEventListener('load', function () {
-			
 			var auto;		
 			window.applicationCache.ondownloading = function()
 			{
@@ -44,7 +42,7 @@
 				
 			window.applicationCache.onnoupdate = function(){
 				
-				setTimeout(function() {runJailbreak();}, 1500);
+				setTimeout(function() {runJailbreak();}, 6000);
 				
 			}
 
@@ -52,7 +50,7 @@
 				
 				if (auto != 1)
 				{
-					setTimeout(function() {runJailbreak();}, 2500);
+					setTimeout(function() {runJailbreak();}, 8000);
 				}
 				else
 				{
@@ -60,7 +58,6 @@
 					window.applicationCache.update();
 				}	
 			}
-        });
     </script>
 <style>
 h1 {

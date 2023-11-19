@@ -12,8 +12,6 @@
     <script defer src="custom_host_stuff.js"></script>
 	
     <script>
-        window.addEventListener('load', function () {
-			
 			var auto;		
 			window.applicationCache.ondownloading = function()
 			{
@@ -59,8 +57,7 @@
 					alert("网络不稳定，缓存失败！ \n\n点击确定尝试再次缓存或请重新打开窗口，如果持续缓存失败请关闭PS5网络使用离线进行折腾！\n\n首次缓存请检查网络问题或稍后再试！否则无法使用离线进行折腾！ \n\n也可以尝试连接手机热点");
 					window.applicationCache.update();
 				}	
-			}
-        });
+			}	
     </script>	
 </head>
 

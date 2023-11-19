@@ -18,7 +18,7 @@ const payload_map =
         },
 		{
             displayTitle: '清除浏览器缓存',
-            description: 'PS5无法双清，遇到缓存异常问题使用本功能清除后重新缓存',
+            description: 'PS5无法双清，遇到连续报错等缓存问题使用本功能清除后重新缓存',
             fileName: 'Browser_appCache_remove.elf',
             author: 'Storm21CH',
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
@@ -50,16 +50,16 @@ const payload_map =
             version: '1.136'
         },
 		{
-            displayTitle: '伪装高版本（支持4.03、4.50 / 需点击两次）',
+            displayTitle: '伪装高版本（需注入两次）',
             description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
             fileName: 'TO99999999_403_450.elf',
             author: 'Jaafar',
             source:'https://twitter.com/jaf51744',
-            version: '1.1'
+            version: '1.0'
         },
 		{
-            displayTitle: 'FTP远程文件管理',
-            description: '端口号1337，后台持续运行，配合FileZilla',
+            displayTitle: 'FTP插件',
+            description: '端口号1337，后台持续运行',
             fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',

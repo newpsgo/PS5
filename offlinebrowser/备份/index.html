@@ -1,18 +1,19 @@
 ﻿<html manifest="Cache.manifest">
 <head>
-<title>PSGO浏览器 v1.9 - PS5.PSGO.eu.org</title>
+<title>PSGO浏览器 - PS5.PSGO.eu.org</title>
 <link rel="stylesheet" href="index.css">
 </head>
 <style>
-body{
-	overflow: hidden;
-    background-color:#080808;
-    background-attachment:fixed;
-    background-size:100%;
-	background-repeat:no-repeat;
-    font-family:system-ui;
-	text-align:center
-    }
+html, body {
+background-image: url('');
+background-size: 100%;
+background-repeat: no-repeat;
+background-color: #202124;
+color: white;
+text-align: center;
+margin: 0px;
+overflow: hidden;
+}
 
 h1 {
 font-size: 25px;
@@ -27,10 +28,6 @@ display: block;
     text-decoration: none;
 }
 
-option{
-    background-color:#080808;
-    }
-	
 #clock{
  float:right;
  margin-right:2.25%;
@@ -47,67 +44,6 @@ option{
  font-size:28px;
  color: white;
 }
-
-/** variables */
-      :root {
-        /*orig*/
-
-        --color-black: black;
-        --color-cod-gray: #101010;
-        --color-white: white;
-        --color-error: rgb(191, 95, 95);
-        --color-primary-rgba: 0, 192, 251;
-        --color-primary: #00c0fb;
-        --color-secondary-rgba: 234, 182, 56;
-        --color-secondary: #eab638;
-      }
-
-      .tiles {
-        display: flex;
-        flex-direction: column;
-		z-index:-1;
-        justify-content: center;
-        left: 50%;
-        position: fixed;
-        top: 50%;
-        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
-      }
-      .tiles__line {
-        -webkit-animation: runner 20s linear infinite;
-        display: flex;
-        transform: translateX(25%);
-      }
-      .tiles__line:nth-child(2) {
-        -webkit-animation-duration: 32s;
-      }
-      .tiles__line:nth-child(3) {
-        -webkit-animation-duration: 44s;
-      }
-
-      @keyframes runner {
-        to {
-          -webkit-transform: translateX(-25%);
-        }
-      }
-      .tiles__line-img {
-        --tile-margin: 3vw;
-        background-position: 50% 50%;
-        background-size: cover;
-        border-radius: 50%;
-        flex: none;
-        height: 30vh;
-        margin: var(--tile-margin);
-        width: 30vh;
-        background-color:#603bcc;
-        opacity: 0.3;
-
-      }
-      .tiles__line-img--large {
-        border-radius: 20vh;
-        width: 100vh;
-        opacity: 0.3;
-      }
-
 </style>
 	<script>
 window.applicationCache.ondownloading = function()
@@ -149,7 +85,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<h1 style="font-size:50px;text-align:center;font-style:italic;"><font color="white">PSGO浏览器</font></h1> 
+<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PSGO 浏览器 v1.8</font></h1></div>
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">
@@ -163,9 +99,9 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 <div id=BOX3>
 
-<button style="position:absolute; bottom:75px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button>
+<!-- <button style="position:absolute; bottom:75px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br> -->
 
-<button style="position:absolute; bottom:25px;" class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button>
+<!-- <button style="position:absolute; bottom:25px;" class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button> -->
 
 <h1 style="margin-top:390px;color:white;"> <a href="" style="color: #f31414;margin-left: 0px;">  </a><br><a style="color: white;margin-left: 0px;">  </a></h1>
 
@@ -176,8 +112,8 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 <div style='text-align:left;margin-left:100px;' id=favsid>
 <h3 style='margin-left:0px;' onclick="A666()">我的收藏</h3>
-<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>[L2键]全自动离线版（首次或更新缓存需联网）</a><br>
-<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>[R2键]一键插件离线版（首次或更新缓存需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>【L2键】全自动离线版（首次或更新缓存需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>【R2键】一键插件离线版（首次或更新缓存需联网）</a><br>
 <a href='https://ps5.psgo.eu.org/' target='_self'>PS5折腾导航首页 - PS5.PSGO.eu.org（联网进入）</a><br>
 <div id=favs></div>
 </div>
@@ -282,39 +218,5 @@ function O888() {
 		}
 	}
 </script>
-  <div class="tiles"> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-   </div> 
-   <div class="tiles__line"> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img"></div> 
-    <div class="tiles__line-img tiles__line-img--large"></div> 
-    <div class="tiles__line-img"></div> 
-   </div>  
-  </div>
 </body>
 </html>

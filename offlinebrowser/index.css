@@ -24,7 +24,8 @@ a{
 color:white;text-decoration:none;
 }
 a:hover{
-color:#603bcc;
+color:#white;
+font-weight:bold;
 text-decoration:none;
 }
 h2,h3,h4,h5,h6{

@@ -85,7 +85,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PSGO 浏览器 v1.6</font></h1></div>
+<div  style='text-align:center;color'><h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PSGO 浏览器 v1.8</font></h1></div>
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">
@@ -94,14 +94,14 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id=BOX2 class=BOX style="margin:30px 0px 0px -35px;">
 <button id=infobutz class=leeful onclick='goToURL();'>  跳转  </button>
 </div>
-<div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：区分字母大小写、区分http和https，否则会影响加载离线缓存</font></div>
+<div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：区分字母大小写、区分http和https，输入错误会影响加载离线缓存</font></div>
 <div id=BOX3  style="margin-top: 30px;">
 
 <div id=BOX3>
 
-<button style="position:absolute; bottom:75px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br>
+<!-- <button style="position:absolute; bottom:75px;" class="leeful smaller" id=clrHis onclick="clearHistory()">清空历史</button><br> -->
 
-<button style="position:absolute; bottom:25px;" class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button>
+<!-- <button style="position:absolute; bottom:25px;" class="leeful smaller" id=clrFav onclick="clearFavorites()">清空收藏</button> -->
 
 <h1 style="margin-top:390px;color:white;"> <a href="" style="color: #f31414;margin-left: 0px;">  </a><br><a style="color: white;margin-left: 0px;">  </a></h1>
 
@@ -111,18 +111,17 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 
 <div style='text-align:left;margin-left:100px;' id=favsid>
-<h3 style='margin-left:0px;'>我的收藏</h3>
-<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>PSGO全自动折腾离线版（首次或更新缓存需联网）</a><br>
-<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>PSGO一键折腾离线版（首次或更新缓存需联网）</a><br>
-<a href='https://ps5.psgo.eu.org/onlinehost/qing/index.html' target='_self'>PSGO一键清除浏览器缓存（联网进入）</a><br>
-<a href='https://ps5.psgo.eu.org/' target='_self'>PSGO折腾导航首页 - PS5.PSGO.eu.org（联网进入）</a><br>
+<h3 style='margin-left:0px;' onclick="A666()">我的收藏</h3>
+<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>【L2键】全自动离线版（首次或更新缓存需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>【R2键】一键插件离线版（首次或更新缓存需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/' target='_self'>PS5折腾导航首页 - PS5.PSGO.eu.org（联网进入）</a><br>
 <div id=favs></div>
 </div>
 
 <div id=histid  style="margin-right: 100px;">
 
 <div style='text-align:left;'  id=histid>
-<h3  style='margin-left:0px;'>历史访问</h3>
+<h3  style='margin-left:0px;'onclick="O888()">历史访问</h3>
 <div id=hist></div>
 
 <script>
@@ -138,7 +137,7 @@ if(localStorage.history==null){
 };
 
 if(localStorage.fav==null){
-localStorage.fav="<a href='https://sleirsgoevy.github.io/ps4jb2/ps5-403/index.html' target='_self'>sleirsgoevy.github.io/ps4jb2/ps5-403 - 原版链接</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav="<a href='https://ps5.psgo.eu.org/onlinehost/qing/index.html' target='_self'>一键清除浏览器缓存（联网进入）</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
 }
  
 function goToURL(){
@@ -186,6 +185,38 @@ function remFav(){
 hist.innerHTML=localStorage.history;
 favs.innerHTML=localStorage.fav;
 </script>
+<script>
+var ikey = 0;
+function manejarKeyPress(event) {
+	//L2
+	if (event.keyCode === 118) {
+		
+		window.open("https://ps5.psgo.eu.org/offlinehostauto/", '_blank');	
+	}
+	//R2
+	if (event.keyCode === 119) {
 
+		window.open("https://ps5.psgo.eu.org/offlinehost/", '_blank');	
+	}
+}
+
+document.addEventListener("keydown", manejarKeyPress);
+</script>
+<script>
+var i666 = 0;
+var i888 = 0;
+function A666() {
+        i666 += 1;
+		if (i666 == 3) {
+		window.open("https://ps5.psgo.eu.org/666/", '_blank');	
+		}
+	}
+function O888() {
+        i888 += 1;
+		if (i888 == 3) {
+		window.open("https://ps5.psgo.eu.org/888/", '_blank');	
+		}
+	}
+</script>
 </body>
 </html>

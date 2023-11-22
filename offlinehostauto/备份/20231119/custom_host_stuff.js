@@ -17,7 +17,7 @@ async function runJailbreak() {
     create_payload_buttons();
     setTimeout(() => {
         poc();
-    }, 500);
+    }, 1500);
 }
 
 function onload_setup() {

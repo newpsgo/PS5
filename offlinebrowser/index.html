@@ -1,6 +1,6 @@
 ﻿<html manifest="Cache.manifest">
 <head>
-<title>PSGO浏览器 v1.9 - PS5.PSGO.eu.org</title>
+<title>PSGO浏览器 | 当前缓存版本：v2.0 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
 <link rel="stylesheet" href="index.css">
 </head>
 <style>
@@ -112,7 +112,7 @@ option{
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("浏览器有新的版本！点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("浏览器有新的版本！\n\n点击确定按钮将开始缓存!缓存完成之前请不要操作！")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -122,7 +122,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("浏览器缓存完成!如果想离线使用PSGO折腾方案，请在联网状态下点击我的收藏中的离线方案进行缓存和升级!")
+	alert("浏览器缓存完成!\n\n如果想离线使用PSGO折腾方案，请在联网状态下点击我的收藏中的离线方案进行缓存和更新!")
     document.location.href = document.location.href;
 };
 
@@ -149,7 +149,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id="container"  style="">
 <span id="date" ></span><span id="clock" ></span><h1 style='font-size:25px;text-align:center;color:yellow;'></h1>
 <br>
-<h1 style="font-size:50px;text-align:center;font-style:italic;"><font color="white">PSGO浏览器</font></h1> 
+<h1 style="font-size:50px;text-align:center;font-style:italic;"><font color="white">PSGO 浏览器</font></h1> 
 <div id="progress"></div>
 <body style="margin:0px;padding:0px;overflow:auto;">
 <div id=BOX1 class=BOX style="margin:30px 5px 0px 35px;">
@@ -158,7 +158,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <div id=BOX2 class=BOX style="margin:30px 0px 0px -35px;">
 <button id=infobutz class=leeful onclick='goToURL();'>  跳转  </button>
 </div>
-<div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：区分字母大小写、区分http和https，输入错误会影响加载离线缓存</font></div>
+<div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：如果要访问的是离线缓存网站，需区分字母大小写、区分http和https，输入有误将无法加载缓存</font></div>
 <div id=BOX3  style="margin-top: 30px;">
 
 <div id=BOX3>
@@ -176,9 +176,9 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 
 <div style='text-align:left;margin-left:100px;' id=favsid>
 <h3 style='margin-left:0px;' onclick="A666()">我的收藏</h3>
-<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>[L2键]全自动离线版（首次或更新缓存需联网）</a><br>
-<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>[R2键]一键插件离线版（首次或更新缓存需联网）</a><br>
-<a href='https://ps5.psgo.eu.org/' target='_self'>PS5折腾导航首页 - PS5.PSGO.eu.org（联网进入）</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehostauto/index.html' target='_self'>[L2键]全自动折腾离线版（首次进入需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/offlinehost/index.html' target='_self'>[R2键]多插件折腾离线版（首次进入需联网）</a><br>
+<a href='https://ps5.psgo.eu.org/' target='_self'>PS5折腾导航 - PS5.PSGO.eu.org（联网进入）</a><br>
 <div id=favs></div>
 </div>
 
@@ -201,7 +201,7 @@ if(localStorage.history==null){
 };
 
 if(localStorage.fav==null){
-localStorage.fav="<a href='https://ps5.psgo.eu.org/onlinehost/qing/index.html' target='_self'>一键清除浏览器缓存（联网进入）</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
+localStorage.fav="<a href='https://ps5.psgo.eu.org/onlinehost/qing/index.html' target='_self'>一键清除浏览器缓存（重启并联网进入）</a><button onclick='url=this.previousElementSibling.innerHTML;remFav()'>删除</button><br>";
 }
  
 function goToURL(){

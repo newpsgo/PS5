@@ -1,6 +1,6 @@
 <html manifest="Cache.manifest">
 <head>
-    <title>PSGO 一键折腾 | 当前缓存版本：v1126 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO 一键折腾 - PS5.PSGO.eu.org - v1123</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
@@ -16,14 +16,11 @@ var auto;
 window.applicationCache.ondownloading = function()
 {
 	alert("折腾缓存有新的版本！\n\n点击确定按钮将开始缓存！缓存完成之前请不要操作！\n\n如果缓存失败请重新打开窗口再次缓存！")
-	document.getElementById('run-jb').onclick = null;
-	document.getElementById('run-jb').innerHTML = "正在更新缓存，完成后即可折腾...";
 };
 
 window.applicationCache.onprogress = function(a)
 {
 	document.getElementById("progress").innerHTML="<h3>正在缓存中！请耐心等待！不要操作！缓存进度: "+(Math.round(100*(a.loaded/a.total)))+"% </h3>";
-	document.getElementById('check-cache').innerHTML = "请稍等...";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
@@ -37,7 +34,7 @@ window.applicationCache.oncached = window.applicationCache.onupdateready = funct
 	
 	for (var i = 1; i <= 99; i++) {
     
-		alert("缓存完成！\n\n长按PS键回到桌面，进入PS5设置-网络，关闭网络开关！！！\n\n再次进入本页即可离线使用！记得定期打开PS5网络开关更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存，完成后关闭PS5网络开关！")
+		alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！（或者最好重启一次！）\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
 		document.location.href = "index.html";	
 	}
 };
@@ -118,8 +115,8 @@ if(!document.location.href.endswith("/index.html"))
 
             <div id="run-jb-parent" class="opacity-transition"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-			<a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:bold;" id="run-jb" onclick="GOGOGO()">开始折腾</a>
-			<a tabindex="0" class="btn" style="max-width: 15%;" id="check-cache" onclick="updateCache()">更新缓存</a>
+			<a tabindex="0" class="btn" style="max-width: 50%;background-color:#603bcc;font-weight:bold;" id="run-jb" onclick="runJailbreak()">开始折腾</a>
+			<a tabindex="0" class="btn" style="max-width: 15%;" onclick="updateCache()">更新缓存</a>
             </div>
 
             <div id="jb-progress" class="opacity-transition"
@@ -131,8 +128,8 @@ if(!document.location.href.endswith("/index.html"))
                     <div></div>
                 </div>
                 <p id="jb-progress-status-text" style="text-align: center; width: 100%; margin-top: 40px;">
-                    页面
-                    会假死... <br /><span class="secondary-text">(折腾中，勿操作)</span></p>
+                    正在
+                    折腾中... <br /><span class="secondary-text">(画面假死，不要操作)</span></p>
                 <textarea id="console" class="log" style="display: none;"></textarea>
             </div>
 
@@ -146,7 +143,7 @@ if(!document.location.href.endswith("/index.html"))
             <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 16px;"
                 class="info opacity-transition" id="credits">
                 <h3>
-                <b>Specter v1.04+ | 按下手柄 L2 键打开浏览器Lite | <a href="https://ps5.psgo.eu.org/onlinehost/qing/" aria-hidden="true" tabindex="-1">清除浏览器缓存（联网进入）</a></b><br>
+                <b>Specter v1.04+ | 按下手柄L2键打开浏览器Lite | <a href="https://ps5.psgo.eu.org/onlinehost/qing/" aria-hidden="true" tabindex="-1">清除浏览器缓存（联网进入）</a></b><br>
                 阮·Andy、Specter、Sleirsgoevy、ChendoChap、Znullptr、ChendoChap、idlesauce、Flat_z、John、PSGO等
 				</h3>
             </center>
@@ -157,32 +154,22 @@ if(!document.location.href.endswith("/index.html"))
 
 </html>
 <script>
-    function GOGOGO(){
-        document.getElementById('run-jb').onclick = null;
-		document.getElementById('run-jb').innerHTML = "即将开始折腾...";
-	    setTimeout(function() {runJailbreak();}, 6000)
-    }
-</script>
-<script>
 function updateCache() {
-
-document.getElementById('check-cache').innerHTML = "正在检查更新...";
 
 window.applicationCache.update();
  
 window.applicationCache.onnoupdate = function(){
-    document.getElementById('check-cache').innerHTML = "当前是最新版本！";
-	//alert("当前缓存是最新版本，无需更新！");
+    alert("当前缓存是最新版本，无需更新！");
 }
 
 window.applicationCache.onerror = function(){
-    alert("当前处于离线状态或网络不稳定！\n\n点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！ \n\n另外也可以尝试连接手机热点");
+    alert("当前处于离线状态或网络不稳定！\n\n点击更新缓存前请先将PS5连接到网络！打开网络并保持畅通！ \n\n你也可以尝试连接手机热点");
 } 
 }
 </script>
 <script>
 function mostrarPopup() {
-    const url = prompt("PSGO 浏览器 Lite\n\n注意：如果要访问的是离线缓存网站，需区分字母大小写、区分http和https", "https://");
+    const url = prompt("PSGO 浏览器 Lite", "https://");
 
     if (url) {
 		

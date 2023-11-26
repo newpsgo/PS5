@@ -1,6 +1,6 @@
 <html manifest="Cache.manifest">
 <head>
-    <title>PSGO 全自动折腾 | 当前缓存版本：v1126 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO 全自动折腾 - PS5.PSGO.eu.org - v1123</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
@@ -35,14 +35,14 @@
 				
 				for (var i = 1; i <= 99; i++) {
 				
-					alert("缓存完成！\n\n长按PS键回到桌面，进入PS5设置-网络，关闭网络开关！！！\n\n再次进入本页即可离线使用！记得定期打开PS5网络开关更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存，完成后关闭PS5网络开关！")
+					alert("缓存完成！\n\n长按PS键回到桌面后再次进入本页面！（建议重启一次！）\n\n现在可以断开网络离线使用！记得定期打开PS5网络更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存！")
 					document.location.href = "index.html";	
 				}
 			};
 				
 			window.applicationCache.onnoupdate = function(){
 				
-				setTimeout(function() {runJailbreak();}, 6000);
+				setTimeout(function() {runJailbreak();}, 500);
 				
 			}
 
@@ -50,7 +50,7 @@
 				
 				if (auto != 1)
 				{
-					setTimeout(function() {runJailbreak();}, 6000);
+					setTimeout(function() {runJailbreak();}, 1000);
 				}
 				else
 				{
@@ -58,8 +58,6 @@
 					window.applicationCache.update();
 				}	
 			}
-			if(!document.location.href.endswith("/index.html"))
-				document.location.href = "index.html";
     </script>
 <style>
 h1 {

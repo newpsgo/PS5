@@ -11,6 +11,14 @@
     <script defer src="exploit.js"></script>
     <script defer src="payload_map.js"></script>
     <script defer src="custom_host_stuff.js"></script>
+	
+	<script>			
+		function executarJailbreak() {
+		
+			setTimeout(runJailbreak, 1500); 
+		}
+		window.onload = executarJailbreak;
+	</script>
 
 <style>
 h1 {
@@ -164,10 +172,3 @@ div#bottommsg {}
 </body>
 
 </html>
-<script>			
-	function executarJailbreak() {
-	
-		setTimeout(runJailbreak, 500); 
-	}
-	window.onload = executarJailbreak;
-</script>

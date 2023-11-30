@@ -7,7 +7,7 @@ const payload_map =
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.2'
-        }
+        },
 		{
             displayTitle: 'ps5debug',
             description: 'FW 4.03 & 4.50 Only. FPKG enabler',

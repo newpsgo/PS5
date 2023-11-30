@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>
-			var auto;		
+			var auto;
+			var fugai;		
 			window.applicationCache.ondownloading = function()
 			{
 				auto = 1;
@@ -22,11 +23,14 @@
 				
 					window.applicationCache.swapCache();
 					window.location.reload();
-					var fugai = "新缓存覆盖老"
+					fugai = "新缓存覆盖老"
 				}
 				
-				for (var i = 1; i <= 99; i++) {
-				
+				for (;;) {
+					
+					if (fugai == undefined) {
+						fugai = "";
+					}
 					alert(fugai + "缓存完成！\n\n长按PS键回到桌面，进入PS5设置-网络，关闭网络开关！！！\n\n再次进入本页即可离线使用！记得定期打开PS5网络开关更新缓存！ \n\n如果折腾遇到连续失败，建议清除缓存后重新缓存，完成后关闭PS5网络开关！");
 					document.location.href = "index.html";
 				}

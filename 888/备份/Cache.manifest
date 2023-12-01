@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-#PS5.PSGO.eu.org 2023/12/01 周五-18:06:47.22 
+#PS5.PSGO.eu.org 2023/11/30 周四-19:30:00.69 
 
 CACHE: 
 cache.html
@@ -28,7 +28,6 @@ payloads\ftps5-p.elf
 payloads\hwinfo-tornblom.elf
 payloads\lock_unlock_updates.elf
 payloads\ps5-kstuff.bin
-payloads\ps5debug.elf
 payloads\spawner.elf
 payloads\TO99999999_403_450.elf
 payloads\versions.elf

@@ -366,8 +366,8 @@ function create_payload_buttons() {
     var fired4 = false;
 	document.getElementById("payload-4").addEventListener("click",function () {
 		
-			if(!fired3) {
-				fired3 = true;
+			if(!fired4) {
+				fired4 = true;
 				document.getElementById("payload-4").style.backgroundColor = "#603bcc";
 				document.getElementById('payload-4').onclick = null;
 			}

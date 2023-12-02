@@ -25,20 +25,20 @@ const payload_map =
             version: '1.0b1'
         },
 		{
-            displayTitle: 'elf插件加载器',
-            description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
-            fileName: 'elfldr.elf',
-            author: 'john-tornblom',
-            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.5'
-        },
-		{
             displayTitle: 'FTP远程文件管理',
             description: '端口号1337，后台持续运行，配合FileZilla客户端',
             fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
+        },
+		{
+            displayTitle: 'elf插件加载器',
+            description: '端口号9021，后台持续运行，配合NetCat或安卓推送客户端',
+            fileName: 'elfldr.elf',
+            author: 'john-tornblom',
+            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
+            version: '0.5'
         },
 		{
             displayTitle: '清除浏览器缓存',

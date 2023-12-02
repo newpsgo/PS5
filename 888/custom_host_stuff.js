@@ -363,13 +363,13 @@ function create_payload_buttons() {
 		
     })
 	// 重复注入会断电的插件
-    var fired3 = false;
-	document.getElementById("payload-3").addEventListener("click",function () {
+    var fired4 = false;
+	document.getElementById("payload-4").addEventListener("click",function () {
 		
 			if(!fired3) {
 				fired3 = true;
-				document.getElementById("payload-3").style.backgroundColor = "#603bcc";
-				document.getElementById('payload-3').onclick = null;
+				document.getElementById("payload-4").style.backgroundColor = "#603bcc";
+				document.getElementById('payload-4').onclick = null;
 			}
 			else{
 				

@@ -33,7 +33,7 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'elf插件加载器',
+            displayTitle: 'elf插件加载器（高频断电）',
             description: '端口号9021，后台持续运行，配合NetCat或安卓推送客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',

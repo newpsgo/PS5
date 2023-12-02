@@ -17,8 +17,8 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'ps5debug',
-            description: '当前金手指仅调试，即将完善配套工具',
+            displayTitle: 'PS5debug',
+            description: '当前仅使用DXWatch或Reaper调试，即将完善',
             fileName: 'ps5debug.elf',
             author: 'SiSTR0, ctn123',
             source: 'https://github.com/GoldHEN/ps5debug',

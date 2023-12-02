@@ -18,19 +18,11 @@ const payload_map =
         },
 		{
             displayTitle: 'PS5debug',
-            description: '当前仅支持使用DXWatch或Reaper进行内存调试，即将完善',
+            description: '当前仅使用DXWatch或Reaper调试，即将完善',
             fileName: 'ps5debug.elf',
             author: 'SiSTR0, ctn123',
             source: 'https://github.com/GoldHEN/ps5debug',
             version: '1.0b1'
-        },
-		{
-            displayTitle: 'elf插件加载器',
-            description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
-            fileName: 'elfldr.elf',
-            author: 'john-tornblom',
-            source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.5'
         },
 		{
             displayTitle: 'FTP远程文件管理',
@@ -39,14 +31,6 @@ const payload_map =
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
-        },
-		{
-            displayTitle: '清除浏览器缓存',
-            description: 'PS5无法双清，遇到缓存异常问题使用本功能清除后重新缓存',
-            fileName: 'Browser_appCache_remove.elf',
-            author: 'Storm21CH',
-            source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
-            version: '1.0fix'
         },
 		// {
             // displayTitle: 'etaHEN 金手指版 v1.1beta（与自制应用冲突）',
@@ -81,13 +65,12 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.136版，运行后可直接启动相应游戏（版本也需要对应）',
-            fileName: 'spawner.elf',
-            author: 'illusion0001, astrelsky',
-            source: 'https://github.com/illusion0001/libhijacker/releases',
-            // loader: 'libhijacker',
-            version: '1.136'
+            displayTitle: '清除浏览器缓存',
+            description: 'PS5无法双清，遇到缓存异常问题使用本功能清除后重新缓存',
+            fileName: 'Browser_appCache_remove.elf',
+            author: 'Storm21CH',
+            source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
+            version: '1.0fix'
         },
 		{
             displayTitle: '查看版本信息',
@@ -104,6 +87,15 @@ const payload_map =
             author: '匿名作者',
             source:'?',
             version: '1.0'
+        },
+		{
+            displayTitle: '解锁部分正版游戏120/60帧率',
+            description: 'v1.136版，运行后可直接启动相应游戏（版本也需要对应）',
+            fileName: 'spawner.elf',
+            author: 'illusion0001, astrelsky',
+            source: 'https://github.com/illusion0001/libhijacker/releases',
+            // loader: 'libhijacker',
+            version: '1.136'
         }
 		
 

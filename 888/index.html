@@ -57,6 +57,25 @@
 			if(!document.location.href.endswith("/index.html"))
 				document.location.href = "index.html";
     </script>
+<script>
+function mostrarPopup() {
+    const url = prompt("PSGO 浏览器 Lite\n\n注意：如果要访问的是离线缓存网站，需区分字母大小写、区分http和https", "https://");
+
+    if (url) {
+		
+        window.open(url, '_blank');
+    }
+}
+
+function manejarKeyPress(event) {
+
+    if (event.keyCode == 118) {
+        mostrarPopup();
+    }
+}
+
+document.addEventListener("keydown", manejarKeyPress);
+</script>
 <style>
 .loader {position: absolute;left: 50%;top: 55%;margin: -75px 0 0 -75px;border: 10px solid #1f1e1e;border-radius: 50%;border-top: 10px solid #603bcc;border-left: 10px solid #603bcc;width: 120px;height: 120px;animation: spin 1s linear infinite;}
 @keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
@@ -70,7 +89,14 @@
 			<h2 id="jb-progress-status-text" style="font-size:26px;text-align:center;color:#fff;font-weight:bold;">开机后稍等30秒 · 待机关机前关游戏 · 后台请勿更新游戏 · 死机需重启两次 · 成功后请勿重复进入</h2>
 		</div>
     </div>
-	<div id="loader" class="loader"></div>
+	<div>
+			<center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 18px;"
+                class="info opacity-transition" id="credits">
+                <h3>
+                <b>跳转前快速按下手柄 L2 键打开浏览器Lite</b><br>
+				</h3>
+            </center>
+	</div>
 </body>
 
 </html>

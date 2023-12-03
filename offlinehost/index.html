@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="main.css">
 	<script>
 			var auto;
-			var fugai;			
+			var fugai;
+			var liulnaqi;
 			window.applicationCache.ondownloading = function()
 			{
 				auto = 1;
@@ -39,6 +40,8 @@
 			window.applicationCache.onnoupdate = function(){
 				
 				setTimeout(function() {window.open("cache.html", '_blank');}, 3500);
+				liulnaqi = 1;
+				document.getElementById("credits").style.display = "block";
 				
 			}
 
@@ -47,6 +50,8 @@
 				if (auto != 1)
 				{
 					setTimeout(function() {window.open("cache.html", '_blank');}, 3500);
+					liulnaqi = 1;
+					document.getElementById("credits").style.display = "block";
 				}
 				else
 				{
@@ -69,7 +74,7 @@ function mostrarPopup() {
 
 function manejarKeyPress(event) {
 
-    if (event.keyCode == 118) {
+    if (event.keyCode == 118 && liulnaqi == 1) {
         mostrarPopup();
     }
 }
@@ -91,12 +96,12 @@ document.addEventListener("keydown", manejarKeyPress);
     </div>
 	<div id="loader" class="loader"></div>
 	<div>
-			<center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 18px;"
-                class="info opacity-transition" id="credits">
-                <h3>
-                <b>跳转前快速按下手柄 L2 键打开浏览器Lite</b><br>
-				</h3>
-            </center>
+		<center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 18px;display:none"
+			class="info opacity-transition" id="credits">
+			<h3>
+			<b>跳转前快速按下手柄 L2 键打开浏览器Lite</b><br>
+			</h3>
+		</center>
 	</div>
 </body>
 

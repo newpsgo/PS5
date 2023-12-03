@@ -1,8 +1,7 @@
 CACHE MANIFEST 
-#PS5.PSGO.eu.org 2023/12/03 周日-12:37:18.78 
+#PS5.PSGO.eu.org 2023/11/27 周一- 1:07:34.10 
 
 CACHE: 
-cache.html
 custom_host_stuff.js
 exploit.js
 index.html
@@ -23,13 +22,11 @@ offsets\4.50.js
 offsets\4.51.js
 payloads\Backup-db-PS5.elf
 payloads\Browser_appCache_remove.elf
-payloads\elfldr.elf
 payloads\etaHEN-1.1b.bin
 payloads\ftps5-p.elf
 payloads\hwinfo-tornblom.elf
 payloads\lock_unlock_updates.elf
 payloads\ps5-kstuff.bin
-payloads\ps5debug.elf
 payloads\spawner.elf
 payloads\TO99999999_403_450.elf
 payloads\versions.elf

@@ -295,7 +295,7 @@ function create_payload_buttons() {
         btn.className = "btn mx-auto";
         btn.tabIndex = "0";
         btn.onclick = async () => {
-            showToast(payload_map[i].displayTitle + " 加入队列.", 1000);
+            showToast(payload_map[i].displayTitle + " 加入队列中", 1000);
             window.local_payload_queue.push(payload_map[i]);
         };
 
@@ -309,14 +309,74 @@ function create_payload_buttons() {
         btn_child2.innerHTML = payload_map[i].description;
         btn.appendChild(btn_child2);
 
-        let btn_child3 = document.createElement("p");
-        btn_child3.className = "payload-author";
-        btn_child3.innerHTML = "v" + payload_map[i].version + " &centerdot; " + payload_map[i].author;
-        btn.appendChild(btn_child3);
+        // let btn_child3 = document.createElement("p");
+        // btn_child3.className = "payload-author";
+        // btn_child3.innerHTML = "v" + payload_map[i].version + " &centerdot; " + payload_map[i].author;
+        // btn.appendChild(btn_child3);
 
         document.getElementById("payloads-list").appendChild(btn);
 
     }
+	
+	// HEN快捷键
+	var fired = false;
+	function manejarKeyPress(event) {
+		if (event.keyCode == 118) {
+			
+			document.getElementById('payload-0').click();
+		}
+		if (event.keyCode == 119) {
+			
+			document.getElementById('payload-1').click();
+		}
+	}
+	document.addEventListener("keyup", manejarKeyPress);
+	
+	// HEN点击
+    document.getElementById("payload-0").addEventListener("click",function () {
+		
+			if(!fired) {
+				fired = true;
+				document.getElementById("payload-0").style.backgroundColor = "#603bcc";
+				document.getElementById('payload-0').onclick = null;
+				document.getElementById('payload-1').onclick = null;
+			}
+			else{
+				
+				showToast('已经注入过HEN，请勿重复注入！否则容易导致断电！');
+			}
+
+    })
+    document.getElementById("payload-1").addEventListener("click",function () {
+		
+			if(!fired) {
+				fired = true;
+				document.getElementById("payload-1").style.backgroundColor = "#603bcc";
+				document.getElementById('payload-0').onclick = null;
+				document.getElementById('payload-1').onclick = null;
+			}
+			else{
+				
+				showToast('已经注入过HEN，请勿重复注入！否则容易导致断电！');
+				//alert("已经注入过HEN，请勿重复注入！否则容易导致断电！");
+			}
+		
+    })
+	// 重复注入会断电的插件
+    var fired4 = false;
+	document.getElementById("payload-4").addEventListener("click",function () {
+		
+			if(!fired4) {
+				fired4 = true;
+				document.getElementById("payload-4").style.backgroundColor = "#603bcc";
+				document.getElementById('payload-4').onclick = null;
+			}
+			else{
+				
+				showToast('请勿重复注入！');
+			}
+
+    })
 
 }
 

@@ -17,8 +17,8 @@ const payload_map =
             version: '1.1'
         },
 		{
-            displayTitle: 'PS5debug',
-            description: '当前仅支持使用DXWatch或Reaper进行内存调试，即将完善',
+            displayTitle: 'PS5debug（支持金手指）',
+            description: '配合MultiTrainer II PC客户端或内存调试工具',
             fileName: 'ps5debug.elf',
             author: 'SiSTR0, ctn123',
             source: 'https://github.com/GoldHEN/ps5debug',
@@ -26,7 +26,7 @@ const payload_map =
         },
 		{
             displayTitle: 'FTP远程文件管理',
-            description: '端口号1337，后台持续运行，配合FileZilla客户端',
+            description: '端口号1337，后台持续运行，配合FileZilla PC客户端',
             fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
@@ -82,7 +82,7 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.136版，运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.137 运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',

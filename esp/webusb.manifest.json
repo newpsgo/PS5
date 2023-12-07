@@ -1,0 +1,11 @@
+{
+  "name": "PSGO ESP32-S2",
+  "version": "v1",
+  "home_assistant_domain": "esphome",
+  "builds": [
+    {
+      "chipFamily": "ESP32-S2",
+      "parts": [{ "path": "ESP32S2.bin", "offset": 0 }]
+    }
+  ]
+}

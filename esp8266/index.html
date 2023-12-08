@@ -1,0 +1,228 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><!-- PS4 Jailbreak Host 9.00FW > Special Thanks to: @leeful @karo_sharifi SiSTR0 . And everyone who contributes to the scene. Website by Mouuu @_mour0ne_ -Youtube: Mouuu -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="https://ps4xploit900.github.io/jailbreak/img/icon-ps.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSGO ESP32-S2 在线刷机</title>
+	<link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico"></link>
+    <style>
+
+      /** variables */
+      :root {
+        /*orig*/
+
+        --color-black: black;
+        --color-cod-gray: #01001e;
+        --color-white: white;
+        --color-error: rgb(191, 95, 95);
+        --color-primary-rgba: 0, 192, 251;
+        --color-primary: #01001e;
+        --color-secondary-rgba: 234, 182, 56;
+        --color-secondary: #eab638;
+
+      }
+
+      body {
+       overflow: hidden;
+    background-color:#080808;
+    background-attachment:fixed;
+    background-size:100%;
+	background-repeat:no-repeat;
+    font-family:system-ui;
+	text-align:center
+	}
+	
+	option{
+    background-color:#080808;
+    }
+  
+      
+      .tiles {
+        display: flex;
+        flex-direction: column;
+		z-index:-1;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
+      }
+      .tiles__line {
+        -webkit-animation: runner 20s linear infinite;
+        display: flex;
+        transform: translateX(25%);
+      }
+      .tiles__line:nth-child(2) {
+        -webkit-animation-duration: 32s;
+      }
+      .tiles__line:nth-child(3) {
+        -webkit-animation-duration: 44s;
+      }
+
+      @keyframes runner {
+        to {
+          -webkit-transform: translateX(-25%);
+        }
+      }
+      .tiles__line-img {
+        --tile-margin: 3vw;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        flex: none;
+        height: 30vh;
+        margin: var(--tile-margin);
+        width: 30vh;
+        background-color:#603bcc;
+        opacity: 0.3;
+
+      }
+      .tiles__line-img--large {
+        border-radius: 20vh;
+        width: 100vh;
+        opacity: 0.3;
+      }
+
+      .esp32__webusb {
+        background-color: #00000000;
+		<!-- border-style:solid;border-radius: 16px; -->
+        padding: 24px;
+        display: table-cell; 
+        
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+      }
+
+      .esp32__webusb svg {
+        display: block;
+        margin-top: 32px;
+      }
+
+      .esp32__webusb-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+		color:#FFFFFF;
+      }
+    .Estilo1 {color: #FFFFFF}
+	
+    a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FFFFFF;
+}
+a:active {
+	color: #FFFFFF;
+}
+
+ button{
+    font-family:arial;
+    font-size:22px;
+    font-weight:700;
+    border:2px solid #404040;
+    border-radius:4px;
+	margin:0px 0px 10px 0px;
+    padding:10px;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:none;
+    background:#603bcc;
+    box-shadow:0 5px 0 #888888;
+	color:white;
+    } 
+
+    button:hover{
+    color:#603bcc;
+    font-size:22px;
+    background:#161616;
+    border:2px solid #fff;
+    box-shadow:0 5px 0 #ccc;
+    } 
+    
+    button:active{
+    background:#603bcc;
+    position:relative;
+    color:#000;
+    top:5px;
+    box-shadow:none
+    }
+    </style>
+  </head>
+  <body>
+	<br>
+    <h1 style="font-size:60px;text-align:center;font-style:italic;text-shadow: 3px 2px #ddd0ff;z-index:99999"><font color="#603bcc"> PSGO PS5 ESP32 在线刷机</font></h1>
+	<!-- <h2 style="font-size:26px;text-align:center;color:#fff;font-style:italic;font-weight:bold;">PS5一键折腾多插件ESP32-S2版</h2> -->
+
+    <div class="tiles">
+      <div class="tiles__line">
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+      </div>
+      <div class="tiles__line">
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+      </div>
+      <div class="tiles__line">
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+      </div>
+      <div class="tiles__line">
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img"></div>
+        <div class="tiles__line-img tiles__line-img--large"></div>
+        <div class="tiles__line-img"></div>
+      </div>
+    </div>
+
+   <script
+      type="module"
+      src="esp-web-tools@8.0.6/dist/web/install-button.js?module"
+    ></script>
+
+<br>
+    <div class="esp32__webusb-container">
+      <div class="esp32__webusb">
+		<!-- <div class="Estilo1">WIFI: PSGO_ESP32 / 密码: 12345678</div><br> -->
+		<!-- <div class="Estilo1">密码: 12345678</div><br> -->
+    <img src="usb.svg"><br>
+        <esp-web-install-button
+          manifest="webusb.manifest.json" ><button slot="activate" style="width:160px;"> 开始在线刷机 </button></esp-web-install-button >
+		  <p class="Estilo2">Wifi:PSGO_ESP32 / 密码:12345678</p>
+		  <p class="Estilo2">从设置-用户指南进入 / IP:10.1.1.1</p>
+		  <p class="Estilo2"><a href="https://psgo.lanzouj.com/ia3hL1h5edub" target="_blank" >下载Bin固件自行刷机（仅支持ESP32-S2）</a></p>
+		  <p class="Estilo2"><a href="https://psgo.lanzouj.com/impD31h5dgcf" target="_blank" >下载PC刷机工具</a> / <a href="https://psgo.lanzouj.com/iG7Do1h5bdoh" target="_blank" >下载驱动</a></p>
+		  <p class="Estilo2">2023.12.8 内测</p>
+      </div>
+    </div>   
+  </body>
+</html>
+  	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7VRDNYTJ1Y');
+</script>

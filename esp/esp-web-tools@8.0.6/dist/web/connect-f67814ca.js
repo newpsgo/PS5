@@ -760,7 +760,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
           .icon=${"🎉"}
-          label="刷机完成!"
+          label="刷机完成！"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"

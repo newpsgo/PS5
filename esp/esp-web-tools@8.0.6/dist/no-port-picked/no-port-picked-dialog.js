@@ -38,10 +38,10 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
         </div>
         <ol>
           <li>
-            确保设备已连接到这台计算机（运行显示此网站的浏览器的计算机）
+            确保ESP已连接到这台计算机（运行显示此网站的浏览器的计算机）
           </li>
           <li>
-            大多数设备在开机时都会有一个小灯。如果您有的话，请确保它已打开。
+            ESP8266自动进入刷机模式，ESP32需要同时按下两个按钮才能进入刷机模式。
           </li>
           <li>
             确保您使用的 USB 线可用于数据传输，而不是仅用于供电的线。

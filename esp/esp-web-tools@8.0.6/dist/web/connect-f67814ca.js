@@ -537,7 +537,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
       <ewt-button
         slot="primaryAction"
         dialogAction="ok"
-        label="Close"
+        label="关闭"
       ></ewt-button>
     `,!1]}_renderDashboard(){const e=this._info.name;let t;return t=N`
       <div class="table-row">
@@ -782,7 +782,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
         确定要 ${i}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
-        ${this._installErase?N`<br /><br />All data on the device will be erased.`:""}
+        ${this._installErase?N`<br /><br />ESP所有数据将会被清空。`:""}
         <ewt-button
           slot="primaryAction"
           label="Install"

@@ -114,7 +114,7 @@ export class EwtInstallDialog extends LitElement {
       <ewt-button
         slot="primaryAction"
         dialogAction="ok"
-        label="Close"
+        label="关闭"
       ></ewt-button>
     `;
         const hideActions = false;
@@ -496,7 +496,7 @@ export class EwtInstallDialog extends LitElement {
         确定要 ${action}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
         ${this._installErase
-                ? html `<br /><br />All data on the device will be erased.`
+                ? html `<br /><br />ESP所有数据将会被清空。`
                 : ""}
         <ewt-button
           slot="primaryAction"
@@ -690,7 +690,7 @@ export class EwtInstallDialog extends LitElement {
         if (this.port.readable === null || this.port.writable === null) {
             this._state = "ERROR";
             this._error =
-                "Serial port is not readable/writable. Close any other application using it and try again.";
+                "Serial port is not readable/writable. Close any other application using it and 再试一次.";
             return;
         }
         try {
@@ -728,7 +728,7 @@ export class EwtInstallDialog extends LitElement {
             if (err instanceof PortNotReady) {
                 this._state = "ERROR";
                 this._error =
-                    "Serial port is not ready. Close any other application using it and try again.";
+                    "Serial port is not ready. Close any other application using it and 再试一次.";
             }
             else {
                 this._client = null; // not supported

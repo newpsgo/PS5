@@ -734,12 +734,12 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
       </ewt-formfield>
       <ewt-button
         slot="primaryAction"
-        label="Next"
+        label="下一步"
         @click=${()=>{const e=this.shadowRoot.querySelector("ewt-checkbox");this._startInstall(e.checked)}}
       ></ewt-button>
       <ewt-button
         slot="secondaryAction"
-        label="Back"
+        label="返回"
         @click=${()=>{this._state="DASHBOARD"}}
       ></ewt-button>
     `]}_renderInstall(){let e,t,i=!1;const o=!this._installErase&&this._isSameFirmware;if(!this._installConfirmed&&this._isSameVersion)e="Erase User Data",t=N`
@@ -756,16 +756,16 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           <br />
           大概需要
           ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}.<br />
-          Keep this page visible to prevent slow down
+          停留在这个页面不要离开
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
           .icon=${"🎉"}
-          label="Installation complete!"
+          label="刷机完成!"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="Next"
-          @click=${()=>{this._state=i&&this._installErase?"PROVISION":"DASHBOARD"}}
+          label="下一步"
+          @click=${()=>{this._state="DASHBOARD"}}
         ></ewt-button>
       `}else"error"===this._installState.state&&(e="Installation failed",t=N`
         <ewt-page-message
@@ -774,10 +774,10 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="Back"
+          label="返回"
           @click=${async()=>{this._initialize(),this._state="DASHBOARD"}}
         ></ewt-button>
-      `);else e="正在刷入",t=this._renderProgress("Preparing installation"),i=!0;else{e="确认安装";const i=o?"update to":"install";t=N`
+      `);else e="正在刷入",t=this._renderProgress("Preparing installation"),i=!0;else{e="确认输入";const i=o?"update to":"install";t=N`
         ${o?N`Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
         确定要 ${i}
@@ -785,19 +785,19 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         ${this._installErase?N`<br /><br />ESP所有数据将会被清空。`:""}
         <ewt-button
           slot="primaryAction"
-          label="Install"
+          label="刷入"
           @click=${this._confirmInstall}
         ></ewt-button>
         <ewt-button
           slot="secondaryAction"
-          label="Back"
+          label="返回"
           @click=${()=>{this._state="DASHBOARD"}}
         ></ewt-button>
       `}return[e,t,i,!1]}_renderLogs(){let e;return e=N`
       <ewt-console .port=${this.port} .logger=${this.logger}></ewt-console>
       <ewt-button
         slot="primaryAction"
-        label="Back"
+        label="返回"
         @click=${async()=>{await this.shadowRoot.querySelector("ewt-console").disconnect(),this._state="DASHBOARD",this._initialize()}}
       ></ewt-button>
       <ewt-button

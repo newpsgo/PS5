@@ -450,7 +450,7 @@ export class EwtInstallDialog extends LitElement {
       </ewt-formfield>
       <ewt-button
         slot="primaryAction"
-        label="Next"
+        label="下一步"
         @click=${() => {
             const checkbox = this.shadowRoot.querySelector("ewt-checkbox");
             this._startInstall(checkbox.checked);
@@ -458,7 +458,7 @@ export class EwtInstallDialog extends LitElement {
       ></ewt-button>
       <ewt-button
         slot="secondaryAction"
-        label="Back"
+        label="返回"
         @click=${() => {
             this._state = "DASHBOARD";
         }}
@@ -486,7 +486,7 @@ export class EwtInstallDialog extends LitElement {
       `;
         }
         else if (!this._installConfirmed) {
-            heading = "确认安装";
+            heading = "确认输入";
             const action = isUpdate ? "update to" : "install";
             content = html `
         ${isUpdate
@@ -500,12 +500,12 @@ export class EwtInstallDialog extends LitElement {
                 : ""}
         <ewt-button
           slot="primaryAction"
-          label="Install"
+          label="刷入"
           @click=${this._confirmInstall}
         ></ewt-button>
         <ewt-button
           slot="secondaryAction"
-          label="Back"
+          label="返回"
           @click=${() => {
                 this._state = "DASHBOARD";
             }}
@@ -552,7 +552,7 @@ export class EwtInstallDialog extends LitElement {
           ${this._installState.chipFamily === "ESP8266"
                 ? "1分钟"
                 : "1分钟"}.<br />
-          Keep this page visible to prevent slow down
+          停留在这个页面不要离开
         `, percentage);
             hideActions = true;
         }
@@ -602,7 +602,7 @@ export class EwtInstallDialog extends LitElement {
       <ewt-console .port=${this.port} .logger=${this.logger}></ewt-console>
       <ewt-button
         slot="primaryAction"
-        label="Back"
+        label="返回"
         @click=${async () => {
             await this.shadowRoot.querySelector("ewt-console").disconnect();
             this._state = "DASHBOARD";

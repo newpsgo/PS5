@@ -63,8 +63,6 @@ import{d as e,r as t,_ as o,n as l,s as i,$ as n,y as a}from"./connect-f67814ca.
                   rel="noopener"
                   >Mac</a
                 >
-                <br />
-                (download via blue button with ${s} icon)
               </li>
               <li>
                 CH340, CH341 drivers:
@@ -80,8 +78,6 @@ import{d as e,r as t,_ as o,n as l,s as i,$ as n,y as a}from"./connect-f67814ca.
                   rel="noopener"
                   >Mac</a
                 >
-                <br />
-                (download via blue button with ${s} icon)
               </li>
             </ul>
           </li>
@@ -90,7 +86,7 @@ import{d as e,r as t,_ as o,n as l,s as i,$ as n,y as a}from"./connect-f67814ca.
               <ewt-button
                 slot="primaryAction"
                 dialogAction="close"
-                label="Try Again"
+                label="再试一次"
                 @click=${this.doTryAgain}
               ></ewt-button>
 

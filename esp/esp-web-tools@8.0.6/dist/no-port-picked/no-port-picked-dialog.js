@@ -96,7 +96,7 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
               <ewt-button
                 slot="primaryAction"
                 dialogAction="close"
-                label="Try Again"
+                label="再试一次"
                 @click=${this.doTryAgain}
               ></ewt-button>
 

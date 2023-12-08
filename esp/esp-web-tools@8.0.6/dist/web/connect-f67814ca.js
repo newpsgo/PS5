@@ -553,7 +553,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
               <div>
                 <ewt-button
                   text-left
-                  .label=${this._isSameFirmware?`Update ${this._manifest.name}`:`Install ${this._manifest.name}`}
+                  .label=${this._isSameFirmware?`Update ${this._manifest.name}`:`刷入 ${this._manifest.name}`}
                   @click=${()=>{this._isSameFirmware?this._startInstall(!1):this._manifest.new_install_prompt_erase?this._state="ASK_ERASE":this._startInstall(!0)}}
                 ></ewt-button>
               </div>
@@ -618,7 +618,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         <div>
           <ewt-button
             text-left
-            .label=${`Install ${this._manifest.name}`}
+            .label=${`刷入 ${this._manifest.name}`}
             @click=${()=>{this._manifest.new_install_prompt_erase?this._state="ASK_ERASE":this._startInstall(!0)}}
           ></ewt-button>
         </div>
@@ -726,7 +726,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
             `}
       `}return[t,e,i]}_renderAskErase(){return["Erase device",N`
       <div>
-        确定要刷入 erase the device before installing
+        确定要 erase the device before 正在刷入
         ${this._manifest.name}? All data on the device will be lost.
       </div>
       <ewt-formfield label="Erase device" class="danger">
@@ -743,7 +743,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         @click=${()=>{this._state="DASHBOARD"}}
       ></ewt-button>
     `]}_renderInstall(){let e,t,i=!1;const o=!this._installErase&&this._isSameFirmware;if(!this._installConfirmed&&this._isSameVersion)e="Erase User Data",t=N`
-        确定要刷入 reset your device and erase all user data from your
+        确定要 reset your device and erase all user data from your
         device?
         <ewt-button
           class="danger"
@@ -751,11 +751,11 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           label="Erase User Data"
           @click=${this._confirmInstall}
         ></ewt-button>
-      `;else if(this._installConfirmed)if(this._installState&&"initializing"!==this._installState.state&&"manifest"!==this._installState.state&&"preparing"!==this._installState.state)if("erasing"===this._installState.state)e="Installing",t=this._renderProgress("Erasing"),i=!0;else if("writing"===this._installState.state||"finished"===this._installState.state&&void 0===this._client){let o,n;e="Installing","finished"===this._installState.state?n="Wrapping up":this._installState.details.percentage<4?n="Installing":o=this._installState.details.percentage,t=this._renderProgress(N`
+      `;else if(this._installConfirmed)if(this._installState&&"initializing"!==this._installState.state&&"manifest"!==this._installState.state&&"preparing"!==this._installState.state)if("erasing"===this._installState.state)e="正在刷入",t=this._renderProgress("Erasing"),i=!0;else if("writing"===this._installState.state||"finished"===this._installState.state&&void 0===this._client){let o,n;e="正在刷入","finished"===this._installState.state?n="Wrapping up":this._installState.details.percentage<4?n="正在刷入":o=this._installState.details.percentage,t=this._renderProgress(N`
           ${n?N`${n}<br />`:""}
           <br />
           大概需要
-          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟s"}.<br />
+          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}.<br />
           Keep this page visible to prevent slow down
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
@@ -777,12 +777,12 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           label="Back"
           @click=${async()=>{this._initialize(),this._state="DASHBOARD"}}
         ></ewt-button>
-      `);else e="Installing",t=this._renderProgress("Preparing installation"),i=!0;else{e="Confirm Installation";const i=o?"update to":"install";t=N`
+      `);else e="正在刷入",t=this._renderProgress("Preparing installation"),i=!0;else{e="确认安装";const i=o?"update to":"install";t=N`
         ${o?N`Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
-        确定要刷入 ${i}
+        确定要 ${i}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
-        ${this._installErase?N`<br /><br />ESP上的所有数据都将被删除。`:""}
+        ${this._installErase?N`<br /><br />All data on the device will be erased.`:""}
         <ewt-button
           slot="primaryAction"
           label="Install"

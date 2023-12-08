@@ -141,7 +141,7 @@ export class EwtInstallDialog extends LitElement {
                 <ewt-button
                   text-left
                   .label=${!this._isSameFirmware
-                ? `Install ${this._manifest.name}`
+                ? `刷入 ${this._manifest.name}`
                 : `Update ${this._manifest.name}`}
                   @click=${() => {
                 if (this._isSameFirmware) {
@@ -251,7 +251,7 @@ export class EwtInstallDialog extends LitElement {
         <div>
           <ewt-button
             text-left
-            .label=${`Install ${this._manifest.name}`}
+            .label=${`刷入 ${this._manifest.name}`}
             @click=${() => {
             if (this._manifest.new_install_prompt_erase) {
                 this._state = "ASK_ERASE";
@@ -442,7 +442,7 @@ export class EwtInstallDialog extends LitElement {
         const heading = "Erase device";
         const content = html `
       <div>
-        确定要刷入 erase the device before installing
+        确定要 erase the device before 正在刷入
         ${this._manifest.name}? All data on the device will be lost.
       </div>
       <ewt-formfield label="Erase device" class="danger">
@@ -475,7 +475,7 @@ export class EwtInstallDialog extends LitElement {
         if (!this._installConfirmed && this._isSameVersion) {
             heading = "Erase User Data";
             content = html `
-        确定要刷入 reset your device and erase all user data from your
+        确定要 reset your device and erase all user data from your
         device?
         <ewt-button
           class="danger"
@@ -486,17 +486,17 @@ export class EwtInstallDialog extends LitElement {
       `;
         }
         else if (!this._installConfirmed) {
-            heading = "Confirm Installation";
+            heading = "确认安装";
             const action = isUpdate ? "update to" : "install";
             content = html `
         ${isUpdate
                 ? html `Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`
                 : ""}
-        确定要刷入 ${action}
+        确定要 ${action}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
         ${this._installErase
-                ? html `<br /><br />ESP上的所有数据都将被删除。`
+                ? html `<br /><br />All data on the device will be erased.`
                 : ""}
         <ewt-button
           slot="primaryAction"
@@ -516,12 +516,12 @@ export class EwtInstallDialog extends LitElement {
             this._installState.state === "initializing" /* FlashStateType.INITIALIZING */ ||
             this._installState.state === "manifest" /* FlashStateType.MANIFEST */ ||
             this._installState.state === "preparing" /* FlashStateType.PREPARING */) {
-            heading = "Installing";
+            heading = "正在刷入";
             content = this._renderProgress("Preparing installation");
             hideActions = true;
         }
         else if (this._installState.state === "erasing" /* FlashStateType.ERASING */) {
-            heading = "Installing";
+            heading = "正在刷入";
             content = this._renderProgress("Erasing");
             hideActions = true;
         }
@@ -530,7 +530,7 @@ export class EwtInstallDialog extends LitElement {
             // until Improv is initialized / not detected.
             (this._installState.state === "finished" /* FlashStateType.FINISHED */ &&
                 this._client === undefined)) {
-            heading = "Installing";
+            heading = "正在刷入";
             let percentage;
             let undeterminateLabel;
             if (this._installState.state === "finished" /* FlashStateType.FINISHED */) {
@@ -539,7 +539,7 @@ export class EwtInstallDialog extends LitElement {
             }
             else if (this._installState.details.percentage < 4) {
                 // We're writing the firmware under 4%, show spinner or else we don't show any pixels
-                undeterminateLabel = "Installing";
+                undeterminateLabel = "正在刷入";
             }
             else {
                 // We're writing the firmware over 4%, show progress bar
@@ -551,7 +551,7 @@ export class EwtInstallDialog extends LitElement {
           大概需要
           ${this._installState.chipFamily === "ESP8266"
                 ? "1分钟"
-                : "1分钟s"}.<br />
+                : "1分钟"}.<br />
           Keep this page visible to prevent slow down
         `, percentage);
             hideActions = true;
@@ -562,14 +562,15 @@ export class EwtInstallDialog extends LitElement {
             content = html `
         <ewt-page-message
           .icon=${OK_ICON}
-          label="Installation complete!"
+          label="输入完成!"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="Next"
+          label="关闭"
           @click=${() => {
-                this._state =
-                    supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
+                this._state = "DASHBOARD";
+				// this._state =
+                    // supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
             }}
         ></ewt-button>
       `;
@@ -583,7 +584,7 @@ export class EwtInstallDialog extends LitElement {
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="Back"
+          label="返回"
           @click=${async () => {
                 this._initialize();
                 this._state = "DASHBOARD";

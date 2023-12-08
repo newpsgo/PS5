@@ -517,7 +517,7 @@ export class EwtInstallDialog extends LitElement {
             this._installState.state === "manifest" /* FlashStateType.MANIFEST */ ||
             this._installState.state === "preparing" /* FlashStateType.PREPARING */) {
             heading = "正在刷入";
-            content = this._renderProgress("Preparing installation");
+            content = this._renderProgress("正在准备刷入...");
             hideActions = true;
         }
         else if (this._installState.state === "erasing" /* FlashStateType.ERASING */) {

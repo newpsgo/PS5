@@ -29,28 +29,33 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
         return html `
       <ewt-dialog
         open
-        heading="未选择端口"
+        heading="No port selected"
         scrimClickAction
         @closed=${this._handleClose}
       >
         <div>
-          如果您因为没有看到列出的设备而未选择端口，请尝试以下步骤：
+          If you didn't select a port because you didn't see your device listed,
+          try the following steps:
         </div>
         <ol>
           <li>
-            确保设备已连接到这台计算机（运行显示此网站的浏览器的计算机）
+            Make sure that the device is connected to this computer (the one
+            that runs the browser that shows this website)
           </li>
           <li>
-            大多数设备在开机时都会有一个小灯。如果您有的话，请确保它已打开。
+            Most devices have a tiny light when it is powered on. If yours has
+            one, make sure it is on.
           </li>
           <li>
-            确保您使用的 USB 电缆可用于数据传输，而不是仅用于供电的电缆。
+            Make sure that the USB cable you use can be used for data and is not
+            a power-only cable.
           </li>
           <li>
-            确保您安装了正确的驱动程序。以下是ESP设备中常用芯片的驱动程序：
+            Make sure you have the right drivers installed. Below are the
+            drivers for common chips used in ESP devices:
             <ul>
               <li>
-                ESP32 CP2102 驱动:
+                CP2102 drivers:
                 <a
                   href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers"
                   target="_blank"
@@ -59,7 +64,7 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
                 >
               </li>
               <li>
-                ESP8266 CH342, CH343, CH9102 驱动:
+                CH342, CH343, CH9102 drivers:
                 <a
                   href="https://www.wch.cn/downloads/CH343SER_ZIP.html"
                   target="_blank"
@@ -72,6 +77,8 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
                   rel="noopener"
                   >Mac</a
                 >
+                <br />
+                (download via blue button with ${cloudDownload} icon)
               </li>
               <li>
                 CH340, CH341 drivers:
@@ -87,6 +94,8 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
                   rel="noopener"
                   >Mac</a
                 >
+                <br />
+                (download via blue button with ${cloudDownload} icon)
               </li>
             </ul>
           </li>
@@ -96,7 +105,7 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
               <ewt-button
                 slot="primaryAction"
                 dialogAction="close"
-                label="再试一次"
+                label="Try Again"
                 @click=${this.doTryAgain}
               ></ewt-button>
 
@@ -104,14 +113,14 @@ let EwtNoPortPickedDialog = class EwtNoPortPickedDialog extends LitElement {
                 no-attention
                 slot="secondaryAction"
                 dialogAction="close"
-                label="取消"
+                label="Cancel"
               ></ewt-button>
             `
             : html `
               <ewt-button
                 slot="primaryAction"
                 dialogAction="close"
-                label="关闭"
+                label="Close"
               ></ewt-button>
             `}
       </ewt-dialog>

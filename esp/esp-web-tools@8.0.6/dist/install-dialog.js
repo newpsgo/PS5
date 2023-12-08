@@ -200,7 +200,7 @@ export class EwtInstallDialog extends LitElement {
         </div>
         <div>
           <ewt-button
-            label="Logs & Console"
+            label="查看日志"
             @click=${async () => {
             const client = this._client;
             if (client) {
@@ -251,7 +251,7 @@ export class EwtInstallDialog extends LitElement {
         <div>
           <ewt-button
             text-left
-            .label=${`刷入 ${this._manifest.name}`}
+            .label=${`Install ${this._manifest.name}`}
             @click=${() => {
             if (this._manifest.new_install_prompt_erase) {
                 this._state = "ASK_ERASE";
@@ -442,7 +442,7 @@ export class EwtInstallDialog extends LitElement {
         const heading = "Erase device";
         const content = html `
       <div>
-        Do you want to erase the device before installing
+        确定要刷入 erase the device before installing
         ${this._manifest.name}? All data on the device will be lost.
       </div>
       <ewt-formfield label="Erase device" class="danger">
@@ -475,7 +475,7 @@ export class EwtInstallDialog extends LitElement {
         if (!this._installConfirmed && this._isSameVersion) {
             heading = "Erase User Data";
             content = html `
-        Do you want to reset your device and erase all user data from your
+        确定要刷入 reset your device and erase all user data from your
         device?
         <ewt-button
           class="danger"
@@ -500,12 +500,12 @@ export class EwtInstallDialog extends LitElement {
                 : ""}
         <ewt-button
           slot="primaryAction"
-          label="确定"
+          label="Install"
           @click=${this._confirmInstall}
         ></ewt-button>
         <ewt-button
           slot="secondaryAction"
-          label="取消"
+          label="Back"
           @click=${() => {
                 this._state = "DASHBOARD";
             }}
@@ -551,7 +551,7 @@ export class EwtInstallDialog extends LitElement {
           大概需要
           ${this._installState.chipFamily === "ESP8266"
                 ? "1分钟"
-                : "1分钟"}.<br />
+                : "1分钟s"}.<br />
           Keep this page visible to prevent slow down
         `, percentage);
             hideActions = true;
@@ -562,15 +562,14 @@ export class EwtInstallDialog extends LitElement {
             content = html `
         <ewt-page-message
           .icon=${OK_ICON}
-          label="刷入完成!"
+          label="Installation complete!"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="关闭"
+          label="Next"
           @click=${() => {
-                this._state = "DASHBOARD";
-				// this._state =
-                    // supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
+                this._state =
+                    supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
             }}
         ></ewt-button>
       `;

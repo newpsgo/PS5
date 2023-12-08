@@ -512,7 +512,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
   a.button {
     text-decoration: none;
   }
-`;class Id extends ge{constructor(){super(...arguments),this.logger=console,this._state="DASHBOARD",this._installErase=!1,this._installConfirmed=!1,this._provisionForce=!1,this._wasProvisioned=!1,this._busy=!1,this._selectedSsid=-1,this._handleDisconnect=()=>{this._state="ERROR",this._error="Disconnected"}}render(){if(!this.port)return N``;let e,t,i=!1,o=!1;return void 0===this._client&&"INSTALL"!==this._state&&"LOGS"!==this._state?this._error?[e,t,i]=this._renderError(this._error):(t=this._renderProgress("Connecting"),i=!0):"INSTALL"===this._state?[e,t,i,o]=this._renderInstall():"ASK_ERASE"===this._state?[e,t]=this._renderAskErase():"ERROR"===this._state?[e,t,i]=this._renderError(this._error):"DASHBOARD"===this._state?[e,t,i,o]=this._client?this._renderDashboard():this._renderDashboardNoImprov():"PROVISION"===this._state?[e,t,i]=this._renderProvision():"LOGS"===this._state&&([e,t,i]=this._renderLogs()),N`
+`;class Id extends ge{constructor(){super(...arguments),this.logger=console,this._state="DASHBOARD",this._installErase=!1,this._installConfirmed=!1,this._provisionForce=!1,this._wasProvisioned=!1,this._busy=!1,this._selectedSsid=-1,this._handleDisconnect=()=>{this._state="ERROR",this._error="Disconnected"}}render(){if(!this.port)return N``;let e,t,i=!1,o=!1;return void 0===this._client&&"INSTALL"!==this._state&&"LOGS"!==this._state?this._error?[e,t,i]=this._renderError(this._error):(t=this._renderProgress("正在连接ESP..."),i=!0):"INSTALL"===this._state?[e,t,i,o]=this._renderInstall():"ASK_ERASE"===this._state?[e,t]=this._renderAskErase():"ERROR"===this._state?[e,t,i]=this._renderError(this._error):"DASHBOARD"===this._state?[e,t,i,o]=this._client?this._renderDashboard():this._renderDashboardNoImprov():"PROVISION"===this._state?[e,t,i]=this._renderProvision():"LOGS"===this._state&&([e,t,i]=this._renderLogs()),N`
       <ewt-dialog
         open
         .heading=${e}
@@ -588,7 +588,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         </div>
         <div>
           <ewt-button
-            label="Logs & Console"
+            label="查看日志"
             @click=${async()=>{const e=this._client;e&&(await this._closeClientWithoutEvents(e),await bt(100)),this._client=void 0,this._state="LOGS"}}
           ></ewt-button>
         </div>
@@ -618,19 +618,19 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         <div>
           <ewt-button
             text-left
-            .label=${`刷入 ${this._manifest.name}`}
+            .label=${`Install ${this._manifest.name}`}
             @click=${()=>{this._manifest.new_install_prompt_erase?this._state="ASK_ERASE":this._startInstall(!0)}}
           ></ewt-button>
         </div>
 
         <div>
           <ewt-button
-            label="Logs & Console"
+            label="查看日志"
             @click=${async()=>{this._client=void 0,this._state="LOGS"}}
           ></ewt-button>
         </div>
       </div>
-    `,["Device Dashboard",e,!0,!0]}_renderProvision(){let e,t="Configure Wi-Fi",i=!1;if(this._busy)return[t,this._renderProgress(void 0===this._ssids?"Scanning for networks":"Trying to connect"),!0];if(this._provisionForce||this._client.state!==mn.PROVISIONED){let t;switch(this._client.error){case 3:t="Unable to connect";break;case 0:case 2:break;default:t=`Unknown error (${this._client.error})`}e=N`
+    `,["准备刷机",e,!0,!0]}_renderProvision(){let e,t="Configure Wi-Fi",i=!1;if(this._busy)return[t,this._renderProgress(void 0===this._ssids?"Scanning for networks":"Trying to connect"),!0];if(this._provisionForce||this._client.state!==mn.PROVISIONED){let t;switch(this._client.error){case 3:t="Unable to connect";break;case 0:case 2:break;default:t=`Unknown error (${this._client.error})`}e=N`
         <div>
           Enter the credentials of the Wi-Fi network that you want your device
           to connect to.
@@ -726,7 +726,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
             `}
       `}return[t,e,i]}_renderAskErase(){return["Erase device",N`
       <div>
-        Do you want to erase the device before installing
+        确定要刷入 erase the device before installing
         ${this._manifest.name}? All data on the device will be lost.
       </div>
       <ewt-formfield label="Erase device" class="danger">
@@ -743,7 +743,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         @click=${()=>{this._state="DASHBOARD"}}
       ></ewt-button>
     `]}_renderInstall(){let e,t,i=!1;const o=!this._installErase&&this._isSameFirmware;if(!this._installConfirmed&&this._isSameVersion)e="Erase User Data",t=N`
-        Do you want to reset your device and erase all user data from your
+        确定要刷入 reset your device and erase all user data from your
         device?
         <ewt-button
           class="danger"
@@ -754,8 +754,8 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
       `;else if(this._installConfirmed)if(this._installState&&"initializing"!==this._installState.state&&"manifest"!==this._installState.state&&"preparing"!==this._installState.state)if("erasing"===this._installState.state)e="Installing",t=this._renderProgress("Erasing"),i=!0;else if("writing"===this._installState.state||"finished"===this._installState.state&&void 0===this._client){let o,n;e="Installing","finished"===this._installState.state?n="Wrapping up":this._installState.details.percentage<4?n="Installing":o=this._installState.details.percentage,t=this._renderProgress(N`
           ${n?N`${n}<br />`:""}
           <br />
-          This will take
-          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}.<br />
+          大概需要
+          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟s"}.<br />
           Keep this page visible to prevent slow down
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
@@ -782,7 +782,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
         确定要刷入 ${i}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
-        ${this._installErase?N`<br /><br />ESP数据将会被删除`:""}
+        ${this._installErase?N`<br /><br />ESP上的所有数据都将被删除。`:""}
         <ewt-button
           slot="primaryAction"
           label="Install"

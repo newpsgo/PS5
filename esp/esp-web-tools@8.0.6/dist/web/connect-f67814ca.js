@@ -755,7 +755,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           ${n?N`${n}<br />`:""}
           <br />
           大概需要
-          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}.<br />
+          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}<br />
           停留在这个页面不要离开
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
@@ -764,7 +764,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="下一步"
+          label=""
           @click=${()=>{this._state="DASHBOARD"}}
         ></ewt-button>
       `}else"error"===this._installState.state&&(e="Installation failed",t=N`
@@ -777,12 +777,12 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           label="返回"
           @click=${async()=>{this._initialize(),this._state="DASHBOARD"}}
         ></ewt-button>
-      `);else e="正在刷入",t=this._renderProgress("Preparing installation"),i=!0;else{e="确认输入";const i=o?"update to":"install";t=N`
+      `);else e="正在刷入",t=this._renderProgress("Preparing installation"),i=!0;else{e="确认刷入";const i=o?"update to":"install";t=N`
         ${o?N`Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
-        确定要 ${i}
+        确定要刷入固件
         ${this._manifest.name}&nbsp;${this._manifest.version}?
-        ${this._installErase?N`<br /><br />ESP所有数据将会被清空。`:""}
+        ${this._installErase?N`<br /><br />ESP之前的固件将会被覆盖！`:""}
         <ewt-button
           slot="primaryAction"
           label="刷入"

@@ -486,7 +486,7 @@ export class EwtInstallDialog extends LitElement {
       `;
         }
         else if (!this._installConfirmed) {
-            heading = "确认输入";
+            heading = "确认刷入";
             const action = isUpdate ? "update to" : "install";
             content = html `
         ${isUpdate
@@ -496,7 +496,7 @@ export class EwtInstallDialog extends LitElement {
         确定要 ${action}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
         ${this._installErase
-                ? html `<br /><br />ESP所有数据将会被清空。`
+                ? html `<br /><br />ESP之前的固件将会被覆盖！`
                 : ""}
         <ewt-button
           slot="primaryAction"
@@ -551,7 +551,7 @@ export class EwtInstallDialog extends LitElement {
           大概需要
           ${this._installState.chipFamily === "ESP8266"
                 ? "1分钟"
-                : "1分钟"}.<br />
+                : "1分钟"}<br />
           停留在这个页面不要离开
         `, percentage);
             hideActions = true;
@@ -562,7 +562,7 @@ export class EwtInstallDialog extends LitElement {
             content = html `
         <ewt-page-message
           .icon=${OK_ICON}
-          label="输入完成!"
+          label="刷入完成!"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"

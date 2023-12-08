@@ -4,7 +4,7 @@
   "home_assistant_domain": "esphome",
   "builds": [
     {
-      "chipFamily": "ESP32-S2",
+      "chipFamily": "ESP8266",
       "parts": [{ "path": "PSGO-PS5-ESP32S2-20231208.bin", "offset": 0 }]
     }
   ]

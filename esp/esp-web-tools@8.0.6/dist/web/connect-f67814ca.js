@@ -755,7 +755,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
           ${n?N`${n}<br />`:""}
           <br />
           This will take
-          ${"ESP8266"===this._installState.chipFamily?"a minute":"2 minutes"}.<br />
+          ${"ESP8266"===this._installState.chipFamily?"1分钟":"1分钟"}.<br />
           Keep this page visible to prevent slow down
         `,o),i=!0}else if("finished"===this._installState.state){e=void 0;const i=null!==this._client;t=N`
         <ewt-page-message
@@ -780,9 +780,9 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
       `);else e="Installing",t=this._renderProgress("Preparing installation"),i=!0;else{e="Confirm Installation";const i=o?"update to":"install";t=N`
         ${o?N`Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`:""}
-        Do you want to ${i}
+        确定要刷入 ${i}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
-        ${this._installErase?N`<br /><br />All data on the device will be erased.`:""}
+        ${this._installErase?N`<br /><br />ESP数据将会被删除`:""}
         <ewt-button
           slot="primaryAction"
           label="Install"

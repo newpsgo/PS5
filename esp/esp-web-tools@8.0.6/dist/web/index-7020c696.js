@@ -20,7 +20,7 @@ import{d as e,r as t,_ as o,n as l,s as i,$ as n,y as a}from"./connect-f67814ca.
 `;let r=class extends i{render(){return n`
       <ewt-dialog
         open
-        heading="No port selected"
+        heading="未检测到端口"
         scrimClickAction
         @closed=${this._handleClose}
       >

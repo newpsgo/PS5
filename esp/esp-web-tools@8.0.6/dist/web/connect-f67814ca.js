@@ -618,7 +618,7 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         <div>
           <ewt-button
             text-left
-            .label=${`Install ${this._manifest.name}`}
+            .label=${`刷入 ${this._manifest.name}`}
             @click=${()=>{this._manifest.new_install_prompt_erase?this._state="ASK_ERASE":this._startInstall(!0)}}
           ></ewt-button>
         </div>

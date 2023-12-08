@@ -1,11 +1,11 @@
 {
-  "name": "PSGO ESP32-S2",
-  "version": "v1",
+  "name": "PSGO-PS5 ESP32-S2",
+  "version": "2023.12.8",
   "home_assistant_domain": "esphome",
   "builds": [
     {
       "chipFamily": "ESP32-S2",
-      "parts": [{ "path": "ESP32S2.bin", "offset": 0 }]
+      "parts": [{ "path": "PSGO-PS5-ESP32S2-20231208.bin", "offset": 0 }]
     }
   ]
 }

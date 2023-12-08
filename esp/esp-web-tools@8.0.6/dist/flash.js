@@ -76,7 +76,7 @@ export const flash = async (onEvent, port, logger, manifestPath, eraseFirst) => 
     }
     fireStateEvent({
         state: "preparing" /* FlashStateType.PREPARING */,
-        message: "Preparing installation...",
+        message: "正在准备刷入......",
         details: { done: false },
     });
     const filePromises = build.parts.map(async (part) => {

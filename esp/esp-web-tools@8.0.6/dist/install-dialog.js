@@ -56,7 +56,7 @@ export class EwtInstallDialog extends LitElement {
                 [heading, content, hideActions] = this._renderError(this._error);
             }
             else {
-                content = this._renderProgress("Connecting");
+                content = this._renderProgress("正在连接ESP...");
                 hideActions = true;
             }
         }
@@ -242,7 +242,7 @@ export class EwtInstallDialog extends LitElement {
         return [heading, content, hideActions, allowClosing];
     }
     _renderDashboardNoImprov() {
-        const heading = "Device Dashboard";
+        const heading = "准备刷机";
         let content;
         let hideActions = true;
         let allowClosing = true;
@@ -251,7 +251,7 @@ export class EwtInstallDialog extends LitElement {
         <div>
           <ewt-button
             text-left
-            .label=${`Install ${this._manifest.name}`}
+            .label=${`刷入 ${this._manifest.name}`}
             @click=${() => {
             if (this._manifest.new_install_prompt_erase) {
                 this._state = "ASK_ERASE";
@@ -266,7 +266,7 @@ export class EwtInstallDialog extends LitElement {
 
         <div>
           <ewt-button
-            label="Logs & Console"
+            label="查看日志"
             @click=${async () => {
             // Also set `null` back to undefined.
             this._client = undefined;
@@ -493,19 +493,19 @@ export class EwtInstallDialog extends LitElement {
                 ? html `Your device is running
               ${this._info.firmware}&nbsp;${this._info.version}.<br /><br />`
                 : ""}
-        Do you want to ${action}
+        确定要刷入 ${action}
         ${this._manifest.name}&nbsp;${this._manifest.version}?
         ${this._installErase
-                ? html `<br /><br />All data on the device will be erased.`
+                ? html `<br /><br />ESP上的所有数据都将被删除。`
                 : ""}
         <ewt-button
           slot="primaryAction"
-          label="Install"
+          label="确定"
           @click=${this._confirmInstall}
         ></ewt-button>
         <ewt-button
           slot="secondaryAction"
-          label="Back"
+          label="取消"
           @click=${() => {
                 this._state = "DASHBOARD";
             }}
@@ -548,10 +548,10 @@ export class EwtInstallDialog extends LitElement {
             content = this._renderProgress(html `
           ${undeterminateLabel ? html `${undeterminateLabel}<br />` : ""}
           <br />
-          This will take
+          大概需要
           ${this._installState.chipFamily === "ESP8266"
-                ? "a minute"
-                : "2 minutes"}.<br />
+                ? "1分钟"
+                : "1分钟"}.<br />
           Keep this page visible to prevent slow down
         `, percentage);
             hideActions = true;
@@ -562,14 +562,15 @@ export class EwtInstallDialog extends LitElement {
             content = html `
         <ewt-page-message
           .icon=${OK_ICON}
-          label="Installation complete!"
+          label="刷入完成!"
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label="Next"
+          label="关闭"
           @click=${() => {
-                this._state =
-                    supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
+                this._state = "DASHBOARD";
+				// this._state =
+                    // supportsImprov && this._installErase ? "PROVISION" : "DASHBOARD";
             }}
         ></ewt-button>
       `;

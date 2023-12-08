@@ -764,8 +764,8 @@ var e=function(t,i){return(e=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
         ></ewt-page-message>
         <ewt-button
           slot="primaryAction"
-          label=""
-          @click=${()=>{this._state="DASHBOARD"}}
+          label="关闭"
+          @click=${()=>{document.location.href = "index.html";}}
         ></ewt-button>
       `}else"error"===this._installState.state&&(e="Installation failed",t=N`
         <ewt-page-message

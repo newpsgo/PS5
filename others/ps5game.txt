@@ -6,7 +6,7 @@ PS5 GAMES 提取整理by BedroZen（资源均来自网络和网友，与PSGO无�
 1.1fichier网盘，有条件的同学自行下载或等待他人的百度网盘
 2.下载后解压，使用FTP插件和工具，将文件夹传入/data/（本机自带硬盘）或/mnt/ext1/data/（内置扩展硬盘）
 3.更新一键折腾PKG或全自动折腾PKG或Windows离线版  v1226版本缓存，注入etaHEN v1.2b
-4.下载、安装和启动itemzflow（暂未发布），然后启动PS5游戏
+4.下载、安装和启动itemzflow，然后启动PS5游戏
 
 对马岛之魂
 Ghost of Tsushima PS5 Dump v2.017.000.rar

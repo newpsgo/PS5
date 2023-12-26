@@ -1,24 +1,24 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN 原版（推荐 / 仅解锁运行PS4）',
-            description: '点击或按下手柄L2键！解锁运行游戏！！！支持 4.03、4.5X',
+            displayTitle: 'HEN 原版（推荐）',
+            description: '点击或按下手柄L2键！解锁运行游戏！！！支持 4.03、4.50、4.51',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.2'
         },
 		{
-            displayTitle: 'etaHEN 多合一版 v1.2b（解锁运行PS5/PS4）',
-            description: '点击或按下手柄R2键！支持itemzFlow、FTP、HB、金手指等，支持 4.03、4.5X',
-            fileName: 'etaHEN.bin',
+            displayTitle: 'etaHEN v1.1b（即将支持运行PS5PKG）',
+            description: '点击或按下手柄R2键！解锁运行游戏 + HB商店等，支持 4.03、4.50、4.51',
+            fileName: 'etaHEN-1.1b.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.2'
+            version: '1.1'
         },
 		{
             displayTitle: 'PS5debug（支持金手指）',
-            description: '配合MultiTrainer II电脑客户端或内存调试工具',
+            description: '配合MultiTrainer II PC客户端或内存调试工具',
             fileName: 'ps5debug.elf',
             author: 'SiSTR0, ctn123',
             source: 'https://github.com/GoldHEN/ps5debug',
@@ -26,15 +26,15 @@ const payload_map =
         },
 		{
             displayTitle: 'FTP远程文件管理',
-            description: '端口号1337，后台持续运行，配合FileZilla电脑客户端',
+            description: '端口号1337，后台持续运行，配合FileZilla PC客户端',
             fileName: 'ftps5-p.elf',
             author: 'SiSTR0, zecoxao, EchoStretch',
             source:'https://github.com/EchoStretch/FTPS5/releases',
             version: '1.4'
         },
 		{
-            displayTitle: 'elf插件加载器（会导致断电）',
-            description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
+            displayTitle: 'elf插件加载器（高频断电）',
+            description: '端口号9021，后台持续运行，配合NetCat或安卓推送客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
@@ -82,7 +82,7 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.138 运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.137 运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',

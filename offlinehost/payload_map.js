@@ -2,7 +2,7 @@ const payload_map =
     [
         {
             displayTitle: 'HEN 原版（推荐 / 仅解锁运行PS4）',
-            description: '点击或按下手柄L2键！解锁运行游戏！！！支持 4.03、4.5X',
+            description: '解锁运行游戏！！！支持 4.03、4.5X',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
@@ -10,7 +10,7 @@ const payload_map =
         },
 		{
             displayTitle: 'etaHEN 多合一版 v1.2b（解锁运行PS5/PS4）',
-            description: '点击或按下手柄R2键！支持itemzFlow、FTP、HB、金手指等，支持 4.03、4.5X',
+            description: '支持itemzFlow、FTP、HB、金手指等，支持 4.03、4.5X',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',

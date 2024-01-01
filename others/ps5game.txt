@@ -2,7 +2,7 @@ PS5 GAMES 提取整理by BedroZen（资源均来自网络和网友，与PSGO无�
 
 1.1更新 - https://ps5.psgo.eu.org/pc.html
 
-说明：
+运行PS5操作说明：
 一、FTP传输方法
 1.1fichier网盘，有条件的同学自行下载或等待他人的转存网盘
 2.下载资源后解压（最外面只有一层文件夹命名为字母数字，最好用“游戏字母全拼+游戏ID”区分），使用FTP插件和工具，将文件夹传入/data/（本机自带硬盘）或/mnt/ext1/data/（内置扩展硬盘）；也可以使用USB设备拷贝，先挂载到移动设备mnt/usb0/游戏文件夹，然后在itemzflow中选中当前挂载的目录，然后在点击“I/O options”选择“move”，然后移动到/data/里
@@ -127,4 +127,5 @@ Grand Theft Auto Vice City - The Definitive Edition PS5 Dump v1.003.rar
 https://1fichier.com/?hn8j10ngz85nx8acpbj6
 
 
-原链接:https://pastebin.com/raw/NgkQzQQu
+原链接:
+https://pastebin.com/raw/NgkQzQQu

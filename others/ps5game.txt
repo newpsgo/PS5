@@ -1,10 +1,10 @@
 PS5 GAMES 提取整理by BedroZen（资源均来自网络和网友，与PSGO无关）
 
-12.30更新 - https://ps5.psgo.eu.org/pc.html
+1.1更新 - https://ps5.psgo.eu.org/pc.html
 
 说明：
 一、FTP传输方法
-1.1fichier网盘，有条件的同学自行下载或等待他人的百度网盘
+1.1fichier网盘，有条件的同学自行下载或等待他人的转存网盘
 2.下载资源后解压（最外面只有一层文件夹命名为字母数字，最好用“游戏字母全拼+游戏ID”区分），使用FTP插件和工具，将文件夹传入/data/（本机自带硬盘）或/mnt/ext1/data/（内置扩展硬盘）；也可以使用USB设备拷贝，先挂载到移动设备mnt/usb0/游戏文件夹，然后在itemzflow中选中当前挂载的目录，然后在点击“I/O options”选择“move”，然后移动到/data/里
 3.使用一键折腾PKG或Windows离线版  最新版本缓存，注入etaHEN v1.2b（注意：如果频繁遇到异常，使用清缓存插件清除后重新缓存，etaHEN作者只提到清缓存并未说明原因）
 4.下载、安装和启动PS5专用的itemzflow，然后启动PS5 App，选择“Change App Path”挂载游戏目录，然后点击“launch”启动游戏
@@ -20,31 +20,53 @@ PS5 GAMES 提取整理by BedroZen（资源均来自网络和网友，与PSGO无�
 当前etahen和itemzflow稳定性欠佳，不要在折腾环境下频繁切换ps5设置中的网络开关，也不要在联网的状态下待机，否则会出现黑屏、假死等现象，记住待机前一定要关闭PS5的网络开关和关闭正在运行的游戏！
 
 
+PS5游戏测试结果列表:
+https://ps5.psgo.eu.org/ps5game.html
 
-对马岛之魂
+
+下载地址:
+LEGO Star Wars The Skywalker Saga PS5 Dump v1.000.rar
+https://1fichier.com/?dvmfv9y1hfwueltot7vu
+
+
+Tony Hawks Pro Skater 1+2 PS5 Dump v1.000.rar
+https://1fichier.com/?b1m4v316dwlaflald3mr
+
+
+Farming Simulator 22 PS5 Dump v1.000.rar
+(Only works on USB, crashes on internal/m.2)
+https://1fichier.com/?f8bbv4pfb90yuo0pywut 	
+
+
+Balan Wonderworld PS5 Dump v1.002.rar
+https://1fichier.com/?78kfwiggd7xcluuzoq51 	
+
+
+Werewolf The Apocalypse - Earthblood PS5 Dump v1.000.rar
+https://1fichier.com/?mp8b7o250f67ehjqase3 	
+
+--------------------------------
+
 Ghost of Tsushima PS5 Dump v2.017.000.rar
 https://1fichier.com/?qmb595y67a7t4kwuf1ed
 
 
-喋血复仇
-Back 4 Blood PS5 Dump v1.000.006.rar
-https://1fichier.com/?sh95qm34kkj271e0euyw
-(Use the Fix files for now until a new archive is made, just replace them in your game folder)
+Back 4 Blood PS5 Dump v1.000.006.rar (Fixed)
+https://1fichier.com/?wt2x0b9v9ajrn1a4u5dr
+(Use the Fix files if you downloaded B4B before the archive was fixed)
 Back 4 Blood PS5 FIX.rar
 https://1fichier.com/?gu04aw8pebcqbgi8p5r7
 
 
-小小大星球麻布仔
-Little Big Planet Sackboy PS5 Dump v01.014.000.rar
+Little Big Planet Sackboy - A Big Adventure PS5 Dump v01.014.000.rar
 https://1fichier.com/?oldrwx63ldktzcthf64n
 
 
-漫威银河护卫队
 Marvel's Guardians of the Galaxy PS5 Dump v1.005.rar
+(Be sure to remove the ' in Marvel's to rename it to Marvels to fix *changing dir* issue)
 https://1fichier.com/?vopgipv9jiktj6k0lzr2
 
 
-星球大战绝地 陨落的武士团
 STAR WARS Jedi Fallen Order PS5 Dump v1.003.rar
 https://1fichier.com/?6lnlt3tpjgx20s203le3
 
@@ -53,66 +75,56 @@ WWE 2K22 PS5 Dump v1.005.rar
 https://1fichier.com/?98hixnt35vqdn7023qpr
 
 
-天堂的陌生人 最终幻想起源
 STRANGER OF PARADISE FINAL FANTASY ORIGIN PS5 Dump v1.001.rar
 https://1fichier.com/?p2zif4umh8yxehektv5o
 
 
-师父
 Sifu PS5 Dump v1.006.rar
 https://1fichier.com/?maeurj90jro34413111m
 
 
-心灵杀手
-Alan Wake Remastered PS5 Dump v1.000.003.rar
-https://1fichier.com/?pd4scxv25erwigcxyen1
+Alan Wake Remastered PS5 Dump v1.000.003.rar (Fixed)
+https://1fichier.com/?zvttmciry7e46jkwpyve
 
 
-幽灵线 东京
 Ghostwire Tokyo PS5 Dump v1.001.rar
 https://1fichier.com/?xrbw8m09irg9rtptm99n
 
 
-无路之旅
 The Pathless PS5 Dump v2.000.rar
 https://1fichier.com/?pqakdcy64is8tqywb4bz
 
 
-罪恶装备 斗争
 Guilty Gear Strive PS5 Dump v1.014.rar
 https://1fichier.com/?as5bq49k55hzcrbkiwgg
 
 
-破晓传说
 Tales of Arise PS5 Dump v01.000.004.rar
 https://1fichier.com/?8ft1wltylmk454nepwuw
 
 
-奇异人生
 Life is Strange True Colors PS5 Dump v1.008.rar
 https://1fichier.com/?aj8mg5cn735872pwegt2
 
 
-无尽轮回
 Persistence PS5 Dump v1.200.rar
 https://1fichier.com/?kj96g5cs8avs8v8b6plm
 
 
-柯娜 精神之桥
 Kena PS5 Dump v1.016.rar
 https://1fichier.com/?gd0pjp4y4cimhvyxeuuy
 
 
-侠盗猎车手3
-Grand Theft Auto III - The Definitive Edition PS5 Dump v1.003.rar
-https://1fichier.com/?6twk94gh5fnlpz2o534y
+Grand Theft Auto III - The Definitive Edition PS5 Dump v1.003.rar (Fixed)
+https://1fichier.com/?i63311cay2q51vg7puo6
 
 
-侠盗猎车 圣安地列斯
 Grand Theft Auto San Andreas - The Definitive Edition PS5 Dump v1.003.rar
 https://1fichier.com/?bwck4msvet8j63wkkmbm
 
 
-侠盗猎车手 罪恶都市
 Grand Theft Auto Vice City - The Definitive Edition PS5 Dump v1.003.rar
 https://1fichier.com/?hn8j10ngz85nx8acpbj6
+
+
+原链接:https://pastebin.com/raw/NgkQzQQu

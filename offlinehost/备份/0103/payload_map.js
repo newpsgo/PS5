@@ -9,12 +9,12 @@ const payload_map =
             version: '1.3'
         },
 		{
-            displayTitle: 'etaHEN v1.3测试版（解锁运行PS5/PS4）',
-            description: '支持itemzFlow，支持 3.00、3.2X、4.03、4.5X',
+            displayTitle: 'etaHEN v1.2测试版（解锁运行PS5/PS4）',
+            description: '支持itemzFlow、FTP、HB、金手指等，支持 4.03、4.5X',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.3b'
+            version: '1.2b'
         },
 		{
             displayTitle: 'PS5debug（支持金手指）',

@@ -24,108 +24,123 @@ PS5游戏测试结果列表:
 https://ps5.psgo.eu.org/ps5game.html
 
 
-资源下载地址:
-LEGO Star Wars The Skywalker Saga PS5 Dump v1.000.rar
-https://1fichier.com/?dvmfv9y1hfwueltot7vu
+Base64工具（把游戏名字下面的字符串单独拷贝进去点解密转换成正常下载链接）:
+https://psgo.eu.org/base64.html
 
 
-Tony Hawks Pro Skater 1+2 PS5 Dump v1.000.rar
-https://1fichier.com/?b1m4v316dwlaflald3mr
-
-
-Farming Simulator 22 PS5 Dump v1.000.rar
-(Only works on USB, crashes on internal/m.2)
-https://1fichier.com/?f8bbv4pfb90yuo0pywut 	
-
-
-Balan Wonderworld PS5 Dump v1.002.rar
-https://1fichier.com/?78kfwiggd7xcluuzoq51 	
-
-
-Werewolf The Apocalypse - Earthblood PS5 Dump v1.000.rar
-https://1fichier.com/?mp8b7o250f67ehjqase3 	
-
-------------------------------------------
-
+资源下载地址（需要国际网络）:
+ 
 Ghost of Tsushima PS5 Dump v2.017.000.rar
-https://1fichier.com/?qmb595y67a7t4kwuf1ed
+aHR0cHM6Ly8xZmljaGllci5jb20vP3FtYjU5NXk2N2E3dDRrd3VmMWVk
  
  
 Back 4 Blood PS5 Dump v1.000.006.rar (Fixed)
-https://1fichier.com/?wt2x0b9v9ajrn1a4u5dr
+aHR0cHM6Ly8xZmljaGllci5jb20vP3d0MngwYjl2OWFqcm4xYTR1NWRy
 (Use the Fix files if you downloaded B4B before the archive was fixed)
 Back 4 Blood PS5 FIX.rar
-https://1fichier.com/?gu04aw8pebcqbgi8p5r7
+aHR0cHM6Ly8xZmljaGllci5jb20vP2d1MDRhdzhwZWJjcWJnaThwNXI3
  
  
 Little Big Planet Sackboy - A Big Adventure PS5 Dump v01.014.000.rar
-https://1fichier.com/?oldrwx63ldktzcthf64n
+aHR0cHM6Ly8xZmljaGllci5jb20vP29sZHJ3eDYzbGRrdHpjdGhmNjRu
  
  
 Marvel's Guardians of the Galaxy PS5 Dump v1.005.rar
-(Be sure to remove the ' in Marvel's to rename it to Marvels to fix *changing dir* issue)
-https://1fichier.com/?vopgipv9jiktj6k0lzr2
+(Be sure to remove the ' in Marvel's and rename it to Marvels to fix *changing dir* issue)
+aHR0cHM6Ly8xZmljaGllci5jb20vP3ZvcGdpcHY5amlrdGo2azBsenIy
  
  
 STAR WARS Jedi Fallen Order PS5 Dump v1.003.rar
-https://1fichier.com/?6lnlt3tpjgx20s203le3
+aHR0cHM6Ly8xZmljaGllci5jb20vPzZsbmx0M3Rwamd4MjBzMjAzbGUz
  
  
 WWE 2K22 PS5 Dump v1.005.rar
-https://1fichier.com/?98hixnt35vqdn7023qpr
+aHR0cHM6Ly8xZmljaGllci5jb20vPzk4aGl4bnQzNXZxZG43MDIzcXBy
  
  
 STRANGER OF PARADISE FINAL FANTASY ORIGIN PS5 Dump v1.001.rar
-https://1fichier.com/?p2zif4umh8yxehektv5o
+aHR0cHM6Ly8xZmljaGllci5jb20vP3AyemlmNHVtaDh5eGVoZWt0djVv
  
  
 Sifu PS5 Dump v1.006.rar
-https://1fichier.com/?maeurj90jro34413111m
+aHR0cHM6Ly8xZmljaGllci5jb20vP21hZXVyajkwanJvMzQ0MTMxMTFt
  
  
 Alan Wake Remastered PS5 Dump v1.000.003.rar (Fixed)
-https://1fichier.com/?zvttmciry7e46jkwpyve
+aHR0cHM6Ly8xZmljaGllci5jb20vP3p2dHRtY2lyeTdlNDZqa3dweXZl
  
  
 Ghostwire Tokyo PS5 Dump v1.001.rar
-https://1fichier.com/?xrbw8m09irg9rtptm99n
+aHR0cHM6Ly8xZmljaGllci5jb20vP3hyYnc4bTA5aXJnOXJ0cHRtOTlu
  
  
 The Pathless PS5 Dump v2.000.rar
-https://1fichier.com/?pqakdcy64is8tqywb4bz
+aHR0cHM6Ly8xZmljaGllci5jb20vP3BxYWtkY3k2NGlzOHRxeXdiNGJ6
  
  
 Guilty Gear Strive PS5 Dump v1.014.rar
-https://1fichier.com/?as5bq49k55hzcrbkiwgg
+aHR0cHM6Ly8xZmljaGllci5jb20vP2FzNWJxNDlrNTVoemNyYmtpd2dn
  
  
 Tales of Arise PS5 Dump v01.000.004.rar
-https://1fichier.com/?8ft1wltylmk454nepwuw
+aHR0cHM6Ly8xZmljaGllci5jb20vPzhmdDF3bHR5bG1rNDU0bmVwd3V3
  
  
 Life is Strange True Colors PS5 Dump v1.008.rar
-https://1fichier.com/?aj8mg5cn735872pwegt2
+aHR0cHM6Ly8xZmljaGllci5jb20vP2FqOG1nNWNuNzM1ODcycHdlZ3Qy
  
  
 Persistence PS5 Dump v1.200.rar
-https://1fichier.com/?kj96g5cs8avs8v8b6plm
+aHR0cHM6Ly8xZmljaGllci5jb20vP2tqOTZnNWNzOGF2czh2OGI2cGxt
  
  
 Kena PS5 Dump v1.016.rar
-https://1fichier.com/?gd0pjp4y4cimhvyxeuuy
+aHR0cHM6Ly8xZmljaGllci5jb20vP2dkMHBqcDR5NGNpbWh2eXhldXV5
  
  
 Grand Theft Auto III - The Definitive Edition PS5 Dump v1.003.rar (Fixed)
-https://1fichier.com/?i63311cay2q51vg7puo6
+aHR0cHM6Ly8xZmljaGllci5jb20vP2k2MzMxMWNheTJxNTF2ZzdwdW82
  
  
 Grand Theft Auto San Andreas - The Definitive Edition PS5 Dump v1.003.rar
-https://1fichier.com/?bwck4msvet8j63wkkmbm
+aHR0cHM6Ly8xZmljaGllci5jb20vP2J3Y2s0bXN2ZXQ4ajYzd2trbWJt
  
  
 Grand Theft Auto Vice City - The Definitive Edition PS5 Dump v1.003.rar
-https://1fichier.com/?hn8j10ngz85nx8acpbj6
+aHR0cHM6Ly8xZmljaGllci5jb20vP2huOGoxMG5nejg1bng4YWNwYmo2
+ 
+*************************************************
+ 
+LEGO Star Wars The Skywalker Saga PS5 Dump v1.000.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vP2R2bWZ2OXkxaGZ3dWVsdG90N3Z1
+ 
+ 
+Tony Hawks Pro Skater 1+2 PS5 Dump v1.004.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vP3hzMjE5OWxyaXJvdmE2NmY5bzl5
+ 
+ 
+Farming Simulator 22 PS5 Dump v1.030.rar
+(Only works on USB, crashes on internal/m.2)
+aHR0cHM6Ly8xZmljaGllci5jb20vPzhieG93b2tnaXBoajNkNDE2cms4
+ 
+ 
+Balan Wonderworld PS5 Dump v1.002.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vPzc4a2Z3aWdnZDd4Y2x1dXpvcTUxCg== 	
+ 
+ 
+Werewolf The Apocalypse - Earthblood PS5 Dump v1.005.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vPzd1NGpwdmF5cnVlbzA2OGNjYXQ3Cg==
+ 
+*************************************************
+ 
+Returnal PS5 Dump v2.000.003.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vP3ZkNmx3YWN4eDdiMnY3dWdhYW90
+ 
+ 
+THE KING OF FIGHTERS XV PS5 Dump v1.000.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vPzB3OWU1c3E0NTJ6eDdkNmwzOGxv
 
 
-原链接:
+PS5合集更新原链接 来自BedroZen:
+https://pastebin.com/UeRiMQjf
 https://pastebin.com/raw/NgkQzQQu

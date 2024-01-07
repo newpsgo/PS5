@@ -1,7 +1,7 @@
 window.CUSDIS_LOCALE = {
   powered_by: ' ',
   post_comment: '发送',
-  loading: '正在加载全部留言',
+  loading: '正在加载全部投稿内容',
 
   // comment
   email: '邮箱地址 (可不填)',

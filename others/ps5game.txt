@@ -1,6 +1,6 @@
 PS5 GAMES 提取整理by BedroZen（资源均来自网络和网友，与PSGO无关）
 
-1.3更新 - https://ps5.psgo.eu.org/pc.html
+1.10更新 - https://ps5.psgo.eu.org/pc.html
 
 运行PS5操作说明：
 一、FTP传输方法
@@ -26,6 +26,11 @@ https://ps5.psgo.eu.org/ps5game.html
 
 Base64工具（把游戏名字下面的字符串单独拷贝进去点解密转换成正常下载链接）:
 https://psgo.eu.org/base64.html
+
+
+PS5合集更新原链接 来自BedroZen:
+https://pastebin.com/UeRiMQjf
+https://pastebin.com/raw/NgkQzQQu
 
 
 资源下载地址（需要国际网络）:
@@ -111,6 +116,8 @@ aHR0cHM6Ly8xZmljaGllci5jb20vP2huOGoxMG5nejg1bng4YWNwYmo2
  
 *************************************************
  
+New Years Collection:
+ 
 LEGO Star Wars The Skywalker Saga PS5 Dump v1.000.rar
 aHR0cHM6Ly8xZmljaGllci5jb20vP2R2bWZ2OXkxaGZ3dWVsdG90N3Z1
  
@@ -139,8 +146,11 @@ aHR0cHM6Ly8xZmljaGllci5jb20vP3ZkNmx3YWN4eDdiMnY3dWdhYW90
  
 THE KING OF FIGHTERS XV PS5 Dump v1.000.rar
 aHR0cHM6Ly8xZmljaGllci5jb20vPzB3OWU1c3E0NTJ6eDdkNmwzOGxv
-
-
-PS5合集更新原链接 来自BedroZen:
-https://pastebin.com/UeRiMQjf
-https://pastebin.com/raw/NgkQzQQu
+ 
+ 
+DIRT5 PS5 Dump v6.003.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vP281c3h6dnJzZmNjaGZtY2Z5NGF2
+ 
+ 
+Sniper Ghost Warrior Contracts 2 PS5 Dump v1.004.rar
+aHR0cHM6Ly8xZmljaGllci5jb20vP2dnY3U2aGYwMWZxMDNueXdtdGc0

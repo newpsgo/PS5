@@ -1,16 +1,16 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN 原版（推荐 / 仅解锁运行PS4）',
-            description: '支持 3.00、3.20、3.21、4.03、4.50、4.51',
+            displayTitle: 'HEN 原版 v1.4（推荐 / 仅解锁运行PS4）',
+            description: '支持 3.00 - 4.51 所有版本',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.3'
         },
 		{
-            displayTitle: 'etaHEN v1.3测试版（解锁运行PS5/PS4）',
-            description: '支持itemzFlow，支持 3.00、3.2X、4.03、4.5X',
+            displayTitle: 'etaHEN v1.4b定制（解锁运行PS5/PS4）',
+            description: '支持itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',

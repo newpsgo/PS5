@@ -6,15 +6,15 @@ const payload_map =
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
-            version: '1.3'
+            version: '1.4'
         },
 		{
-            displayTitle: 'etaHEN v1.4b定制（解锁运行PS5/PS4）',
+            displayTitle: 'etaHEN v1.4b定制简化（解锁运行PS5/PS4）',
             description: '支持itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.3b'
+            version: '1.4b'
         },
 		{
             displayTitle: 'PS5debug（支持金手指）',

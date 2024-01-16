@@ -5,14 +5,132 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>PS5 折腾导航 - PS5.PSGO.eu.org</title>
     <link rel="shortcut icon" href="https://psgo.eu.org/psgo.ico"></link>
-	<link rel="stylesheet" href="style.css">
- <style> 
- 
-</style> 
 </head> 
 
 <body>
-<ul class="g-wrap"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul><ul id="dianzan" class="g-wrap"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+ <style> 
+ body{
+    background-image:url(bg.jpg);
+    background-color:#202124;
+    background-attachment:fixed;
+    background-size:100%;
+    background-repeat:no-repeat;
+    font-family:system-ui;
+	text-align:center
+    }
+		
+    a:hover{
+	text-decoration: none;
+    border-bottom: 1.5px solid;
+	padding-bottom: 5px;
+	}
+    
+    button:-moz-focus-inner, button:focus{
+    outline:0;
+    border:none
+	}
+	
+	option{
+    background-color:#080808;
+    }
+	
+    button{
+	color:#dcddde;
+    font-family:arial;
+    font-size:22px;
+    font-weight:700;
+    border:2px solid #404040;
+    border-radius:4px;
+	margin:10px 2px; 
+    padding:10px;
+    cursor:pointer;
+    display:inline-block;
+    text-decoration:none;
+    background:#303134;
+    box-shadow:0 5px 0 #888888;
+    } 
+
+    button:hover{
+    font-size:22px;
+	color:#fff;
+    background:#603bcc;
+    } 
+    
+    button:active{
+    background:#603bcc;
+    position:relative;
+    top:5px;
+    box-shadow:none
+    }
+    
+   .bottopmsg{
+
+	padding:5px 0 1px 0;
+	color:#dcddde;
+	text-align: center;
+	font-size:16px;
+    }
+	
+      /** variables */
+      :root {
+        /*orig*/
+
+        --color-black: black;
+        --color-cod-gray: #101010;
+        --color-white: white;
+        --color-error: rgb(191, 95, 95);
+        --color-primary-rgba: 0, 192, 251;
+        --color-primary: #00c0fb;
+        --color-secondary-rgba: 234, 182, 56;
+        --color-secondary: #eab638;
+      }
+
+      .tiles {
+        display: flex;
+        flex-direction: column;
+		z-index:-1;
+        justify-content: center;
+        left: 50%;
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(22.5deg);
+      }
+      .tiles__line {
+        -webkit-animation: runner 20s linear infinite;
+        display: flex;
+        transform: translateX(25%);
+      }
+      .tiles__line:nth-child(2) {
+        -webkit-animation-duration: 32s;
+      }
+      .tiles__line:nth-child(3) {
+        -webkit-animation-duration: 44s;
+      }
+
+      @keyframes runner {
+        to {
+          -webkit-transform: translateX(-25%);
+        }
+      }
+      .tiles__line-img {
+        --tile-margin: 3vw;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50%;
+        flex: none;
+        height: 30vh;
+        margin: var(--tile-margin);
+        width: 30vh;
+        background-color:#1d9bf0;
+        opacity: 0.3;
+
+      }
+      .tiles__line-img--large {
+        border-radius: 20vh;
+        width: 100vh;
+        opacity: 0.3;
+      }
+</style> 
   <h1 style="font-size:70px;text-align:center;font-style:italic;text-shadow: 4px 2px #303134;"><font color="#dcddde">PS5 折腾导航</font></h1>
   <h2 style="font-size:28px;text-align:center;"><font color="#dcddde"> PS5.PSGO.eu.org - <font color="#dcddde"> 记得收藏分享本站</font> </font></h2>
   <div id="progress"></div>
@@ -390,8 +508,6 @@
 
 <tr><td><br><br><br></td></tr>
 
-
-
 <tr><td><pre><font size="6" color="#dcddde">
     ____  _____ __________ 
    / __ \/ ___// ____/ __ \
@@ -420,16 +536,12 @@
 <tr><td><font size="4.5" color="#dcddde"> PS5新3群：287873386 </font></td></tr>
 
    </table> 
-   
   </div> 
   <div class="bottopmsg"> 
   <br><br><br><br><br>
    <a href="https://psgo.eu.org/disclaimer.html" target="_blank" style="color:#dcddde;font-size:16px;text-align:center;text-decoration:none;">免责声明</a>
   </div>  
-
-</body>
-</html>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+  	 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -438,6 +550,8 @@
 
   gtag('config', 'G-7VRDNYTJ1Y');
 </script>
+</body>
+</html>
 <script language="javascript"> 
  var now = new Date();
  function createtime(){

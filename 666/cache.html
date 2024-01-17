@@ -1,8 +1,7 @@
 <html>
 
 <head>
-    <title>PSGO 全自动折腾 | 当前缓存版本：v0106 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
-	<meta charset="UTF-8">
+    <title>PSGO一键折腾 | 当前缓存版本：v0118 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -12,33 +11,9 @@
     <script defer src="payload_map.js"></script>
     <script defer src="custom_host_stuff.js"></script>
 
-<style>
-h1 {
-text-shadow: 0.1em 0.1em 0.2em black;
-font-size: 25px;
-text-align: center;
-color: white;
-}
-body{background-color:black;color: #f5f1f1;border: 5px solid #603bcc;font-size:28px;text-align:center;}
-.bottopmsg{position:absolute;bottom: 34px;width: 1520px;padding:5px 0 1px 0;}
-
-div#bottommsg {}
-.loader {position: absolute;left: 50%;top: 55%;margin: -75px 0 0 -75px;border: 10px solid #1f1e1e;border-radius: 50%;border-top: 10px solid #603bcc;border-left: 10px solid #603bcc;width: 120px;height: 120px;animation: spin 1s linear infinite;}
-@keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
-</style>
-
 </head>
 
 <body>
-	<div id="loader" class="loader"></div>
-    <br>
-    <div>
-	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 全自动折腾离线版 × etaHEN</font></h1>
-	<!-- <h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 全自动折腾离线版 × etaHEN<span id="current-fw"></span></font></h1> -->
-	<h2 id="jb-progress-status-text" style="font-size:30px;text-align:center;color:#fff;font-weight:bold;">开机后稍等15秒 · 待机关机前关游戏 · 后台请勿更新游戏 · 死机需重启两次 · 成功后请勿重复进入</h2>
-    </div>
-	<div style="display:none;">
-	
     <svg style="display: none" version="2.0">
         <defs>
             <symbol id="delete-icon" viewBox="0 -960 960 960">
@@ -80,16 +55,16 @@ div#bottommsg {}
     <div id="center-view" style="position: absolute; top: 0; left: 0; width: 100%; min-height: 100%;">
 
         <div style="margin-top: 15px; position: absolute; width: 100%;">
-            <h1 style="text-align: center;">PS5 Jailbreak 3.xx-4.xx</h1>
+            <h1 style="text-align: center;opacity: 0;">PS5 Jailbreak 3.xx-4.xx</h1>
             <p id="current-fw" class="text-secondary"
-                style="text-align: center; margin-bottom: 8px; padding-bottom: 0;">
+                style="opacity: 0;text-align: center; margin-bottom: 8px; padding-bottom: 0;">
             </p>
 
-            <p id="listening-ip" class="text-secondary" style="text-align: center; margin-top: 0; padding-top: 0;">
+            <p id="listening-ip" class="text-secondary" style="opacity: 0;text-align: center; margin-top: 0; padding-top: 0;">
                 <br />
             </p>
         </div>
-        <div style="position: absolute; margin: 35px; top: 0; left: 10px;" class="opacity-transition" id="l2-redirect">
+        <div style="opacity: 0;position: absolute; margin: 35px; top: 0; left: 10px;" class="opacity-transition" id="l2-redirect">
             <div>
                 <span style="vertical-align: middle;display: inline-block;                ">
                     <svg viewbox="0 0 79 61" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height:32px;">
@@ -107,8 +82,17 @@ div#bottommsg {}
 
             <div id="run-jb-parent" class="opacity-transition"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-                <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">Jailbreak</a>
+                <!-- <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">Jailbreak</a> -->
             </div>
+
+				<script>			
+					function executarJailbreak() {
+
+						// runJailbreak(); 
+						setTimeout(runJailbreak, 500);
+					}
+					window.onload = executarJailbreak;
+				</script>
 
             <div id="jb-progress" class="opacity-transition"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none;">
@@ -120,18 +104,18 @@ div#bottommsg {}
                 </div>
                 <p id="jb-progress-status-text" style="text-align: center; width: 100%; margin-top: 40px;">
                     Getting
-                    ready... <br /><span class="secondary-text">(may look frozen)</span></p>
+                    ready...</p>
                 <textarea id="console" class="log" style="display: none;"></textarea>
             </div>
 
             <div id="post-jb-view" class="opacity-transition"
-                style="width: 100%;position: relative; max-height: 10px; overflow-y: hidden; margin-top: 200px;">
+                style="width: 100%;position: relative; max-height: 10px; overflow-y: hidden; margin-top: 15px;">
                 <!-- it seems like sometimes display none to anything else and transforms like causing crashes after the jailbreak. idk. -->
                 <div id="payloads-list" class="grid-container">
                 </div>
             </div>
 
-            <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 13px;"
+            <center style="opacity: 0;position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 13px;"
                 class="info opacity-transition" id="credits">
                 <a href="https://github.com/idlesauce/PS5-Exploit-Host" style="padding-bottom: -20px;">
                     <svg style="margin-bottom:-5px;" width="25px" height="25px" viewBox="0 0 98 96"
@@ -160,15 +144,7 @@ div#bottommsg {}
             </center>
         </div>
     </div>
-	</div>
+
 </body>
 
 </html>
-<script>			
-	function executarJailbreak() {
-
-		runJailbreak(); 
-		// setTimeout(runJailbreak, 500);
-	}
-	window.onload = executarJailbreak;
-</script>

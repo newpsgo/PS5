@@ -6,7 +6,7 @@ window.CUSDIS_LOCALE = {
   // comment
   email: '邮箱地址 (可不填)',
   nickname: '昵称',
-  reply_placeholder: '留言',
+  reply_placeholder: '留言内容',
   reply_btn: '回复',
   sending: '发送中…',
 

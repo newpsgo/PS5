@@ -83,16 +83,9 @@
 }
 
 body {
-    user-select: none;
-    -webkit-user-select: none;
     background-color: rgb(14, 14, 20);
     color: white;
-    /* font-family: Calibri, Helvetica, 'Sans-Serif'; */
-    font-family: Arial;
-}
-
-input:focus {
-    outline:none;
+    font-family: Calibri, Helvetica, 'Sans-Serif';
 }
 
 .btn {
@@ -113,41 +106,9 @@ input:focus {
     transition: background-color 0.3s ease-in-out;
 }
 
-.small-btn{
-    padding-top: 5px; 
-    padding-bottom: 5px; 
-    padding-left: 0;
-    padding-right: 0;
-    background-color: #223;
-    width: 100%;
-    min-width: unset;
-}
-
-.icon-btn{
-    padding-top: 0px; 
-    padding-bottom: 0px; 
-    padding-left: 0;
-    padding-right: 0;
-    background-color: unset;
-    width: unset;
-    min-width: unset;
-    width: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-}
-
-.icon-btn:hover{
-    background-color: #555 !important;
-    color: #fff !important;
-}
-
 .btn:hover {
     background-color: #603bcc;
-	/* 603bcc */
     color: #fff;
-	/* fff */
 }
 
 a:active,
@@ -176,7 +137,6 @@ a:focus {
 
 .payload-description {
     color: #fff;
-	/* fff */
     margin: 0;
     padding: 0;
     text-overflow: ellipsis;
@@ -188,7 +148,6 @@ a:focus {
 
 .btn:hover p.payload-description {
     color: #fff;
-	/* fff */
 }
 
 .payload-author {
@@ -199,7 +158,6 @@ a:focus {
     overflow: hidden;
     white-space: nowrap;
     line-height: 0px;
-	/* 0 */
     font-size: 13px;
     font-weight:normal;
 }
@@ -255,7 +213,6 @@ a:focus {
 
 .toast {
     background: #603bcc;
-	/* 603bcc */
     color: #fff;
     padding: 20px 25px;
     border-radius: 5px;

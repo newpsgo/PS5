@@ -2,7 +2,7 @@ const payload_map =
     [
         {
             displayTitle: 'HEN 原版 v1.4（推荐 / 仅解锁运行PS4）',
-            description: '和etaHEN只能二选一！！！支持 3.00 - 4.51 所有版本',
+            description: '支持 3.00 - 4.51 所有版本',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
@@ -10,7 +10,7 @@ const payload_map =
         },
 		{
             displayTitle: 'etaHEN v1.4b 定制简化版（解锁运行PS5/PS4）',
-            description: '支持PS5游戏管理器器itemzFlow，支持 3.00 - 4.51 所有版本',
+            description: '支持PS5游戏启动器itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
@@ -48,6 +48,14 @@ const payload_map =
             source:'https://github.com/Storm21CH/PS5_Browser_appCache_remove/blob/main/Browser_appCache_remove.elf',
             version: '1.0fix'
         },
+		// {
+            // displayTitle: 'etaHEN 金手指版 v1.1beta（与自制应用冲突）',
+            // description: '普通版+金手指功能。配合illusion的patches工具包进行使用',
+            // fileName: 'etaHENwithcheats-1.1b.bin',
+            // author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            // source: 'https://github.com/LightningMods/etaHEN',
+            // version: '1.1'
+        // },
 		{
             displayTitle: '屏蔽系统更新（推荐）',
             description: '左上角显示“blocker enable”则为永久生效，建议配合路由器屏蔽',
@@ -74,7 +82,7 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.142 运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.138 运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',

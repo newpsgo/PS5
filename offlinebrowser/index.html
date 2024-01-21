@@ -112,7 +112,7 @@ option{
 	<script>
 window.applicationCache.ondownloading = function()
 {
-	alert("浏览器有新的缓存！\n\n点击确定按钮将开始缓存!缓存完成之前请不要操作！")
+	alert("浏览器有新的缓存！\n\n点击确定按钮将开始缓存!缓存完成之前请不要操作！\n\n记得以后定期打开PS5网络检查缓存更新哦~")
 };
 
 window.applicationCache.onprogress = function(a)
@@ -122,7 +122,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("浏览器缓存完成!\n\n如果想离线使用折腾方案，请在联网状态下点击我的收藏中的离线方案单独进行缓存和更新!")
+	alert("浏览器缓存完成!\n\n如果想离线使用折腾方案，请在联网状态下点击我的收藏中的离线方案单独进行缓存和更新!\n\n记得以后定期打开PS5网络检查缓存更新哦~")
     document.location.href = document.location.href;
 };
 
@@ -159,7 +159,7 @@ document.getElementById("clock").innerHTML = (Hour+":"+Minute);
 <button id=infobutz class=leeful onclick='goToURL();'>  跳转  </button>
 </div>
 <div  style='margin-top: 10px;margin-left:45px;text-align:left;color'><font size="4" color="#dcddde">注意：如果要访问的是离线缓存网站，需区分字母大小写、区分http和https，输入有误将无法加载缓存</font></div>
-<div id=BOX3  style="margin-top: 30px;">
+<div id=BOX3  style="margin-top: 30px">
 
 <div id=BOX3>
 

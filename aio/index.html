@@ -19,7 +19,7 @@ window.applicationCache.onprogress = function(a)
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
 {
-	alert("缓存完成!\n\n如果想离线使用折腾方案，请在联网状态下点击其中的离线折腾方案按钮进入后进行单独缓存和更新!")
+	alert("缓存完成!\n\n如果想离线使用折腾方案，请在联网状态下点击其中的离线折腾方案按钮进入后进行单独缓存和更新!\n\n记得以后定期打开PS5网络检查缓存更新哦~")
     location.reload();
 };
 
@@ -106,6 +106,11 @@ document.addEventListener("keydown", manejarKeyPress);
     <img id="image" src="resources/images/tio.png">
   </body>
 </html>
+<!-- <script>
+  if(!navigator.userAgent.includes('PlayStation 5')) {
+    alert("请在PS5浏览器中进入本页！推荐下载安装AIO折腾大全PKG");
+  }
+</script> -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VRDNYTJ1Y"></script>
 <script>

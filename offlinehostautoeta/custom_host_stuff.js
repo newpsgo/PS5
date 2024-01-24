@@ -15,8 +15,8 @@ async function runJailbreak() {
     await sleep(500);
 
     create_payload_buttons();
-    setTimeout(() => {
-        poc();
+    setTimeout(async () => {
+        await poc();
     }, 100);
 }
 
@@ -121,12 +121,12 @@ function redirectorGo() {
 }
 
 const default_pinned_websites = [
-    "https://es7in1.site/ps5jb",
+    "https://es7in1.site/ps5",
     "https://google.com"
 ]
 
 const dummy_history = [
-    "https://es7in1.site/ps5jb",
+    "https://es7in1.site/ps5",
     "https://google.com",
     "https://ps5jb.pages.dev",
     "https://github.com",

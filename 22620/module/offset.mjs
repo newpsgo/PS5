@@ -21,6 +21,7 @@ export const js_butterfly = 0x8;
 // offsets for JSC::JSArrayBufferView
 export const view_m_vector = 0x10;
 export const view_m_length = 0x18;
+export const view_m_mode = 0x1c;
 
 // sizeof JSC::JSArrayBufferView
 export const size_view = 0x20;

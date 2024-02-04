@@ -1,8 +1,8 @@
 CACHE MANIFEST 
-#PS5.PSGO.eu.org 2024/01/18 周四- 4:01:17.54 
+#PS5.PSGO.eu.org 2024/02/04 周日-21:14:11.96 
 
 CACHE: 
-appcache_handler.js
+cache.html
 custom_host_stuff.js
 exploit.js
 index.html
@@ -11,7 +11,14 @@ main.css
 payload_map.js
 rop.js
 rop_slave.js
-webkit.js
+webkit_fontface.js
+webkit_psfree.js
+module\constants.js
+module\int64.js
+module\mem.js
+module\memtools.js
+module\rw.js
+module\utils.js
 offsets\3.00.js
 offsets\3.10.js
 offsets\3.20.js
@@ -21,16 +28,17 @@ offsets\4.02.js
 offsets\4.03.js
 offsets\4.50.js
 offsets\4.51.js
+payloads\Backup-db-PS5.elf
 payloads\Browser_appCache_remove.elf
 payloads\elfldr.elf
-payloads\etaHEN-1.4B.bin
-payloads\ftps5-np.elf
+payloads\etaHEN.bin
 payloads\ftps5-p.elf
-payloads\getOsVersion.elf
-payloads\henv.elf
-payloads\libhijacker-1.142.elf
-payloads\ps5-kstuff-v1.4.bin
+payloads\hwinfo-tornblom.elf
+payloads\lock_unlock_updates.elf
+payloads\ps5-kstuff.bin
 payloads\ps5debug.elf
+payloads\spawner.elf
+payloads\TO99999999_403_450.elf
 payloads\versions.elf
 
 NETWORK: 

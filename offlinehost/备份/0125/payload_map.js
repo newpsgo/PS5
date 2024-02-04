@@ -9,12 +9,12 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'etaHEN v1.5b 定制简化版（解锁运行PS5/PS4）',
+            displayTitle: 'etaHEN v1.4b 定制简化版（解锁运行PS5/PS4）',
             description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.5b'
+            version: '1.4b'
         },
 		{
             displayTitle: 'PS5debug（支持金手指）',
@@ -33,12 +33,12 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'elf/bin插件加载器（会导致断电）',
+            displayTitle: 'elf插件加载器（会导致断电）',
             description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.7'
+            version: '0.6'
         },
 		{
             displayTitle: '清除浏览器缓存',

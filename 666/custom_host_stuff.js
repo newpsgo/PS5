@@ -64,7 +64,7 @@ function onload_setup() {
     redirector.style.opacity = "0";
 
     window.addEventListener('keydown', function (event) {
-        if (event.keyCode == 51123 || event.keyCode == 118123) {
+        if (event.keyCode == 51 || event.keyCode == 118) {
             // seems like the browser failes to load any new pages after the jailbreak...
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
@@ -115,7 +115,7 @@ function onload_setup() {
         }
 
 
-        if (event.keyCode == 52123 || event.keyCode == 119123) {
+        if (event.keyCode == 52 || event.keyCode == 119) {
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
             }

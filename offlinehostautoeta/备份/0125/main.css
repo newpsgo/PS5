@@ -144,10 +144,8 @@ input:focus {
 }
 
 .btn:hover {
-    background-color: #603bcc;
-	/* 603bcc */
-    color: #fff;
-	/* fff */
+    background-color: #c2c2c2;
+    color: #303030;
 }
 
 a:active,
@@ -175,8 +173,7 @@ a:focus {
 
 
 .payload-description {
-    color: #fff;
-	/* fff */
+    color: #959595;
     margin: 0;
     padding: 0;
     text-overflow: ellipsis;
@@ -187,8 +184,7 @@ a:focus {
 }
 
 .btn:hover p.payload-description {
-    color: #fff;
-	/* fff */
+    color: #666;
 }
 
 .payload-author {
@@ -198,8 +194,7 @@ a:focus {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    line-height: 0px;
-	/* 0 */
+    line-height: 24px;
     font-size: 13px;
     font-weight:normal;
 }
@@ -254,8 +249,7 @@ a:focus {
 }
 
 .toast {
-    background: #603bcc;
-	/* 603bcc */
+    background: #181830;
     color: #fff;
     padding: 20px 25px;
     border-radius: 5px;

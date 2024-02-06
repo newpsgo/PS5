@@ -21,7 +21,7 @@ function l() {
   const e = document.createElement("div");
   e.className = "lantern-left";
   const t = document.createElement("div");
-  t.className = "lantern-right", e.innerHTML = a("福"), t.innerHTML = a("富");
+  t.className = "lantern-right", e.innerHTML = a("新春"), t.innerHTML = a("快乐");
   const n = document.createElement("div");
   n.className = "lantern", n.appendChild(e), n.appendChild(t), document.body.appendChild(n);
 }

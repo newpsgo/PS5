@@ -19,11 +19,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 
 function die(msg) {
-    // ------
-	// alert(msg);
-	print(msg);
-	print("PSGO Next load...");
-	location.reload();
+    alert(msg);
     undefinedFunction();
 }
 

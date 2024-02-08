@@ -687,7 +687,9 @@ async function triple_free(
 function pop(event, save) {
     let spray_res = check_spray(save.views);
     if (spray_res === null) {
-		die('failed spray');
+        //------
+		// die('failed spray');
+		location.reload();
     } else {
         save.pop = event;
         save.ab = save.views[spray_res];

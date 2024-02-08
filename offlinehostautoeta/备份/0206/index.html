@@ -10,16 +10,8 @@
     <link rel="prefetch" href="exploit.js" as="script">
     <link rel="prefetch" href="payload_map.js" as="script">
     <link rel="prefetch" href="custom_host_stuff.js" as="script">
-	
-    <link rel="prefetch" href="module/utils.js" as="script">
-    <link rel="prefetch" href="module/constants.js" as="script">
-    <link rel="prefetch" href="module/int64.js" as="script">
-    <link rel="prefetch" href="module/mem.js" as="script">
-    <link rel="prefetch" href="module/memtools.js" as="script">
-    <link rel="prefetch" href="module/rw.js" as="script">
-    <link rel="prefetch" href="webkit_psfree.js" as="script">
-    <link rel="prefetch" href="webkit_fontface.js" as="script">
-	
+    <link rel="prefetch" href="webkit.js" as="script">
+    <link rel="prefetch" href="rop_slave.js" as="script">
 	<link rel="prefetch" href="offsets\3.00.js" as="script">
 	<link rel="prefetch" href="offsets\3.10.js" as="script">
 	<link rel="prefetch" href="offsets\3.20.js" as="script">
@@ -65,7 +57,7 @@
 				
 			window.applicationCache.onnoupdate = function(){
 				
-				setTimeout(function() {document.location.href = "cache.html";}, 1500);
+				setTimeout(function() {document.location.href = "cache.html";}, 3500);
 				
 			}
 
@@ -73,7 +65,7 @@
 				
 				if (auto != 1)
 				{
-					setTimeout(function() {document.location.href = "cache.html";}, 1500);
+					setTimeout(function() {document.location.href = "cache.html";}, 3500);
 				}
 				else
 				{

@@ -21,10 +21,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 function die(msg) {
     // ------
 	// alert(msg);
-	// print(msg);
-	print("PSGO Next loading...");
-	location.reload();
+	print(msg);
+	print('PSGO Next loading...');
+	document.location.href = "cache.html";
     // undefinedFunction();
+	// setTimeout(function() {undefinedFunction();}, 6000);
 }
 
 function debug_log(msg) {
@@ -33,7 +34,7 @@ function debug_log(msg) {
 
     // document.body.appendChild(node);
     // document.body.appendChild(document.createElement("br"));
-    // print(msg);
+    print(msg);
 }
 
 function clear_log() {

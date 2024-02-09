@@ -22,7 +22,7 @@ function die(msg) {
     // ------
 	// alert(msg);
 	// print(msg);
-	print("PSGO Next load...");
+	print("PSGO Next loading...");
 	location.reload();
     // undefinedFunction();
 }

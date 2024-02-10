@@ -22,9 +22,9 @@ function die(msg) {
     // ------
 	// alert(msg);
 	print(msg);
+	undefinedFunction();
 	print('PSGO Next loading...');
 	document.location.href = "cache.html";
-    // undefinedFunction();
 	// setTimeout(function() {undefinedFunction();}, 6000);
 }
 

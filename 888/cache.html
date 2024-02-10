@@ -24,11 +24,13 @@
             const reason = event.reason;
             // We log the line and column numbers as well since some exceptions (like
             // SyntaxError) do not show it in the stack trace.
-            alert(
-                `${reason}\n`
-                + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
-                + `${reason.stack}`
-            );
+            // ------
+			document.location.href = "cache.html";
+			<!-- alert( -->
+                <!-- `${reason}\n` -->
+                <!-- + `${reason.sourceURL}:${reason.line}:${reason.column}\n` -->
+                <!-- + `${reason.stack}` -->
+            <!-- ); -->
             throw reason;
         });
         window.addEventListener('load', function () {

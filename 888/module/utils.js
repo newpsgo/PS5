@@ -24,7 +24,7 @@ function die(msg) {
 	print(msg);
 	undefinedFunction();
 	print('PSGO Next loading...');
-	document.location.href = "cache.html";
+	// document.location.href = "cache.html";
 	// setTimeout(function() {undefinedFunction();}, 6000);
 }
 

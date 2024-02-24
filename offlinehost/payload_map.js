@@ -33,7 +33,7 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'elf/bin插件加载器（会导致断电）',
+            displayTitle: 'elf、bin插件加载器（会导致断电）',
             description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
@@ -74,12 +74,12 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.142 运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.152 运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
             // loader: 'libhijacker',
-            version: '1.136'
+            version: '1.152'
         },
 		{
             displayTitle: '查看版本信息',

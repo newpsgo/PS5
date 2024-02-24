@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8">
-    <title>PSGO一键折腾 | 当前缓存版本：v0212 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO一键折腾 | 当前缓存版本：v0224 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -83,14 +83,14 @@
 
             <div id="run-jb-parent" class="opacity-transition"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-                <!-- <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">Jailbreak</a> -->
+                <a tabindex="0" class="btn" style="max-width: 50%;display: none" id="run-jb" onclick="runJailbreak()">Jailbreak</a>
             </div>
 
 				<script>			
 					function executarJailbreak() {
 
-						runJailbreak(); 
-						// setTimeout(runJailbreak, 500);
+						// runJailbreak(); 
+						setTimeout(runJailbreak, 500);
 					}
 					window.onload = executarJailbreak;
 				</script>

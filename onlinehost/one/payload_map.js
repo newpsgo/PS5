@@ -33,12 +33,12 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'elf/bin插件加载器（会导致断电）',
+            displayTitle: 'elf/bin插件加载器',
             description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.7'
+            version: '0.8'
         },
 		{
             displayTitle: '清除浏览器缓存',

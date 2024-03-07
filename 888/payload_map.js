@@ -1,7 +1,7 @@
 const payload_map =
     [
         {
-            displayTitle: 'HEN 原版 v1.4（推荐 / 仅解锁运行PS4）',
+            displayTitle: 'HEN原版 v1.4（推荐 / 仅解锁运行PS4）',
             description: '和etaHEN只能二选一！！！支持 3.00 - 4.51 所有版本',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
@@ -9,7 +9,7 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'etaHEN v1.7b（解锁运行PS5/PS4）',
+            displayTitle: 'etaHEN简化版 v1.7b（解锁运行PS5/PS4）',
             description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
@@ -17,12 +17,12 @@ const payload_map =
             version: '1.7b'
         },
 		{
-            displayTitle: 'PS5debug（支持金手指）',
-            description: '配合MultiTrainer II电脑客户端或内存调试工具',
-            fileName: 'ps5debug.elf',
-            author: 'SiSTR0, ctn123',
-            source: 'https://github.com/GoldHEN/ps5debug',
-            version: '1.0b1'
+            displayTitle: 'etaHEN原版 v1.7b（解锁运行PS5/PS4）',
+            description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
+            fileName: 'etaHEN0.bin',
+            author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
+            source: 'https://github.com/LightningMods/etaHEN',
+            version: '1.7b'
         },
 		{
             displayTitle: 'FTP远程文件管理',
@@ -65,12 +65,12 @@ const payload_map =
             version: '0.5'
         },
 		{
-            displayTitle: '伪装高版本（支持4.03、4.50 / 需点击两次）',
-            description: '用于安装运行高版本补丁，点击本插件前先点击运行HEN！',
-            fileName: 'TO99999999_403_450.elf',
-            author: 'Jaafar',
-            source:'https://twitter.com/jaf51744',
-            version: '1.1'
+            displayTitle: 'PS5debug（支持金手指）',
+            description: '配合MultiTrainer II电脑客户端或内存调试工具',
+            fileName: 'ps5debug.elf',
+            author: 'SiSTR0, ctn123',
+            source: 'https://github.com/GoldHEN/ps5debug',
+            version: '1.0b1'
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',

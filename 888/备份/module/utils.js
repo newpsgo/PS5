@@ -19,8 +19,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
 
 function die(msg) {
-    alert(msg);
-    undefinedFunction();
+    // ------
+	// alert(msg);
+	print(msg);
+	undefinedFunction();
+	print('PSGO Next loading...');
+	// document.location.href = "cache.html";
+	// setTimeout(function() {undefinedFunction();}, 6000);
 }
 
 function debug_log(msg) {

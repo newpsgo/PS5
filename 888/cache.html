@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PSGO一键折腾 | 当前缓存版本：v0216 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO一键折腾 | 当前缓存版本：v0308 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -24,13 +24,12 @@
             const reason = event.reason;
             // We log the line and column numbers as well since some exceptions (like
             // SyntaxError) do not show it in the stack trace.
-            // ------
-			document.location.href = "cache.html";
-			<!-- alert( -->
-                <!-- `${reason}\n` -->
-                <!-- + `${reason.sourceURL}:${reason.line}:${reason.column}\n` -->
-                <!-- + `${reason.stack}` -->
-            <!-- ); -->
+            // alert(
+            //     `${reason}\n`
+            //     + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
+            //     + `${reason.stack}`
+            // );
+            alert(reason);
             throw reason;
         });
         window.addEventListener('load', function () {
@@ -122,7 +121,7 @@
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
                 <a tabindex="0" class="btn" style="max-width: 50%;display: none" id="run-jb" onclick="runJailbreak()">Jailbreak</a>
             </div>
-
+			
 				<script>			
 					function executarJailbreak() {
 

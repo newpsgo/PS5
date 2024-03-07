@@ -425,7 +425,7 @@ function find_leaked_view(rstr, view_rstr, view_m_vector, view_arr) {
     write64(view_rstr, strimpl_m_data, old_m_data);
 
     if (res === null) {
-        die('not found');
+        die('view not found');
     }
     return res;
 }
@@ -687,7 +687,7 @@ async function triple_free(
 function pop(event, save) {
     let spray_res = check_spray(save.views);
     if (spray_res === null) {
-		die('failed spray');
+        die('failed spray');
     } else {
         save.pop = event;
         save.ab = save.views[spray_res];

@@ -45,7 +45,7 @@ function onload_setup() {
     let menu = document.getElementById("menu-bar-wrapper");
 
     if (localStorage.getItem("wk_exploit_type") == null) {
-        localStorage.setItem("wk_exploit_type", "fontface");
+        localStorage.setItem("wk_exploit_type", "psfree");
     }
 
     let wk_exploit_type = localStorage.getItem("wk_exploit_type");

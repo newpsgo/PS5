@@ -31,9 +31,9 @@ function wk_expoit_type_changed(event) {
 
 function onload_setup() {
 
-    if (document.documentElement.hasAttribute("manifest")) {
-        add_cache_event_toasts();
-    }
+    // if (document.documentElement.hasAttribute("manifest")) {
+        // add_cache_event_toasts();
+    // }
 
     create_redirector_buttons();
 
@@ -45,7 +45,7 @@ function onload_setup() {
     let menu = document.getElementById("menu-bar-wrapper");
 
     if (localStorage.getItem("wk_exploit_type") == null) {
-        localStorage.setItem("wk_exploit_type", "psfree");
+        localStorage.setItem("wk_exploit_type", "fontface");
     }
 
     let wk_exploit_type = localStorage.getItem("wk_exploit_type");
@@ -115,7 +115,7 @@ function onload_setup() {
         }
 
 
-        if (event.keyCode == 52666 || event.keyCode == 119666) {
+        if (event.keyCode == 52 || event.keyCode == 119) {
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
             }

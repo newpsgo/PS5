@@ -11,7 +11,7 @@ const payload_map =
 		{
             displayTitle: 'etaHEN简化版 v1.7b（解锁运行PS5/PS4）',
             description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
-            fileName: 'etaHEN.bin',
+            fileName: 'etaHEN0.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.7b'
@@ -19,7 +19,7 @@ const payload_map =
 		{
             displayTitle: 'etaHEN原版 v1.7b（解锁运行PS5/PS4）',
             description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
-            fileName: 'etaHEN0.bin',
+            fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
             version: '1.7b'

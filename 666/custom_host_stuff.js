@@ -18,7 +18,8 @@ async function runJailbreak() {
     setTimeout(async () => {
         let wk_exploit_type = localStorage.getItem("wk_exploit_type");
         if (wk_exploit_type == "psfree") {
-            await run_psfree();
+            // await run_psfree();
+			await run_fontface();
         } else if (wk_exploit_type == "fontface") {
             await run_fontface();
         }
@@ -31,9 +32,9 @@ function wk_expoit_type_changed(event) {
 
 function onload_setup() {
 
-    if (document.documentElement.hasAttribute("manifest")) {
-        add_cache_event_toasts();
-    }
+    // if (document.documentElement.hasAttribute("manifest")) {
+        // add_cache_event_toasts();
+    // }
 
     create_redirector_buttons();
 

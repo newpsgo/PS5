@@ -31,9 +31,9 @@ function wk_expoit_type_changed(event) {
 
 function onload_setup() {
 
-    // if (document.documentElement.hasAttribute("manifest")) {
-        // add_cache_event_toasts();
-    // }
+    if (document.documentElement.hasAttribute("manifest")) {
+        add_cache_event_toasts();
+    }
 
     create_redirector_buttons();
 
@@ -64,7 +64,7 @@ function onload_setup() {
     redirector.style.opacity = "0";
 
     window.addEventListener('keydown', function (event) {
-        if (event.keyCode == 51666 || event.keyCode == 118666) {
+        if (event.keyCode == 51123 || event.keyCode == 118123) {
             // seems like the browser failes to load any new pages after the jailbreak...
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
@@ -115,7 +115,7 @@ function onload_setup() {
         }
 
 
-        if (event.keyCode == 52 || event.keyCode == 119) {
+        if (event.keyCode == 52123 || event.keyCode == 119123) {
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
             }
@@ -368,7 +368,7 @@ function create_payload_buttons() {
 
 }
 
-function showToast(message, timeout = 2000) {
+function showToast(message) {
     const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
     toast.className = 'toast';
@@ -386,5 +386,5 @@ function showToast(message, timeout = 2000) {
         toast.addEventListener('transitionend', () => {
             toast.remove();
         });
-    }, timeout);
+    }, 2000);
 }

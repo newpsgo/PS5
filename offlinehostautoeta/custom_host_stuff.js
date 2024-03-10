@@ -22,9 +22,9 @@ async function runJailbreak() {
 
 function onload_setup() {
 
-    if (document.documentElement.hasAttribute("manifest")) {
-        add_cache_event_toasts();
-    }
+    // if (document.documentElement.hasAttribute("manifest")) {
+        // add_cache_event_toasts();
+    // }
 
     create_redirector_buttons();
 

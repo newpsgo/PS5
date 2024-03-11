@@ -18,10 +18,9 @@ async function runJailbreak() {
     setTimeout(async () => {
         let wk_exploit_type = localStorage.getItem("wk_exploit_type");
         if (wk_exploit_type == "psfree") {
-            // await run_psfree();
-			await run_fontface();
+            await run_psfree();
         } else if (wk_exploit_type == "fontface") {
-            await run_fontface();
+            await run_psfree();
         }
     }, 100);
 }

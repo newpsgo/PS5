@@ -2,27 +2,27 @@ const payload_map =
     [
         {
             displayTitle: 'HEN原版 v1.4（推荐 / 仅解锁运行PS4）',
-            description: '不要重复点击！和etaHEN只能二选一！支持 3.00 - 4.51 所有版本',
+            description: '和etaHEN只能二选一！！！支持 3.00 - 4.51 所有版本',
             fileName: 'ps5-kstuff.bin',
             author: 'sleirsgoevy',
             source: 'https://github.com/sleirsgoevy/ps4jb2/blob/ps5-403/ps5-kstuff.bin',
             version: '1.4'
         },
 		{
-            displayTitle: 'etaHEN简化版 v1.6b（解锁运行PS5/PS4）',
+            displayTitle: 'etaHEN简化版 v1.7b（解锁运行PS5/PS4）',
             description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN0.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.x'
+            version: '1.7b'
         },
 		{
             displayTitle: 'etaHEN原版 v1.7b（解锁运行PS5/PS4）',
-            description: '多合一整合HEN，支持 3.00 - 4.51 所有版本',
+            description: '支持PS5游戏管理器itemzFlow，支持 3.00 - 4.51 所有版本',
             fileName: 'etaHEN.bin',
             author: 'LightningMods_, sleirsgoevy, ChendoChap, astrelsky, illusion',
             source: 'https://github.com/LightningMods/etaHEN',
-            version: '1.x'
+            version: '1.7b'
         },
 		{
             displayTitle: 'FTP远程文件管理',
@@ -33,8 +33,8 @@ const payload_map =
             version: '1.4'
         },
 		{
-            displayTitle: 'elf/bin插件加载器',
-            description: '端口号9021，后台持续运行，配合NetCat或安卓客户端推送插件',
+            displayTitle: 'elf、bin插件加载器',
+            description: '端口号9021，后台持续运行，配合NetCat或安卓客户端',
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',

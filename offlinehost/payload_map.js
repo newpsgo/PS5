@@ -38,7 +38,7 @@ const payload_map =
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.8'
+            version: '0.10'
         },
 		{
             displayTitle: '清除浏览器缓存',

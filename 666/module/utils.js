@@ -22,7 +22,6 @@ function die(msg) {
     // alert(msg);
     // undefinedFunction();
     // throw new Error("PSFree failed: " + msg);
-	print('Next loading...');
 	document.location.href = "cache.html";
 }
 

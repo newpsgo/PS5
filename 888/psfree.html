@@ -1,8 +1,7 @@
 <html>
-
 <head>
-	<meta charset="UTF-8">
-    <title>当前缓存版本：v0316 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <meta charset="UTF-8">
+    <title>PSGO一键折腾 | 当前缓存版本：v0316 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -32,30 +31,15 @@
             // );
             <!-- alert(reason); -->
             throw reason;
-			document.location.href = "cache.html";
+			document.location.href = "psfree.html";
         });
         window.addEventListener('load', function () {
             onload_setup();
         }, false);
     </script>
-<style>
-body{background-color:black;border: 5px solid #603bcc;}
-
-.loader {position: absolute;left: 50%;top: 55%;margin: -75px 0 0 -75px;border: 10px solid #1f1e1e;border-radius: 50%;border-top: 10px solid #603bcc;border-left: 10px solid #603bcc;width: 120px;height: 120px;animation: spin 1s linear infinite;}
-@keyframes spin {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
-</style>
-
 </head>
 
 <body>
-	<div id="loader" class="loader"></div>
-    <br>
-    <div>
-	<h1 style="font-size:60px;text-align:center;font-style:italic;"><font color="#603bcc">PSGO 全自动折腾离线版 × etaHEN</font></h1>
-	<h2 id="jb-progress-status-text" style="font-size:30px;text-align:center;color:#fff;font-weight:bold;">Loading PSFree</h2>
-    </div>
-	<div style="display:none;">
-	
     <svg style="display: none" version="2.0">
         <defs>
             <symbol id="delete-icon" viewBox="0 -960 960 960">
@@ -96,18 +80,18 @@ body{background-color:black;border: 5px solid #603bcc;}
     <div id="center-view" style="position: absolute; top: 0; left: 0; width: 100%; min-height: 100%;">
 
         <div style="margin-top: 15px; position: absolute; width: 100%;">
-            <h1 style="text-align: center;">PS5 Jailbreak 3.xx-4.xx</h1>
+            <h1 style="text-align: center;opacity: 0;">PS5 Jailbreak 3.xx-4.xx</h1>
             <p id="current-fw" class="text-secondary"
-                style="text-align: center; margin-bottom: 8px; padding-bottom: 0;">
+                style="opacity: 0;text-align: center; margin-bottom: 8px; padding-bottom: 0;">
             </p>
 
-            <p id="listening-ip" class="text-secondary" style="text-align: center; margin-top: 0; padding-top: 0;">
+            <p id="listening-ip" class="text-secondary" style="opacity: 0;text-align: center; margin-top: 0; padding-top: 0;">
                 <br />
             </p>
         </div>
-        <div style="position: absolute; margin: 20px; margin-right:28px; bottom: 0; right: 0px;" class="opacity-transition" id="l2-redirect">
+        <div style="opacity: 0;position: absolute; margin: 20px; margin-right:28px; bottom: 0; right: 0px;" class="opacity-transition" id="l2-redirect">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 35px;">
-                <div >
+                <div style="opacity: 0;">
                     <span style="vertical-align: middle;display: inline-block;                ">
                         <svg viewbox="0 0 79 61" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height:32px;">
                             <rect x="0" y="0" width="79" height="61" rx="13" ry="13" fill="#bdc0c2" />
@@ -127,7 +111,7 @@ body{background-color:black;border: 5px solid #603bcc;}
                         </svg>
                     </span>
                     <span
-                        style="font-size: 18px; vertical-align: middle;display: inline-block; margin-left: 8px; font-weight: bold; color: #fff;">Options</span>
+                        style="font-size: 18px; vertical-align: middle;display: inline-block; margin-left: 8px; font-weight: bold; color: #fff;">r2</span>
                 </div>
             </div>
         </div>
@@ -136,7 +120,7 @@ body{background-color:black;border: 5px solid #603bcc;}
 
             <div id="run-jb-parent" class="opacity-transition"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-                <a tabindex="0" class="btn" style="max-width: 50%;" id="run-jb" onclick="runJailbreak()">Jailbreak</a>
+                <a tabindex="0" class="btn" style="max-width: 35%;display: none" id="run-jb" onclick="runJailbreak()">PSGO</a>
             </div>
 
             <div id="jb-progress" class="opacity-transition"
@@ -154,16 +138,16 @@ body{background-color:black;border: 5px solid #603bcc;}
             </div>
 
             <div id="post-jb-view" class="opacity-transition"
-                style="width: 100%;position: relative; max-height: 10px; overflow-y: hidden; margin-top: 200px;">
+                style="width: 100%;position: relative; max-height: 10px; overflow-y: hidden; margin-top: 15px;">
                 <!-- it seems like sometimes display none to anything else and transforms like causing crashes after the jailbreak. idk. -->
                 <div id="payloads-list" class="grid-container">
                 </div>
             </div>
 
-            <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 13px;"
+            <center style="position: fixed;bottom: 0;width: 100%;margin-bottom: 10px;font-size: 16px;"
                 class="info opacity-transition" id="credits">
-                <b id="version"> | v1.04</b>
-                <h3 style="margin-top: 0;padding-top: 0;">
+                <b style="opacity: 0;" id="version"> | v1.04</b>
+                <h3 style="margin-top: 0;padding-top: 0;color:#fff;">
                 </h3>
             </center>
         </div>
@@ -181,7 +165,7 @@ body{background-color:black;border: 5px solid #603bcc;}
             </div>
         </div>
     </div>
-</div>      
+    
 </body>
 
 </html>

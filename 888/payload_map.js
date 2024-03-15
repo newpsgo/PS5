@@ -38,7 +38,7 @@ const payload_map =
             fileName: 'elfldr.elf',
             author: 'john-tornblom',
             source:'https://github.com/john-tornblom/ps5-payload-elfldr/releases',
-            version: '0.8'
+            version: '0.10'
         },
 		{
             displayTitle: '清除浏览器缓存',
@@ -74,12 +74,11 @@ const payload_map =
         },
 		{
             displayTitle: '解锁部分正版游戏120/60帧率',
-            description: 'v1.152 运行后可直接启动相应游戏（版本也需要对应）',
+            description: 'v1.156 运行后可直接启动相应游戏（版本也需要对应）',
             fileName: 'spawner.elf',
             author: 'illusion0001, astrelsky',
             source: 'https://github.com/illusion0001/libhijacker/releases',
-            // loader: 'libhijacker',
-            version: '1.152'
+            version: '1.x'
         },
 		{
             displayTitle: '查看版本信息',
@@ -93,7 +92,7 @@ const payload_map =
             displayTitle: '查看系统状态',
             description: '温度、频率等系统信息',
             fileName: 'hwinfo-tornblom.elf',
-            author: '匿名作者',
+            author: '?',
             source:'?',
             version: '1.0'
         }

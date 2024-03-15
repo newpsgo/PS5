@@ -1,5 +1,5 @@
 CACHE MANIFEST 
-#PS5.PSGO.eu.org 2024/03/11 fix12
+#PS5.PSGO.eu.org 2024/03/15 ÷‹ŒÂ-19:43:42.52 
 
 CACHE: 
 cache.html
@@ -9,6 +9,7 @@ index.html
 int64.js
 main.css
 payload_map.js
+psfree.html
 rop.js
 rop_slave.js
 webkit_fontface.js

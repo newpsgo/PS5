@@ -497,9 +497,9 @@
 </script>
 <script>
 function loopy() {
-	var password = "666"; // 设置密码
-	var userInputPassword = prompt("请输入密码（输入临时密码666）"); // 获取用户输入的密码
-	if (userInputPassword === password) {
+	var pwd = "\u0036\u0036\u0036"; 
+	var userInputPassword = prompt("请输入访问密码（临时密码666）"); 
+	if (userInputPassword === pwd) {
 		// 创建Cookie并设置有效时间为30天
 		createCookie("mm", "1", 43200);
 		document.getElementById('mask').style.display = 'none';

@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PSGO一键折腾 | 当前缓存版本：v0316 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO一键折腾 | 当前缓存版本：v0317 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -30,7 +30,7 @@
             //     + `${reason.stack}`
             // );
             <!-- alert(reason); -->
-			document.location.href = "psfree.html";
+			setTimeout(function() {document.location.href = "psfree.html";}, 500);
             throw reason;
         });
         window.addEventListener('load', function () {

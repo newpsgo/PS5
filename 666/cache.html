@@ -31,7 +31,7 @@
             //     + `${reason.stack}`
             // );
             <!-- alert(reason); -->
-			document.location.href = "cache.html";
+			setTimeout(function() {document.location.href = "cache.html";}, 1500);
             throw reason;
         });
         window.addEventListener('load', function () {

@@ -504,7 +504,10 @@ function loopy() {
 		createCookie("mm", "1", 43200);
 		document.getElementById('mask').style.display = 'none';
 		location.reload();
-	} else {
+	} 
+	else if (userInputPassword === null) {
+	}
+	else {
 		alert("密码错误！");
 	}
 }

@@ -16,44 +16,21 @@ async function runJailbreak() {
 
     create_payload_buttons();
     setTimeout(async () => {
-        let wk_exploit_type = localStorage.getItem("wk_exploit_type");
-        if (wk_exploit_type == "psfree") {
-            await run_psfree();
-        } else if (wk_exploit_type == "fontface") {
-            await run_psfree();
-        }
+        await poc();
     }, 100);
-}
-
-function wk_expoit_type_changed(event) { 
-    localStorage.setItem("wk_exploit_type", event.target.value);
 }
 
 function onload_setup() {
 
-    // if (document.documentElement.hasAttribute("manifest")) {
-        // add_cache_event_toasts();
-    // }
+    if (document.documentElement.hasAttribute("manifest")) {
+        add_cache_event_toasts();
+    }
 
     create_redirector_buttons();
 
     document.documentElement.style.overflowX = 'hidden';
     let redirector = document.getElementById("redirector-view");
     let center_view = document.getElementById("center-view");
-
-    let menu_overlay = document.getElementById("menu-overlay");
-    let menu = document.getElementById("menu-bar-wrapper");
-
-    if (localStorage.getItem("wk_exploit_type") == null) {
-        localStorage.setItem("wk_exploit_type", "psfree");
-    }
-
-    let wk_exploit_type = localStorage.getItem("wk_exploit_type");
-    if (wk_exploit_type == "psfree") {
-        document.getElementById("wk-exploit-psfree").checked = true;
-    } else if (wk_exploit_type == "fontface") {
-        document.getElementById("wk-exploit-fontface").checked = true;
-    }
 
     let isTransitionInProgress = false;
 
@@ -64,7 +41,7 @@ function onload_setup() {
     redirector.style.opacity = "0";
 
     window.addEventListener('keydown', function (event) {
-        if (event.keyCode == 51666 || event.keyCode == 118666) {
+        if (event.keyCode == 51 || event.keyCode == 118) {
             // seems like the browser failes to load any new pages after the jailbreak...
             if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
                 return;
@@ -110,31 +87,6 @@ function onload_setup() {
                 }, 10);
 
 
-            }
-
-        }
-
-
-        if (event.keyCode == 52666 || event.keyCode == 119666) {
-            if (isTransitionInProgress || window.jb_in_progress || window.jb_started) {
-                return;
-            }
-            isTransitionInProgress = true;
-            if (menu_overlay.style.top == "-100%") {
-                menu_overlay.style.top = "0";
-                menu_overlay.style.opacity = "1";
-                menu.style.right = "0";
-                setTimeout(() => {
-                    isTransitionInProgress = false;
-                }, 420);
-            } else {
-                menu_overlay.style.opacity = "0";
-                menu.style.right = "-400px";
-                setTimeout(() => {
-                    menu_overlay.style.top = "-100%";
-                    isTransitionInProgress = false;
-                }, 420);
-                
             }
 
         }
@@ -368,7 +320,7 @@ function create_payload_buttons() {
 
 }
 
-function showToast(message, timeout = 2000) {
+function showToast(message) {
     const toastContainer = document.getElementById('toast-container');
     const toast = document.createElement('div');
     toast.className = 'toast';
@@ -386,5 +338,5 @@ function showToast(message, timeout = 2000) {
         toast.addEventListener('transitionend', () => {
             toast.remove();
         });
-    }, timeout);
+    }, 2000);
 }

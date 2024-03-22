@@ -21,8 +21,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 function die(msg) {
     // alert(msg);
     // undefinedFunction();
-    // throw new Error("PSFree" + msg);
-	setTimeout(function() {document.location.href = "psfree.html";}, 500);
+    throw new Error("PSFree执行失败: " + msg + "\n 请长按PS键回到桌面并重新进入本页面");
 }
 
 function debug_log(msg) {

@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PSGO一键折腾 | 当前缓存版本：v0323 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
+    <title>PSGO一键折腾 | 当前缓存版本：v0313 | 官网：PS5.PSGO.eu.org | 禁止商用</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
 
@@ -29,8 +29,7 @@
             //     + `${reason.sourceURL}:${reason.line}:${reason.column}\n`
             //     + `${reason.stack}`
             // );
-            <!-- alert(reason); -->
-			setTimeout(function() {document.location.href = "psfree.html";}, 1500);
+            alert(reason);
             throw reason;
         });
         window.addEventListener('load', function () {
@@ -120,8 +119,18 @@
 
             <div id="run-jb-parent" class="opacity-transition"
                 style="display: flex; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%;">
-                <a tabindex="0" class="btn" style="max-width: 50%;font-weight:bold;" id="run-jb" onclick="runJailbreak()">开始折腾</a>
+                <a tabindex="0" class="btn" style="max-width: 35%;font-weight:bold;" id="run-jb" onclick="runJailbreak()">开始折腾（离线版）</a>
+                <a href="https://ps5.psgo.eu.org/onlinehost/one/" tabindex="0" class="btn" style="max-width: 15%;font-weight:bold;">联网在线版</a>
             </div>
+			
+				<!-- <script>			 -->
+					<!-- function executarJailbreak() { -->
+
+						<!-- // runJailbreak();  -->
+						<!-- setTimeout(runJailbreak, 500); -->
+					<!-- } -->
+					<!-- window.onload = executarJailbreak; -->
+				<!-- </script> -->
 
             <div id="jb-progress" class="opacity-transition"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 0;left: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none;">
@@ -159,7 +168,7 @@
             <p style="margin: 10px; font-weight: bold;">请选择Webkit漏洞方案</p>
             <div style="margin: 10px;" >
                 <input type="radio" id="wk-exploit-psfree" name="wk-exploit" value="psfree" onchange="wk_expoit_type_changed(event)" >
-                <label for="psfree" >PSFree<br>新漏洞 / 执行快</label><br><br>
+                <label for="psfree" >PSFree<br>新漏洞 / 执行快 / 会提示错误</label><br><br>
                 <input type="radio" id="wk-exploit-fontface" name="wk-exploit" value="fontface" onchange="wk_expoit_type_changed(event)">
                 <label for="fontface">FontFace<br>老漏洞 / 容易提示内存不足</label><br><br>
             </div>
